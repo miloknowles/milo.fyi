@@ -9,7 +9,7 @@ import { Theme } from '@radix-ui/themes';
 
 import './globals.css';
 
-import Navigation from '@/components/Navigation';
+import Navigation from '@/components/navigation';
 
 import { Inter } from 'next/font/google';
 import { cx } from 'class-variance-authority';
@@ -37,7 +37,13 @@ export default function RootLayout({
         <Script src="/gtag.js" async/>
       </head>
       <body className={cx(sans.className)}>
-        <Theme appearance="light" accentColor="indigo" radius="medium">
+        <Theme
+          appearance="light"
+          accentColor="blue"
+          grayColor="auto"
+          radius="medium"
+          panelBackground="solid"
+        >
           <Navigation/>
           {children}
         </Theme>

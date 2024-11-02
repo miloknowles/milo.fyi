@@ -2,11 +2,11 @@ import { Text, Heading, Code, Strong } from "@radix-ui/themes";
 import { Metadata } from "next";
 import { Link as RadixLink } from "@radix-ui/themes";
 
-import { BlogSection, BlogWrapper, ContentContainer, SidenotesContainer } from "@/components/Blog/Wrappers";
-import Header from "@/components/Blog/Header";
-import { Ref, Sidenote, SidenoteAutoLayout } from "@/components/Blog/Sidenotes";
+import { BlogSection, BlogWrapper, ContentContainer, SidenotesContainer } from "@/components/blog/Wrappers";
+import Header from "@/components/blog/Header";
+import { Ref, Sidenote, SidenoteAutoLayout } from "@/components/blog/Sidenotes";
 import Image from "next/image";
-import Feedback from "@/components/Blog/Feedback";
+import Feedback from "@/components/blog/Feedback";
 
 
 export const metadata: Metadata = {

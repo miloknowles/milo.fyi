@@ -1,8 +1,3 @@
-import { Container, Section } from "@radix-ui/themes";
-
-import Header from "@/components/Blog/Header";
-import Feedback from "@/components/Blog/Feedback";
-
 const Content = () => (
 <div className="flex flex-col flex-grow gap-4 relative text-lg pb-8">
 <p><strong>Note</strong>: this is not a serious idea that I believe is
@@ -93,24 +88,4 @@ of 10 ms, a camera with a framerate of 30 Hz only captures data every
 </div>
 )
 
-
-export default function Page() {
-  return (
-    <Section
-      size={{initial: "1", md: "3"}}
-      pl={{initial: "3"}}
-      pr={{initial: "3"}}
-      id="blog-wrapper"
-    >
-      <Container size="3">
-        <Header
-          title="Aerodynamic driving could reduce US emissions by 1%"
-          publishDate="Nov 2, 2024"
-          sidenoteWarning
-        />
-        <Content/>
-        <Feedback/>
-      </Container>
-    </Section>
-  );
-}
+export default Content;

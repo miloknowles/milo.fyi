@@ -1,9 +1,4 @@
-import { Container, Link as RadixLink, Section } from "@radix-ui/themes";
-
-import Header from "@/components/Blog/Header";
-import Feedback from "@/components/Blog/Feedback";
-import CaptionedImage from "@/components/Blog/CaptionedImage";
-
+import CaptionedImage from "@/components/blog/CaptionedImage";
 
 const Content = () => (
 <div className="flex flex-col flex-grow gap-4 relative text-lg pb-8">
@@ -415,24 +410,4 @@ person.<a className="footnote-back" href="#fnref14" role="doc-backlink">↩︎</
 </div>
 )
 
-
-export default function Page() {
-  return (
-    <Section
-      size={{initial: "1", md: "3"}}
-      pl={{initial: "3"}}
-      pr={{initial: "3"}}
-      id="blog-wrapper"
-    >
-      <Container size="3">
-        <Header
-          title="Part 2: The artificial photosynthesis revolution"
-          publishDate="June 9, 2024"
-          sidenoteWarning
-        />
-        <Content/>
-        <Feedback/>
-      </Container>
-    </Section>
-  );
-}
+export default Content;

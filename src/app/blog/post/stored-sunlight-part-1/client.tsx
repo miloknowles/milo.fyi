@@ -2,8 +2,8 @@
 
 import { Container, Link as RadixLink, Section } from "@radix-ui/themes";
 
-import Header from "@/components/Blog/Header";
-import Feedback from "@/components/Blog/Feedback";
+import Header from "@/components/blog/Header";
+import Feedback from "@/components/blog/Feedback";
 
 import MathJax from "react-mathjax";
 

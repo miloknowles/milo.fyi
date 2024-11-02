@@ -1,3 +1,7 @@
+## Special Markdown Syntax
+- Code formatting: 
+
+
 ## Publishing
 
 - Download from Google Docs as a `.docx` file
@@ -5,3 +9,7 @@
 - Copy the output HTML into the blog page
 - Replace images manually as needed (not supported yet)
 - Delete intermediate files
+
+## FastAPI Server
+
+- Run `fastapi dev main.py` to start the server

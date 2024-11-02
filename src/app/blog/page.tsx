@@ -1,4 +1,5 @@
-import { Container, Flex, Heading, Link, Section, Separator } from "@radix-ui/themes";
+import ExternalLink from "@/components/core/external-link";
+import { Container, Flex, Heading, Section, Separator } from "@radix-ui/themes";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -6,12 +7,56 @@ export const metadata: Metadata = {
   description: "Blog posts, papers, and other ideas I'm thinking about.",
 }
 
+const index = [
+  {
+    title: "Aerodynamic driving could reduce US emissions by 1%",
+    href: "/blog/post/highway-drafting",
+  },
+  {
+    title: "Part 2: The artificial photosynthesis revolution",
+    href: "/blog/post/artificial-photosynthesis-part-2",
+  },
+  {
+    title: "Part 1: Making food with air, water, and sunlight",
+    href: "/blog/post/stored-sunlight-part-1",
+  },
+  {
+    title: "Green premium agreements",
+    href: "/blog/post/green-premium-agreements",
+  },
+  {
+    title: "Some types of startups should be nonprofit startups",
+    href: "/blog/post/nonprofit-startups",
+  },
+  {
+    title: "How should companies and individuals fund climate mitigation?",
+    href: "/blog/post/funding-climate",
+  },
+  {
+    title: "Blue Meadow: What I learned from a year as a solo founder",
+    href: "/blog/post/blue-meadow",
+  },
+  {
+    title: "[Article] What is consumed carbon intensity and why is it important?",
+    href: "https://medium.com/singularity-energy/what-is-consumed-carbon-intensity-and-why-is-it-important-3e272ee3e08c",
+  },
+  {
+    title: "[Paper] Toward Robust and Efficient Online Adaptation for Deep Stereo Depth Estimation (ICRA 2021)",
+    href: "/knowles_icra_2021.pdf",
+  },
+  {
+    title: "[Thesis] Toward robust deep stereo networks: uncertainty learning, novelty detection, and online adaptation",
+    href: "https://dspace.mit.edu/handle/1721.1/129167",
+  }
+]
+
+
 export default function Page() {
   return (
     <main className="min-h-screen">
       <Section size={{initial: "1", md: "3"}} pl="3" pr="3">
         <Container size="3">
-          <Flex direction="column" gap="7">
+          <Flex direction="column" gap="6">
             <Heading size="9">
               Writing
             </Heading>
@@ -20,41 +65,27 @@ export default function Page() {
               <Heading size="7">
                 Blog
               </Heading>
-              <Link href="/blog/highway-drafting">
-                Aerodynamic driving could reduce US emissions by 1%
-              </Link>
-              <Link href="/blog/artificial-photosynthesis-part-2">
-                Part 2: The artificial photosynthesis revolution
-              </Link>
-              <Link href="/blog/stored-sunlight-part-1">
-                Part 1: Making food with air, water, and sunlight
-              </Link>
-              <Link href="/blog/green-premium-agreements">
-                Green premium agreements
-              </Link>
-              <Link href="/blog/nonprofit-startups">
-                Some types of startups should be nonprofit startups
-              </Link>
-              <Link href="/blog/funding-climate">
-                How should companies and individuals fund climate mitigation?
-              </Link>
-              <Link href="/blog/bluemeadow">
-                Blue Meadow: What I learned from a year as a solo founder
-              </Link>
+              {
+                index.map((item, index) => (
+                  <ExternalLink key={index} href={item.href}>
+                    {item.title}
+                  </ExternalLink>
+                ))
+              }
             </Flex>
             <Flex direction="column" gap="3">
               <Heading size="7">
                 Other
               </Heading>
-              <Link href="https://medium.com/singularity-energy/what-is-consumed-carbon-intensity-and-why-is-it-important-3e272ee3e08c" target="_blank">
+              <ExternalLink href="https://medium.com/singularity-energy/what-is-consumed-carbon-intensity-and-why-is-it-important-3e272ee3e08c">
                 [Article] What is consumed carbon intensity and why is it important?
-              </Link>
-              <Link href="/knowles_icra_2021.pdf" target="_blank">
+              </ExternalLink>
+              <ExternalLink href="/knowles_icra_2021.pdf">
                 [Paper] Toward Robust and Efficient Online Adaptation for Deep Stereo Depth Estimation (ICRA 2021)
-              </Link>
-              <Link href="https://dspace.mit.edu/handle/1721.1/129167" target="_blank">
+              </ExternalLink>
+              <ExternalLink href="https://dspace.mit.edu/handle/1721.1/129167">
                 [Thesis] Toward robust deep stereo networks: uncertainty learning, novelty detection, and online adaptation
-              </Link>
+              </ExternalLink>
             </Flex>
           </Flex>
         </Container>

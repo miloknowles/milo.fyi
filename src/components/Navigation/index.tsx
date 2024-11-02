@@ -15,7 +15,11 @@ const BigLink = (props: { href: string, target?: string, children: any, onClick?
     <Link href={props.href} onClick={props.onClick} target={props.target}>
       <Heading
         size="9"
-        className="relative after:bg-current after:absolute after:h-[2px] after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-200 cursor-pointer w-min"
+        className="
+          relative
+          after:bg-current after:absolute after:h-[3px] after:w-0 after:-bottom-2 after:left-0
+          hover:after:w-full after:transition-all after:duration-200
+          cursor-pointer w-min"
       >
         {props.children}
       </Heading>
@@ -60,26 +64,23 @@ export default function Navigation() {
   }
 
   return (
-    <header style={{zIndex: 2000, position: "sticky"}}> 
-      <nav style={{width: "100%", borderBottom: "2px solid var(--color-panel-solid)", display: "flex"}}>
-        <Flex p="4" gap="4" ml="auto">
-          <IconButton size="3" variant="ghost" onClick={() => setOpen(!open)} style={{zIndex: 5000}} color="gray">
-            {
-              open ?
-                <Cross1Icon width="32" height="32"/> :
-                <ArrowTopRightIcon width="32" height="32"/>
-            }
-          </IconButton>
-        </Flex>
+    <header className="z-[2000] fixed right-0 top-0"> 
+      <nav className="p-4">
+        <IconButton size="3" variant="ghost" onClick={() => setOpen(!open)} className="z-[5000] relative">
+          {
+            open ?
+              <Cross1Icon width="32" height="32"/> :
+              <ArrowTopRightIcon width="32" height="32"/>
+          }
+        </IconButton>
       </nav>
       <Section
-        className="h-screen w-screen fixed top-0 right-0"
+        className="h-screen w-screen fixed top-0 right-0 bg-background z-[4000]"
         style={{
           opacity: open ? 1 : 0,
           transition: "opacity 0.25s ease",
           pointerEvents: open ? "all" : "none",
           zIndex: 4000,
-          backgroundColor: "var(--color-background)"
         }}
       >
         <nav style={{display: open ? "inherit" : "none"}}>

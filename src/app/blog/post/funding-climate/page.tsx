@@ -1,11 +1,11 @@
 import { Text, Heading, Code, Blockquote } from "@radix-ui/themes";
 import { Metadata } from "next";
 import { Link as RadixLink } from "@radix-ui/themes";
-import { Ref, Sidenote, SidenoteAutoLayout } from "@/components/Blog/Sidenotes";
+import { Ref, Sidenote, SidenoteAutoLayout } from "@/components/blog/Sidenotes";
 import ClimateNeutralChart from "./ClimateNeutralChart";
-import Header from "@/components/Blog/Header";
-import { BlogSection, BlogWrapper, ContentContainer, SidenotesContainer } from "@/components/Blog/Wrappers";
-import Feedback from "@/components/Blog/Feedback";
+import Header from "@/components/blog/Header";
+import { BlogSection, BlogWrapper, ContentContainer, SidenotesContainer } from "@/components/blog/Wrappers";
+import Feedback from "@/components/blog/Feedback";
 
 
 export const metadata: Metadata = {
