@@ -5,8 +5,7 @@ export default function Feedback() {
   return (
     <CalloutRoot>
       <CalloutText>
-        Did I get something wrong? Have you been thinking about this too?
-        I'd love to <RadixLink href="mailto:miloknowles97@gmail.com">hear your thoughts</RadixLink> either way.
+        If you have questions or feedback, feel free to <RadixLink href="mailto:miloknowles97@gmail.com">reach out</RadixLink>.
       </CalloutText>
     </CalloutRoot>
   )

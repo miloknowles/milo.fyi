@@ -20,6 +20,9 @@ export default function Page() {
               <Heading size="7">
                 Blog
               </Heading>
+              <Link href="/blog/highway-drafting">
+                Aerodynamic driving could reduce US emissions by 1%
+              </Link>
               <Link href="/blog/artificial-photosynthesis-part-2">
                 Part 2: The artificial photosynthesis revolution
               </Link>
