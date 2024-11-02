@@ -1,12 +1,10 @@
-import { Badge, Container, Flex, Heading, Link, Section, Separator, Text } from "@radix-ui/themes";
+import { Container, Flex, Heading, Link, Section, Separator } from "@radix-ui/themes";
 import { Metadata } from "next";
-
 
 export const metadata: Metadata = {
   title: 'Milo Knowles | Writing',
   description: "Blog posts, papers, and other ideas I'm thinking about.",
 }
-
 
 export default function Page() {
   return (

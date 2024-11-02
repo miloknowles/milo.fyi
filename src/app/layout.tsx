@@ -10,11 +10,9 @@ import { Theme } from '@radix-ui/themes';
 import './globals.css';
 
 import Navigation from '@/components/Navigation';
-import Footer from '@/components/Footer';
 
 import { Inter } from 'next/font/google';
 import { cx } from 'class-variance-authority';
-
 
 export const metadata: Metadata = {
   title: 'Milo Knowles',
@@ -22,7 +20,6 @@ export const metadata: Metadata = {
 }
 
 const sans = Inter({ subsets: ['latin'], variable: "--font-sans" });
-
 
 export default function RootLayout({
   children,
@@ -36,12 +33,11 @@ export default function RootLayout({
           rel="icon"
           href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌲</text></svg>"
         />
-        {/* <Script src="/segment.js" async/> */}
         <Script src="https://www.googletagmanager.com/gtag/js?id=G-BGELZ7CXQ0" async/>
         <Script src="/gtag.js" async/>
       </head>
       <body className={cx(sans.className)}>
-        <Theme appearance="dark" accentColor="indigo" radius="medium">
+        <Theme appearance="light" accentColor="indigo" radius="medium">
           <Navigation/>
           {children}
         </Theme>

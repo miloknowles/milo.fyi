@@ -1,5 +1,4 @@
-import { RocketIcon } from '@radix-ui/react-icons';
-import { CalloutIcon, CalloutRoot, CalloutText, Container, Flex, Grid, Heading, Link, Section, Text } from '@radix-ui/themes';
+import { Container, Flex, Grid, Heading, Link, Section, Text } from '@radix-ui/themes';
 import Image from 'next/image';
 
 

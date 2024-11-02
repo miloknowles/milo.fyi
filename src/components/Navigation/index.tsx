@@ -2,10 +2,13 @@
 
 import { ArrowTopRightIcon, Cross1Icon } from "@radix-ui/react-icons";
 import { Container, Flex, Heading, IconButton, Section } from "@radix-ui/themes";
+
 import Link from "next/link";
 import { useState } from "react";
-import Socials from "@/components/Socials";
 
+import { GitHubLogoIcon, LinkedInLogoIcon } from "@radix-ui/react-icons";
+import { FaStrava } from "react-icons/fa";
+import { FaEnvelope } from "react-icons/fa";
 
 const BigLink = (props: { href: string, target?: string, children: any, onClick?: () => void }) => {
   return (
@@ -20,6 +23,34 @@ const BigLink = (props: { href: string, target?: string, children: any, onClick?
   );
 }
 
+function LinkIcon(props: { href: string, children: any }) {
+  return (
+    <Link href={props.href} target="_blank">
+      <IconButton variant="ghost">
+        {props.children}
+      </IconButton>
+    </Link>
+  )
+}
+
+function Socials(props: { size: number, color?: string }) {
+  return (
+    <Flex gap="6">
+      <LinkIcon href="https://www.linkedin.com/in/milo-knowles/">
+        <LinkedInLogoIcon width={props.size.toString()} height={props.size.toString()} color={props.color || "gray"}/>
+      </LinkIcon>
+      <LinkIcon href="https://www.github.com/miloknowles">
+        <GitHubLogoIcon width={props.size.toString()} height={props.size.toString()} color={props.color || "gray"}/>
+      </LinkIcon>
+      <LinkIcon href="https://www.strava.com/athletes/6914634">
+        <FaStrava size={props.size} color={props.color || "gray"}/>
+      </LinkIcon>
+      <LinkIcon href="mailto:miloknowles97@gmail.com">
+        <FaEnvelope size={props.size} color={props.color || "gray"}/>
+      </LinkIcon>
+    </Flex>
+  );
+}
 
 export default function Navigation() {
   const [open, setOpen] = useState(false);
@@ -32,9 +63,6 @@ export default function Navigation() {
     <header style={{zIndex: 2000, position: "sticky"}}> 
       <nav style={{width: "100%", borderBottom: "2px solid var(--color-panel-solid)", display: "flex"}}>
         <Flex p="4" gap="4" ml="auto">
-          {/* <IconButton size="3" variant="ghost" color="gray">
-            <SunIcon width="32" height="32"/>
-          </IconButton> */}
           <IconButton size="3" variant="ghost" onClick={() => setOpen(!open)} style={{zIndex: 5000}} color="gray">
             {
               open ?
@@ -44,24 +72,24 @@ export default function Navigation() {
           </IconButton>
         </Flex>
       </nav>
-      <Section style={{
-        width: "100vw", height: "100vh", position: "fixed", top: "0px", right: "0px",
-        opacity: open ? 1 : 0,
-        transition: "opacity 0.25s ease",
-        pointerEvents: open ? "all" : "none",
-        zIndex: 4000,
-        backgroundColor: "var(--color-background)"
-      }}>
+      <Section
+        className="h-screen w-screen fixed top-0 right-0"
+        style={{
+          opacity: open ? 1 : 0,
+          transition: "opacity 0.25s ease",
+          pointerEvents: open ? "all" : "none",
+          zIndex: 4000,
+          backgroundColor: "var(--color-background)"
+        }}
+      >
         <nav style={{display: open ? "inherit" : "none"}}>
           <Container size="1" p={{initial: "4", md: "0"}}>
             <Flex direction="column" gap="6">
               <BigLink href="/" onClick={onClickLink}>About</BigLink>
               <BigLink href="/blog" onClick={onClickLink}>Writing</BigLink>
               <BigLink href="https://triathlon-tools.vercel.app/" target="_blank" onClick={onClickLink}>Triathlon</BigLink>
-              <BigLink href="https://resume.io/r/5C7pJxyMP" onClick={onClickLink} target={"_blank"}>CV</BigLink>
-              <Flex>
-                <Socials size={64} color="white"/>
-              </Flex>
+              <BigLink href="https://resume.io/r/5C7pJxyMP" onClick={onClickLink} target={"_blank"}>Resume</BigLink>
+              <Socials size={64} color="black"/>
             </Flex>
           </Container>
         </nav>
