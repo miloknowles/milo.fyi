@@ -14,11 +14,11 @@ const index = [
   },
   {
     title: "Part 2: The artificial photosynthesis revolution",
-    href: "/blog/post/artificial-photosynthesis-part-2",
+    href: "/blog/post/solar-to-food-part-2",
   },
   {
     title: "Part 1: Making food with air, water, and sunlight",
-    href: "/blog/post/stored-sunlight-part-1",
+    href: "/blog/post/solar-to-food-part-1",
   },
   {
     title: "Green premium agreements",

@@ -1,10 +1,5 @@
 "use client";
 
-import { Container, Link as RadixLink, Section } from "@radix-ui/themes";
-
-import Header from "@/components/blog/Header";
-import Feedback from "@/components/blog/Feedback";
-
 import MathJax from "react-mathjax";
 
 const Content = () => (
@@ -33,17 +28,17 @@ efficiency of photosynthesis (energy stored per unit of solar energy
 received) is <a
 href="https://www.britannica.com/science/photosynthesis/Energy-efficiency-of-photosynthesis"><u>about
 26%</u></a>, plants have a practical efficiency of less than {" "}<code
-className="text-indigo-200 font-bold">1%</code>{" "} on an annual areawide
+className="text-indigo-500 font-bold">1%</code>{" "} on an annual areawide
 basis. Some of the most "light-efficient" crops we farm are maize and <a
 href="https://www.canarymedia.com/articles/air-travel/this-new-factory-will-turn-co2-into-sustainable-jet-fuel"><u>sugar
 beets</u></a>, which can capture about {" "}<code
-className="text-indigo-200 font-bold">0.3%</code>{" "} and {" "}<code
-className="text-indigo-200 font-bold">0.4%</code>{" "} of the light energy
+className="text-indigo-500 font-bold">0.3%</code>{" "} and {" "}<code
+className="text-indigo-500 font-bold">0.4%</code>{" "} of the light energy
 that falls on a given patch of land, respectively<a href="#fn1"
 id="fnref1" className="footnote-ref"
 role="doc-noteref"><sup>1</sup></a>.</p>
 <p>So when you eat a plant and metabolize its carbohydrates for energy,
-{" "}<code className="text-indigo-200 font-bold">&gt;99%</code>{" "} of the
+{" "}<code className="text-indigo-500 font-bold">&gt;99%</code>{" "} of the
 original solar energy has already been lost. This seems terribly
 inefficient, but you could argue that energy from sunlight is incredibly{" "}
 <a
@@ -65,17 +60,17 @@ eat from many different trophic levels on a daily basis.</p>
 <p>As you move to higher trophic levels, energy is inevitably lost as
 heat due to the fact that organisms do a lot more than just eat and
 grow. An animal who eats {" "}<code
-className="text-indigo-200 font-bold">1000{" "} kcal</code>{" "} of
+className="text-indigo-500 font-bold">1000{" "} kcal</code>{" "} of
 vegetation doesn't actually gain {" "}<code
-className="text-indigo-200 font-bold">1000{" "} kcal</code>{" "} of edible
+className="text-indigo-500 font-bold">1000{" "} kcal</code>{" "} of edible
 body mass, since they do lots of other energy-consuming things for
 survival (or just for fun). The feed conversion efficiency of animals
 might be <a
 href="https://cbey.yale.edu/our-stories/disrupting-meat"><u>10%</u></a>{" "}
 under "ideal" (read: highly confined) conditions.</p>
-<p>Using the {" "}<code className="text-indigo-200 font-bold">1%</code>{" "}
+<p>Using the {" "}<code className="text-indigo-500 font-bold">1%</code>{" "}
 efficiency bound on photosynthesis and the {" "}<code
-className="text-indigo-200 font-bold">10%</code>{" "} upper bound on feed
+className="text-indigo-500 font-bold">10%</code>{" "} upper bound on feed
 conversion, the fraction of the sun's energy available at level $[L]$
 is:</p>
 <p><MathJax.Node formula={"E(L) = \\frac{1}{100} \\enspace \\times \\enspace \\frac{1}{10^{L-1}} =\\frac{1}{10^{L+1}} \\tag{Equation 2}"}/></p>
@@ -253,41 +248,4 @@ role="doc-backlink">↩︎</a></p>
 </div>
 )
 
-
-export default function Page() {
-  return (
-    <MathJax.Provider options={
-      {
-        asciimath2jax: {
-          delimiters: [['$$', '$$']],
-          inlineMath: [['$[', ']$']]
-        },
-        tex2jax: {
-          delimiters: [['$$', '$$']],
-          inlineMath: [['$[', ']$']]
-        },
-        mathml2jax: {
-          delimiters: [['$$', '$$']],
-          inlineMath: [['$[', ']$']]
-        }
-      }
-    }>
-      <Section
-        size={{initial: "1", md: "3"}}
-        pl={{initial: "3"}}
-        pr={{initial: "3"}}
-        id="blog-wrapper"
-      >
-        <Container size="3">
-          <Header
-            title="Part 1: Making food with air, water, and sunlight"
-            publishDate="March 5, 2024"
-            sidenoteWarning
-          />
-          <Content/>
-          <Feedback/>
-        </Container>
-      </Section>
-    </MathJax.Provider>
-  );
-}
+export default Content;
