@@ -1,4 +1,4 @@
-export const CLIMATE_NEUTRAL_DATA = [
+export const data = [
   {
     companyName: "5DayDeal",
     dataUrl: "https://www.climateneutral.org/brand/5daydeal",

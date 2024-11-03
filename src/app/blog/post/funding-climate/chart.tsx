@@ -3,10 +3,10 @@
 import { ScatterChart, Card, Title, Text } from "@tremor/react";
 import { Link as RadixLink } from "@radix-ui/themes";
 
-import { CLIMATE_NEUTRAL_DATA } from "./climateneutral";
+import { data } from "./data";
 
 export default function ClimateNeutralChart() {
-  const chartData = CLIMATE_NEUTRAL_DATA.map(v => ({
+  const chartData = data.map(v => ({
     "Total Offsets": Math.log10(v.totalOffsets),
     "Price Per Ton": v.pricePerTon,
     "Total Spending": v.totalSpending,

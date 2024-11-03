@@ -1,7 +1,6 @@
 import sys
 import re
 
-
 def add_spaces_after_newlines(input_file: str, output_file: str):
   with open(input_file, "r") as f:
     lines = f.readlines()
@@ -16,7 +15,6 @@ def add_spaces_after_newlines(input_file: str, output_file: str):
   with open(output_file, "w") as f:
     for line in output_lines:
       f.write(line)
-
 
 if __name__ == "__main__":
   """Add spaces after HTML closing tags on the end of a line.
