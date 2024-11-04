@@ -66,7 +66,12 @@ export default function Navigation() {
   return (
     <header className="z-[2000] fixed right-0 top-0"> 
       <nav className="p-4">
-        <IconButton size="3" variant="ghost" onClick={() => setOpen(!open)} className="z-[5000] relative">
+        <IconButton
+          size="3"
+          variant="ghost"
+          onClick={() => setOpen(!open)}
+          className="z-[5000] relative"
+        >
           {
             open ?
               <Cross1Icon width="32" height="32" color="black"/> :

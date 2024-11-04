@@ -24,7 +24,7 @@ export default function Page() {
         </Text>
         <Text className="fade-order-4 text-lg">
           Currently, I'm a software engineer at <ExternalLink href="https://www.synonym.bio">Synonym</ExternalLink>, which
-          is developing the infrastructure we need to scale up biomanufacturing.
+          infrastructure for biomanufacturing.
           
           If you're working on biomanufacturing, alternative proteins, agriculture, or climate more broadly, I'd love to chat.
         </Text>
