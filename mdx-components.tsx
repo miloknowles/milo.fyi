@@ -1,11 +1,8 @@
+import type { MDXComponents } from 'mdx/types'
+
 import Link from 'next/link'
 import Image from 'next/image'
-import { MDXRemote } from 'next-mdx-remote/rsc'
 import { highlight } from 'sugar-high'
-import remarkGfm from 'remark-gfm'
-import remarkRehype from 'remark-rehype'
-import remarkMath from 'remark-math'
-import remarkHtml from 'remark-html'
 import React from 'react'
 
 function Table({ data }) {
@@ -91,7 +88,7 @@ function createHeading(level) {
   return Heading
 }
 
-let components = {
+let customComponents = {
   h1: createHeading(1),
   h2: createHeading(2),
   h3: createHeading(3),
@@ -103,41 +100,10 @@ let components = {
   code: Code,
   Table,
 }
-
-const options = {
-  remarkPlugins: [
-    remarkGfm,
-    (remark) => {
-      return (tree) => {
-        console.debug("Remark plugin was called")
-        console.debug(tree)
-        // tree.children = tree.children.map((node) => {
-        //   if (node.type === 'code') {
-        //     node.lang = node.lang || 'text'
-        //   }
-        //   return node
-        // })
-      }
-    }
-    // remarkHtml,
-    // remarkMath,
-    // remarkRehype,
-  ],
-  rehypePlugins: [
-  ],
-}
-
-export async function CustomMDX(props) {
-  // const source = props.source || '';
-  // const compiled = await serialize(source, { scope: {} });
-
-  // console.log(compiled);
-
-  return (
-    <MDXRemote
-      {...props}
-      components={{ ...components, ...(props.components || {}) }}
-      options={options}
-    />
-  )
+ 
+export function useMDXComponents(components: MDXComponents): MDXComponents {
+  return {
+    ...customComponents,
+    ...components,
+  }
 }

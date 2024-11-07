@@ -26,8 +26,11 @@ function parseFrontmatter(fileContent: string) {
   return { metadata: metadata as Metadata, content }
 }
 
+// Recursively read all files in the directory, and then filter only files with the .mdx extension.
 function getMDXFiles(dir) {
-  return fs.readdirSync(dir).filter((file) => path.extname(file) === '.mdx')
+  return fs.readdirSync(dir, { recursive: true })
+    .filter((file: string) => path.extname(file.toString()) === '.mdx')
+    .map((file: string) => file)
 }
 
 function readMDXFile(filePath) {
@@ -39,7 +42,9 @@ function getMDXData(dir) {
   let mdxFiles = getMDXFiles(dir)
   return mdxFiles.map((file) => {
     let { metadata, content } = readMDXFile(path.join(dir, file))
-    let slug = path.basename(file, path.extname(file))
+    // let slug = path.basename(file, path.extname(file))
+    // The slug is actually the directory name, not the file name.
+    let slug = path.basename(path.dirname(file))
 
     return {
       metadata,

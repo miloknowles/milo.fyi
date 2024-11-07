@@ -10,7 +10,7 @@ export default function Page() {
       </h1>
       <div className="flex flex-col gap-4">
         <Text className="fade-order-2 text-lg">
-          I studied CS/AI at MIT, where my research focused on vision for autonomous <ExternalLink href="https://www.csail.mit.edu/research/robust-robotics-group">robots</ExternalLink>.
+          I studied CS/AI at MIT, where my research focused on autonomous <ExternalLink href="https://www.csail.mit.edu/research/robust-robotics-group">robotics and computer vision</ExternalLink>.
           I've explored a few different areas through my work: autonomous <ExternalLink href="https://www.linkedin.com/company/optimus-ride/">cars</ExternalLink>/<ExternalLink href="https://www.skydio.com/">drones</ExternalLink>,
           ocean farming, the <ExternalLink href="https://singularity.energy/">energy grid</ExternalLink>,
           carbon crediting, alternative proteins, and biomanufacturing.
