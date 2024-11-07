@@ -1,7 +1,6 @@
 import { Text } from '@radix-ui/themes'
 
-import { BlogPosts } from 'src/components/posts-index'
-import ExternalLink from '../components/external-link'
+import ExternalLink from '@/components/external-link'
 
 export default function Page() {
   return (
@@ -11,31 +10,26 @@ export default function Page() {
       </h1>
       <div className="flex flex-col gap-4">
         <Text className="fade-order-2 text-lg">
-          I studied Computer Science and Artificial Intelligence at MIT, where my research focused on vision for autonomous <ExternalLink href="https://www.csail.mit.edu/research/robust-robotics-group">robots</ExternalLink>.
-          Since then, I've explored a lot of different technical areas: autonomous <ExternalLink href="https://www.linkedin.com/company/optimus-ride/">cars</ExternalLink>/<ExternalLink href="https://www.skydio.com/">drones</ExternalLink>,
+          I studied CS/AI at MIT, where my research focused on vision for autonomous <ExternalLink href="https://www.csail.mit.edu/research/robust-robotics-group">robots</ExternalLink>.
+          I've explored a few different areas through my work: autonomous <ExternalLink href="https://www.linkedin.com/company/optimus-ride/">cars</ExternalLink>/<ExternalLink href="https://www.skydio.com/">drones</ExternalLink>,
           ocean farming, the <ExternalLink href="https://singularity.energy/">energy grid</ExternalLink>,
-          carbon crediting, alternative proteins, and biomanufacturing. In two words, I'd say I’m a <ExternalLink href="https://nav.al/optimism">rational optimist</ExternalLink>;
-          I like to spend my time thinking about how the world couldand should get even better.
+          carbon crediting, alternative proteins, and biomanufacturing.
         </Text>
         <Text className="fade-order-3 text-lg">
-          The problems that I think and <ExternalLink href="/blog">write</ExternalLink> about the most are climate change and the food system. I believe that a sustainable food
-          system is the most important lever for addressing climate change, and that we need more
-          attention and innovation there.
+          The goal of this blog is <ExternalLink href="https://nav.al/optimism">rational optimism</ExternalLink>;
+          I'd like to clarify my own thinking about how the world could and should get even better.
+          Right now, I'm focused on climate change, the food system, and learning about synthetic biology.
         </Text>
         <Text className="fade-order-4 text-lg">
-          Currently, I'm a software engineer at <ExternalLink href="https://www.synonym.bio">Synonym</ExternalLink>, which
-          infrastructure for biomanufacturing.
-          
+          By day, I'm a software engineer at <ExternalLink href="https://www.synonym.bio">Synonym</ExternalLink>, which
+          builds infrastructure for biomanufacturing and supports the emerging bioeconomy.
           If you're working on biomanufacturing, alternative proteins, agriculture, or climate more broadly, I'd love to chat.
         </Text>
         <Text className="fade-order-5 text-lg">
-          Outside of work, I enjoy <ExternalLink href="https://www.strava.com/athletes/6914634">triathlon</ExternalLink> and following endurance sports.
+          Outside of work, I'm a <ExternalLink href="https://www.strava.com/athletes/6914634">triathlon</ExternalLink> enthusiast and enjoy following endurance sports.
           You'll usually find me biking, running, or at the pool.
         </Text>
       </div>
-      {/* <div className="my-8">
-        <BlogPosts />
-      </div> */}
     </section>
   )
 }
