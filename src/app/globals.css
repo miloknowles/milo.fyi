@@ -1,4 +1,4 @@
-@import 'tailwindcss';
+@import "tailwindcss/base";
 
 @tailwind base;
 @tailwind components;
@@ -130,7 +130,7 @@ html {
 }
 
 .prose pre {
-  @apply bg-neutral-50 rounded-lg overflow-x-auto border border-neutral-200py-2 px-3 text-sm;
+  @apply bg-neutral-50 rounded-lg overflow-x-auto border border-neutral-200 py-2 px-3 text-sm;
 }
 
 .prose code {
@@ -148,7 +148,6 @@ html {
 }
 
 .prose img {
-  /* Don't apply styles to next/image */
   @apply m-0;
 }
 

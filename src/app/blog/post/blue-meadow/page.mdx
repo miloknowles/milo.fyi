@@ -4,6 +4,10 @@ publishedAt: '2022-01-01'
 summary: 'Here are some of the lessons I’ve learned, most of them the hard way.'
 ---
 
+import Header from '@/components/blog/header'
+
+<Header title={frontmatter.title} publishedAt={frontmatter.publishedAt}/>
+
 Over the past 15 months, I took an unexpected detour in my life to work on a startup.
 
 Because I spent most of that time as a solo founder, summarizing my thoughts in writing became my proxy for having a co-founder to bounce ideas off of. Similar to the [rubber duck](https://en.wikipedia.org/wiki/Rubber_duck_debugging) that a software engineer might be familiar with, writing is my way of forcing myself to examine what I’m doing.
@@ -50,9 +54,9 @@ I had this ordering reversed when I started out.
 
 If I had to model my instantaneous level of optimism in pseudocode, it would be something like:
 
-```
-\\mathbf{Optimism}(t) \= \\mathbf{Optimism}(t) \+ \\mathbf{Optimism}(t) \+ \\mathbf{Optimism}(t)
-```
+$$
+\mathtt{Optimism}(t) = \mathtt{RationalSignal}(t) + \mathtt{PersonalBias}(t) + \mathtt{PersonalNoise}(t)
+$$
 
 The rational signal is how “good” an idea actually is on paper, based on the data you have so far: feedback from customers, market size, progress on the product, etc. Added to that is some amount of personal bias. I tend to be biased toward optimism (i.e, that term is positive), although the bias term occasionally went negative after a few weeks of consistent setbacks or frustration in other areas of life.
 

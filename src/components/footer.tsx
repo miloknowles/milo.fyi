@@ -15,32 +15,50 @@ function ArrowIcon() {
   )
 }
 
+const items = [
+  {
+    href: '/rss',
+    label: 'rss',
+  },
+  {
+    href: 'https://github.com/miloknowles/next.milo.fyi',
+    label: 'github',
+  },
+  {
+    href: 'https://resume.io/r/5C7pJxyMP',
+    label: 'resume',
+  },
+  {
+    href: 'https://www.linkedin.com/in/milo-knowles/',
+    label: 'linkedin',
+  },
+  {
+    href: 'https://www.strava.com/athletes/6914634',
+    label: 'strava',
+  },
+  {
+    href: 'mailto:miloknowles97@gmail.com',
+    label: 'email',
+  },
+]
+
 export default function Footer() {
   return (
     <footer className="mb-16">
       <ul className="font-sm mt-8 flex flex-col space-x-0 space-y-2 text-neutral-600 md:flex-row md:space-x-4 md:space-y-0">
-        <li>
-          <a
-            className="flex items-center transition-all hover:text-neutral-800"
-            rel="noopener noreferrer"
-            target="_blank"
-            href="/rss"
-          >
-            <ArrowIcon />
-            <p className="ml-2 h-7">rss</p>
-          </a>
-        </li>
-        <li>
-          <a
-            className="flex items-center transition-all hover:text-neutral-800"
-            rel="noopener noreferrer"
-            target="_blank"
-            href="https://github.com/miloknowles/next.milo.fyi"
-          >
-            <ArrowIcon />
-            <p className="ml-2 h-7">github</p>
-          </a>
-        </li>
+        {items.map((item) => (
+          <li key={item.href}>
+            <a
+              className="flex items-center transition-all hover:text-neutral-800"
+              rel="noopener noreferrer"
+              target="_blank"
+              href={item.href}
+            >
+              <ArrowIcon />
+              <p className="ml-2 h-7">{item.label}</p>
+            </a>
+          </li>
+        ))}
       </ul>
     </footer>
   )
