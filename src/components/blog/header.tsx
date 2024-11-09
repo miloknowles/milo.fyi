@@ -1,4 +1,4 @@
-import { Separator } from "@radix-ui/themes"
+import { Link, Separator } from "@radix-ui/themes"
 
 // A header shown at the top of a blog post.
 export default function Header({ title, publishedAt }) {
@@ -9,6 +9,7 @@ export default function Header({ title, publishedAt }) {
   })
   return (
     <header className="mb-8">
+      <Link href="/blog" className="text-neutral-600">← Back</Link>
       <h1 className="text-4xl font-bold">{title}</h1>
       <span className="text-neutral-600 font-medium">{formattedDate}</span>
       <Separator className="w-full mt-4"/>
