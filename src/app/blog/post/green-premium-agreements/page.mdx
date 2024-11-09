@@ -1,0 +1,80 @@
+---
+title: 'Green Premium Agreements'
+publishedAt: '2024-02-01'
+summary: 'Power purchase agreements (PPAs) play a huge role in bringing new renewable capacity online, and helping companies reduce their Scope 2 emissions. Could this idea be generalized to industries besides energy?'
+---
+
+import Header from '@/components/blog/header'
+
+<Header title={frontmatter.title} publishedAt={frontmatter.publishedAt}/>
+
+[Power purchase agreements](https://en.wikipedia.org/wiki/Power_purchase_agreement) (PPAs) play a huge role in bringing new renewable capacity online, and helping companies reduce their Scope 2 emissions. Could this idea be generalized to industries besides energy?
+
+## Valuing a green product
+
+There are many products that are both economically useful and beneficial to the environment, such as green steel, green cement, sustainable aviation fuel, and alternative proteins, to name a few. These products serve the same functional role as an existing product while producing far fewer GHG emissions and bringing other environmental and social co-benefits.
+
+**The value of a green product can be broken down into two parts:**
+
+$$
+V = P_{market} + P_{premium}
+$$
+
+Where the value $V$ is the sum of the market price $P_{market}$ and a green premium $P_{premium}$. The market price is the intrinsic value of the product, and is what buyers currently pay for its functional properties. The green premium captures the environmental benefits of the green product, and could extend beyond GHG emissions to include aspects like land use, water use, biodiversity, etc.
+
+You could look at a green premium from both the supply side and demand side. On the supply side, it is driven by the higher cost of producing immature technologies that have not yet achieved economies of scale. On the demand side, it is driven by the amount that consumers or businesses are willing to pay for the environmental and social benefits.
+
+## Market failures
+
+**A key barrier for green products is that different entities may be interested in the functional and environmental value of the product.** This market failure hinders decarbonization, because the physical buyer of a product may not be willing to pay a high green premium for it. Similarly, an organization interested in the environmental or social benefits of a product may not directly purchase that product.
+
+For example, a construction company acting out of purely economic interests may not be willing to pay above market price for green cement. At the same time, a tech company like Stripe may be very interested in decarbonizing heavy industry, but does not directly procure any cement. Even if Stripe does happen to be procuring cement for a new building, green cement may not be commercially available in that region yet due to supply chain constraints[^1]. 
+
+## Physical vs. contractual buyer
+
+One interesting solution is to coordinate a **physical buyer**, who procures the green product at the market price, and a **contractual buyer**, who pays the green premium and gets to claim the environmental benefits. The physical buyer receives the functional value of the product, while the contractual buyer receives the environmental value.
+
+The separation of physical and contractual delivery is commonly implemented in the renewable energy industry through [virtual power purchase agreements (vPPAs)](https://rmi.org/wp-content/uploads/2018/12/rmi-brc-intro-vppa.pdf). vPPAs allow a contractual buyer to procure zero-carbon energy from a generator, even if the electrons from the generator are delivered to a different physical region of the grid. Decoupling the physical delivery of energy from its environmental attributes is useful because it allows buyers from a wider geographical area to fund renewable energy projects.
+
+## Idea: Green Premium Agreements (GPAs)
+
+**Green premium agreements (GPAs) are a generalization of virtual power purchase agreements (vPPAs) to arbitrary green products.** Like vPPAs, GPAs are designed to reduce the commercial risk of an infrastructure project, helping it attract institutional investors and reduce the cost of capital.
+
+The GPA is a fixed length “contract-for-difference” (e.g 10 years) between a supplier and a *contractual buyer*. During this time, the supplier sells its product to *physical buyers* on the open market, who are not involved in the contract. Under the GPA, the contractual buyer will pay the supplier a green premium plus a fixed profit margin for each unit that is sold, and receive decarbonization credits in return. Like a VPPA, this is a contract-for-difference because the contractual buyer pays the difference between a floating market price and a guaranteed strike price for the supplier.
+
+### Benefits to the supplier
+
+The green premium agreement (GPA) reduces commercialization risk by (1) guaranteeing that a project will achieve a minimum profit margin while (2) also guaranteeing that the project can compete with market prices.
+
+The GPA is not a guaranteed offtake agreement for the product itself, since the firm must still find physical buyers. However, the GPA does guarantee a price floor for all units that are sold, ensuring that the project will recoup its investment. As long as the project is within a serviceable geographic area of enough physical buyers, investors can be confident that the project is financially viable.
+
+### Benefits to the buyer
+
+* Green premium agreements have a much higher climate impact than many other offsets, since they help commercialize technologies that the world needs to decarbonize.  
+* GPAs are suitable for ton-for-ton, beyond value chain mitigation (BVCM). Some companies may prefer to make climate contributions to these kinds of quantifiable projects.  
+* Currently, the [GHG Protocol](https://ghgprotocol.org/sites/default/files/standards/Corporate-Value-Chain-Accounting-Reporing-Standard_041613_2.pdf) rules allow companies to include avoided emissions as a separate metric in their reporting. GPAs could be counted towards a company’s official avoided emissions figure.
+
+### Setting the strike price
+
+The supplier sells their product to physical buyers at a floating price that is dictated by the market. When the market price is below an agreed-upon strike price, the contractual buyer will pay the difference, guaranteeing that the supplier makes a profit. The strike price should be at least the expected cost of goods sold (COGS) from the project, plus debt servicing costs, plus a minimum return required by the project’s equity investors. This guarantees a financially viable price floor for the project.
+
+If the product’s COGS is expected to decline over the lifetime of the project, the strike price may need to be adjusted annually. For most novel green products, it is likely that the COGS will decline due to technological and operational improvements, or “learning by doing”.
+
+Eventually, the green product may reach price parity with the incumbent product, or even become cheaper. At this point, the green premium is zero or, technically, negative. As a result, financial assistance from the contractual buyer of the GPA may no longer be needed. If the fixed duration of the GPA is not reached yet, how should ongoing avoided emissions be allocated?
+
+**It might make sense for the contractual buyer to be allowed to claim avoided emissions credits for the duration of the GPA, even after the product reaches price parity.** Essentially, the contractual buyer may receive “free” avoided emission credits as a reward for being an early supporter of the project. This benefit incentivizes more contractual buyers to participate in GPAs by bringing down the levelized cost of avoided emissions. Even if the green premium for a product is initially very high, this is offset as the product approaches or surpasses price parity. Contractual buyers should view the GPA as an investment in future emission reductions, and think about the levelized cost of avoided emissions rather than the initial cost. Indeed, earlier investors in clean technology play an outsized role in bringing them to market.
+
+## Other considerations
+
+**Demonstrating displacement**: The supplier must demonstrate that the green product is displacing an incumbent product with higher emissions. Generally, this is true of green products sold B2B that are 1:1 replacements (e.g., cement, steel, fuel). If the product is sold directly to consumers, identifying their counterfactual behavior may be more difficult[^2].
+
+**No double counting**: The physical buyer cannot count the avoided emissions against their own inventory, since these avoided emissions have been sold to the contractual buyer.
+
+**Bundled vs. unbundled decarbonization credits**
+
+When the contractual buyer receives decarbonization credit through a green premium agreement, these credits are considered “bundled”. In theory, the contractual buyer could sell these decarbonization credits to a third party, in which case they would become unbundled.  
+
+
+[^1]:  The regional fragmentation of the cement industry makes geographic constraints particularly important. Once cement is shipped to a ready-mix facility, it must be delivered to the construction site within 60 to 90 minutes before it cures. Even if a construction company wanted to use green cement, they would have to be close to a ready-mix facility that is also close to a green cement production facility. Given that green cement is currently being demonstrated at a very small scale, buyers in many geographic locations will be unable to procure green cement in the near future.
+
+[^2]:  Currently, most novel green products have virtually zero market share, making displacement a safe assumption. However, as the green product gains market share and reaches price parity, proving displacement may become more difficult. Over time, it may make sense to assume that each unit of the green product is displacing an average “mix” of products according to their market share.

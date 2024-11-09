@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowTopRightIcon, Cross1Icon } from "@radix-ui/react-icons";
+import { ArrowTopRightIcon, Cross1Icon, HamburgerMenuIcon } from "@radix-ui/react-icons";
 import { Container, Flex, Heading, IconButton, Section } from "@radix-ui/themes";
 
 import Link from "next/link";
@@ -75,7 +75,7 @@ export default function Navigation() {
           {
             open ?
               <Cross1Icon width="32" height="32" color="black"/> :
-              <ArrowTopRightIcon width="32" height="32" color="black"/>
+              <HamburgerMenuIcon width="32" height="32" color="black"/>
           }
         </IconButton>
       </nav>
