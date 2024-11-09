@@ -1,33 +1,33 @@
 ---
-title: 'The case for more nonprofit startups'
-publishedAt: '2024-01-31'
-summary: 'I believe that some problems, especially within climate, could be better served by nonprofit, focused research organizations.'
+title: "The case for more nonprofit startups"
+publishedAt: "2024-01-31"
+summary: "I believe that some problems, especially within climate, could be better served by nonprofit, focused research organizations."
 ---
 
-import Header from '@/components/blog/header'
-import Figure from '@/components/blog/figure'
+import Header from "@/components/blog/header";
+import Figure from "@/components/blog/figure";
 
-<Header title={frontmatter.title} publishedAt={frontmatter.publishedAt}/>
+<Header title={frontmatter.title} publishedAt={frontmatter.publishedAt} />
 
 ## What are Focused Research Organizations (FROs)?
 
-Among the many tools for innovation on [Levers for Progress](https://www.leversforprogress.com/collection?lever=Focused%2520Research%2520Organizations), one that I’ve been particularly fascinated by is the **focused research organization (FRO)**. According to Levers for Progress: 
+Among the many tools for innovation on [Levers for Progress](https://www.leversforprogress.com/collection?lever=Focused%2520Research%2520Organizations), one that I’ve been particularly fascinated by is the **focused research organization (FRO)**. According to Levers for Progress:
 
-*“A Focused Research Organization (FRO) is a specialized non-profit research entity that seeks to advance a specific scientific topic or technology that cannot be efficiently addressed by standard organizational structures in academia or industry.”*
+_“A Focused Research Organization (FRO) is a specialized non-profit research entity that seeks to advance a specific scientific topic or technology that cannot be efficiently addressed by standard organizational structures in academia or industry.”_
 
 In their [piece](https://fas.org/publication/focused-research-organizations-to-accelerate-science-technology-and-medicine/) for the Federation of American Scientists, Sam Rodriquez[^1] and Adam Marblestone elaborate:
 
-*“FROs would be independent from existing universities or labs, focused on a single basic science or technology problem, and organized similarly to a startup. FROs would fill a key structural gap in our nation’s research and development (R\&D) system, enabling major advances in areas that (i) require levels of coordinated engineering or system-building inaccessible to academia, (ii) benefit society broadly in ways that industry cannot rapidly monetize, and (iii) harbor opportunities for acceleration through innovative new technologies and processes.”* 
+_“FROs would be independent from existing universities or labs, focused on a single basic science or technology problem, and organized similarly to a startup. FROs would fill a key structural gap in our nation’s research and development (R\&D) system, enabling major advances in areas that (i) require levels of coordinated engineering or system-building inaccessible to academia, (ii) benefit society broadly in ways that industry cannot rapidly monetize, and (iii) harbor opportunities for acceleration through innovative new technologies and processes.”_
 
 There are a few other important features, like a 5-7 year expiration date, but you can think of an FRO as simply a mission-driven, nonprofit startup. The reason we need nonprofit startups is that there are some problems that are either too big or not “publishable” enough for an academic lab, but don’t have an obvious or immediate customer that a for-profit startup could sell to.
 
 ## Some startups should be nonprofit startups
 
-FROs are defined *via negativa*: technologies that are not a good fit for academic labs or startups are potential candidates for an FRO. Indeed, in Convergent Research’s [application](https://docs.google.com/document/d/1_7TXxKCoGz4gvRIxIepaZ4BppC8KMCBwNUdXLFXWXGE/edit#heading=h.o3v1paomg1vs) for FROs, they ask you to explain why a startup/VC wouldn’t address the problem, and why an academic lab can’t. **A key assumption is that if a technology *could* be funded by venture capital, then it is, by definition, a bad fit for an FRO.**
+FROs are defined _via negativa_: technologies that are not a good fit for academic labs or startups are potential candidates for an FRO. Indeed, in Convergent Research’s [application](https://docs.google.com/document/d/1_7TXxKCoGz4gvRIxIepaZ4BppC8KMCBwNUdXLFXWXGE/edit#heading=h.o3v1paomg1vs) for FROs, they ask you to explain why a startup/VC wouldn’t address the problem, and why an academic lab can’t. **A key assumption is that if a technology _could_ be funded by venture capital, then it is, by definition, a bad fit for an FRO.**
 
 As I started to brainstorm ideas for FROs, I started to question that assumption. Many ideas could feasibly be addressed by both startups and FROs. In fact, many FRO-shaped problems are already being tackled by well-capitalized, venture-backed startups. If I didn’t know there was a startup already working on the problem, I would have thought it should be solved by an FRO.
 
-**My question is this: if a problem *could* be addressed by a startup, does that disqualify an FRO from working on it?** I’d like to explore some of the nuances between *could* and *should*, and argue that there are certain classes of problems that we want FROs working on so that the solutions end up in the public domain.  
+**My question is this: if a problem _could_ be addressed by a startup, does that disqualify an FRO from working on it?** I’d like to explore some of the nuances between _could_ and _should_, and argue that there are certain classes of problems that we want FROs working on so that the solutions end up in the public domain.
 
 <Figure
   src="/assets/blog/fro.png"
@@ -35,7 +35,10 @@ As I started to brainstorm ideas for FROs, I started to question that assumption
   alt="Focused Research Organizations"
   caption={
     <span>
-      Source: <a href="https://www.leversforprogress.com/collection?lever=Focused%2520Research%2520Organizations">Levers for Progress</a>
+      Source:{" "}
+      <a href="https://www.leversforprogress.com/collection?lever=Focused%2520Research%2520Organizations">
+        Levers for Progress
+      </a>
     </span>
   }
 />
@@ -48,11 +51,11 @@ There are some public goods that could be easily monetized, but risk being corru
 
 In climate-tech, a salient example is monitoring, reporting, and verification (MRV) technologies for carbon credits. Accurate and scalable MRV is essential for nature-based solutions like reforestation or regenerative farming, where carbon is stored organically (and non-permanently) in soil or vegetation. It is expensive to routinely collect soil samples or measure trees by hand, which has led to the emergence of dozens of startups working on machine learning, model-based approaches for estimating carbon stocks from satellite imagery[^2].
 
-There are a few reasons why I believe that MRV *should* be developed by an FRO, even if VCs are spending $100M+ to fill this gap already.
+There are a few reasons why I believe that MRV _should_ be developed by an FRO, even if VCs are spending $100M+ to fill this gap already.
 
 The main reason is that MRV is predicated on trust. For obvious reasons, startups don’t want to provide open access to their proprietary datasets or trained models, since this is the secret intellectual sauce. But how can we trust the answers that come from a black box verifier without the ability to audit it? Even worse, if there are multiple MRV companies with competing black-box offerings, a project developer could “shop around” for whoever tells them they’ve sequestered the most carbon. There needs to be an industry-standard model so that projects can’t game the system[^3].
 
-Worse still, the business model of some startups is to be the developers, trusted verifiers, *and* sellers of credits, such as [Pachama](https://pachama.com/). This creates an obvious conflict of interest, since the business becomes more profitable if the AI models are biased towards overestimating the amount of carbon that a project stores, or exaggerating the amount of counterfactual deforestation.
+Worse still, the business model of some startups is to be the developers, trusted verifiers, _and_ sellers of credits, such as [Pachama](https://pachama.com/). This creates an obvious conflict of interest, since the business becomes more profitable if the AI models are biased towards overestimating the amount of carbon that a project stores, or exaggerating the amount of counterfactual deforestation.
 
 ### FROs can align incentives
 
@@ -72,29 +75,29 @@ Is it a good thing that for-profit startups are making scientific discoveries an
 
 ### Intellectual property creates a bottleneck to further innovation and deployment
 
-I want to first emphasize that I think patents are important for innovation, and inventors *should* capture some of the social value of their work. But in my view, patents create a tradeoff between incentivizing innovation (good) and creating a subsequent bottleneck to spreading the innovation (bad). For urgent problems like climate change, we should carefully weigh this tradeoff.
+I want to first emphasize that I think patents are important for innovation, and inventors _should_ capture some of the social value of their work. But in my view, patents create a tradeoff between incentivizing innovation (good) and creating a subsequent bottleneck to spreading the innovation (bad). For urgent problems like climate change, we should carefully weigh this tradeoff.
 
 #### The downside of patents:
 
 In “Market Shaping to Combat Climate Change,” Will Arenesen [writes](https://www.nber.org/books-and-chapters/new-directions-market-design/market-shaping-combat-climate-change):  
-*Because patents create temporary monopolies for the patent-holder, that monopoly will generally result in higher prices and lower quantities supplied than under a purely competitive market post-patent.*
+_Because patents create temporary monopolies for the patent-holder, that monopoly will generally result in higher prices and lower quantities supplied than under a purely competitive market post-patent._
 
 Patents have a time limit, which means that inventions should, in theory, end up in the public domain (like generic drugs) where competition will drive down costs. Given the urgency of climate, however, a possible 20 year monopoly over planet-saving technologies is not an option. Furthermore, tactics like “evergreening” could prolong quasi-monopoly rights indefinitely[^6], so waiting for patents to expire worries me. We want the price of green technologies to come down as quickly as possible, and maximize the number of units sold, and patents are not designed to do this.
 
 Startups could spread their technology by licensing it to others, but this adds transaction costs and may not be a strategic priority for the team. Furthermore, it makes economic sense to prioritize licensing agreements with the highest bidders first, not necessarily those that stand to benefit the most. There might be an innovative way to overcome IP licensing bottlenecks that I’m not aware of – I would welcome any ideas here.
 
-In addition to higher prices and lower supply, IP may actually limit *further innovation*.
+In addition to higher prices and lower supply, IP may actually limit _further innovation_.
 
 A really interesting paper by Heidi L. Williams examines efforts to sequence the human genome:
 
-*The public effort \[by the Human Genome Project\] began in 1990 and required that all sequenced genes be placed in the public domain. Celera’s effort began in 1999 and ended in 2001 when Celera disclosed an incomplete draft genome. The public effort continued and by 2003 had sequenced all genes in Celera’s 2001 draft. Between 2001 and 2003, Celera used a contract law–based form of IP to protect genes sequenced by Celera but not yet sequenced by the public effort. This IP enabled Celera to sell its data for substantial fees and required firms to negotiate licensing agreements with Celera for any resulting commercial discoveries, even though it was publicly known at the time that all of Celera’s genes would be sequenced by the public effort, and thus be in the public domain, by 2003\.*  
+_The public effort \[by the Human Genome Project\] began in 1990 and required that all sequenced genes be placed in the public domain. Celera’s effort began in 1999 and ended in 2001 when Celera disclosed an incomplete draft genome. The public effort continued and by 2003 had sequenced all genes in Celera’s 2001 draft. Between 2001 and 2003, Celera used a contract law–based form of IP to protect genes sequenced by Celera but not yet sequenced by the public effort. This IP enabled Celera to sell its data for substantial fees and required firms to negotiate licensing agreements with Celera for any resulting commercial discoveries, even though it was publicly known at the time that all of Celera’s genes would be sequenced by the public effort, and thus be in the public domain, by 2003\._  
 [(Williams, 2013\)](https://www.journals.uchicago.edu/doi/abs/10.1086/669706)
 
 The result: Williams found that Celera’s IP led to reductions in subsequent scientific research and product development on the order of 20-30 percent.
 
 #### The upside of patents
 
-Patents are a really good thing if they incentivize private sector innovation in public goods that might otherwise be neglected. A patent benefits society if we believe that the relevant scientific discovery and commercialization wouldn’t happen otherwise. But is this always the case for public goods? I’m not convinced that all public goods would be neglected in the absence of patents.  When it comes to climate change, I think startups and investors have some altruistic motives that are not captured by a purely rational/economic model. For example, companies invested \~$1B carbon removal via Frontier, even though they don’t stand to gain many immediate benefits. There are people – like the founders of Stripe – who I believe get a lot of satisfaction from doing good things for the world.
+Patents are a really good thing if they incentivize private sector innovation in public goods that might otherwise be neglected. A patent benefits society if we believe that the relevant scientific discovery and commercialization wouldn’t happen otherwise. But is this always the case for public goods? I’m not convinced that all public goods would be neglected in the absence of patents. When it comes to climate change, I think startups and investors have some altruistic motives that are not captured by a purely rational/economic model. For example, companies invested \~$1B carbon removal via Frontier, even though they don’t stand to gain many immediate benefits. There are people – like the founders of Stripe – who I believe get a lot of satisfaction from doing good things for the world.
 
 The situation might be more like the Celera case study, where the public and private sector are pursuing innovation in parallel, and the public sector is not far behind. Given the “all-hands-on-deck” attitude toward climate change and increasing levels of investment by governments, I’m not convinced that startups are the only entities that could invent climate technologies – they might just be patenting them right before everyone else arrives. Furthermore, the [existence of FROs](https://convergentresearch.org/fro-portfolio) seems to prove that you can get smart and motivated people to work on big problems even if most of the value will be given away to others for free.
 
@@ -122,20 +125,20 @@ In sum, I believe that some problems, especially within climate, could be better
 
 [^1]: Interestingly, the FRO was originally conceived in the last chapter of Rodriquez’ [thesis](https://dspace.mit.edu/handle/1721.1/123401) at MIT, as a way to further develop the work of the thesis.
 
-[^2]:  For forest carbon, see Pachama, NCX, Overstory, Treefera, Chloris Geospatial. For soil carbon, see Perennial and Boomitra.
+[^2]: For forest carbon, see Pachama, NCX, Overstory, Treefera, Chloris Geospatial. For soil carbon, see Perennial and Boomitra.
 
 [^3]: Having a single source of truth for carbon crediting doesn’t entirely solve the problem, however, if the model is overly simplified or exploitable. For example, project developers within California’s forest offset program can exploit the program’s coarse regional averages through [adverse selection](https://onlinelibrary.wiley.com/doi/10.1111/gcb.15943) of project boundaries.
 
 [^4]: The story of [Norman Borlaug](https://en.wikipedia.org/wiki/Norman_Borlaug) is one great example of an innovation being spread with speed and scale. He developed semi-dwarf wheat varieties with higher yields and disease resistant properties in Mexico, Pakistan, and India. This nearly doubled wheat yields in Pakistan and India in about five years, and made Mexico a net exporter of wheat.
 
-[^5]:  For stock (long-lived) greenhouse gasses like CO2, our goal should be to minimize *cumulative* emissions. Reducing annual emissions by 1 ton in 2025 is the same as reducing emissions by 25 tons in 2050\. This is why speed really matters for decarbonization.
+[^5]: For stock (long-lived) greenhouse gasses like CO2, our goal should be to minimize _cumulative_ emissions. Reducing annual emissions by 1 ton in 2025 is the same as reducing emissions by 25 tons in 2050\. This is why speed really matters for decarbonization.
 
-[^6]:  This [article](https://www.nejm.org/doi/pdf/10.1056/NEJMms1411398?articleTools=true) discusses why, after more than a century, we still don’t have generic insulin in the United States. This is, in part, due to “evergreening,” where a firm keeps patenting incremental improvements to a technology to maintain monopoly rights. One depressing fact I learned from this paper is that the original patent for insulin was sold for $1, which is 10-100x less than the price of a single vial of insulin today.
+[^6]: This [article](https://www.nejm.org/doi/pdf/10.1056/NEJMms1411398?articleTools=true) discusses why, after more than a century, we still don’t have generic insulin in the United States. This is, in part, due to “evergreening,” where a firm keeps patenting incremental improvements to a technology to maintain monopoly rights. One depressing fact I learned from this paper is that the original patent for insulin was sold for $1, which is 10-100x less than the price of a single vial of insulin today.
 
-[^7]:  [https://www.notboring.co/p/what-do-you-do-with-an-idea](https://www.notboring.co/p/what-do-you-do-with-an-idea) 
+[^7]: [https://www.notboring.co/p/what-do-you-do-with-an-idea](https://www.notboring.co/p/what-do-you-do-with-an-idea)
 
-[^8]:  [https://ourworldindata.org/cheap-renewables-growth](https://ourworldindata.org/cheap-renewables-growth) 
+[^8]: [https://ourworldindata.org/cheap-renewables-growth](https://ourworldindata.org/cheap-renewables-growth)
 
-[^9]:  Carbon lock-in occurs when a country invests in a fossil-fuel intensive system, effectively “locking-in” the emissions from that asset over its useful lifetime (e.g, 30 years). As a result, it is imperative to prevent new fossil fuel infrastructure from being built by providing viable clean alternatives.
+[^9]: Carbon lock-in occurs when a country invests in a fossil-fuel intensive system, effectively “locking-in” the emissions from that asset over its useful lifetime (e.g, 30 years). As a result, it is imperative to prevent new fossil fuel infrastructure from being built by providing viable clean alternatives.
 
-[^10]:  Artificial intelligence seems like another area where aligned incentives are extremely important. Samuel Hammond [points out](https://www.secondbest.ca/p/openais-lessons-for-science-policy) that OpenAI was an “accidental FRO”, since it was founded in 2015 as a nonprofit research organization focused on transformative AGI. However, the nonprofit motives seem to have been lost when OpenAI switched to a “capped profit” structure in 2019\. Note that the profit cap is set at [100x, but increases by 20% YOY starting in 2025](https://www.economist.com/business/2023/11/21/inside-openais-weird-governance-structure).
+[^10]: Artificial intelligence seems like another area where aligned incentives are extremely important. Samuel Hammond [points out](https://www.secondbest.ca/p/openais-lessons-for-science-policy) that OpenAI was an “accidental FRO”, since it was founded in 2015 as a nonprofit research organization focused on transformative AGI. However, the nonprofit motives seem to have been lost when OpenAI switched to a “capped profit” structure in 2019\. Note that the profit cap is set at [100x, but increases by 20% YOY starting in 2025](https://www.economist.com/business/2023/11/21/inside-openais-weird-governance-structure).

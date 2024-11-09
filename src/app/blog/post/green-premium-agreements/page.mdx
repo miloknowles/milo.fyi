@@ -1,12 +1,12 @@
 ---
-title: 'Green Premium Agreements'
-publishedAt: '2024-02-01'
-summary: 'Power purchase agreements (PPAs) play a huge role in bringing new renewable capacity online, and helping companies reduce their Scope 2 emissions. Could this idea be generalized to industries besides energy?'
+title: "Green Premium Agreements"
+publishedAt: "2024-02-01"
+summary: "Power purchase agreements (PPAs) play a huge role in bringing new renewable capacity online, and helping companies reduce their Scope 2 emissions. Could this idea be generalized to industries besides energy?"
 ---
 
-import Header from '@/components/blog/header'
+import Header from "@/components/blog/header";
 
-<Header title={frontmatter.title} publishedAt={frontmatter.publishedAt}/>
+<Header title={frontmatter.title} publishedAt={frontmatter.publishedAt} />
 
 [Power purchase agreements](https://en.wikipedia.org/wiki/Power_purchase_agreement) (PPAs) play a huge role in bringing new renewable capacity online, and helping companies reduce their Scope 2 emissions. Could this idea be generalized to industries besides energy?
 
@@ -28,7 +28,7 @@ You could look at a green premium from both the supply side and demand side. On 
 
 **A key barrier for green products is that different entities may be interested in the functional and environmental value of the product.** This market failure hinders decarbonization, because the physical buyer of a product may not be willing to pay a high green premium for it. Similarly, an organization interested in the environmental or social benefits of a product may not directly purchase that product.
 
-For example, a construction company acting out of purely economic interests may not be willing to pay above market price for green cement. At the same time, a tech company like Stripe may be very interested in decarbonizing heavy industry, but does not directly procure any cement. Even if Stripe does happen to be procuring cement for a new building, green cement may not be commercially available in that region yet due to supply chain constraints[^1]. 
+For example, a construction company acting out of purely economic interests may not be willing to pay above market price for green cement. At the same time, a tech company like Stripe may be very interested in decarbonizing heavy industry, but does not directly procure any cement. Even if Stripe does happen to be procuring cement for a new building, green cement may not be commercially available in that region yet due to supply chain constraints[^1].
 
 ## Physical vs. contractual buyer
 
@@ -40,7 +40,7 @@ The separation of physical and contractual delivery is commonly implemented in t
 
 **Green premium agreements (GPAs) are a generalization of virtual power purchase agreements (vPPAs) to arbitrary green products.** Like vPPAs, GPAs are designed to reduce the commercial risk of an infrastructure project, helping it attract institutional investors and reduce the cost of capital.
 
-The GPA is a fixed length “contract-for-difference” (e.g 10 years) between a supplier and a *contractual buyer*. During this time, the supplier sells its product to *physical buyers* on the open market, who are not involved in the contract. Under the GPA, the contractual buyer will pay the supplier a green premium plus a fixed profit margin for each unit that is sold, and receive decarbonization credits in return. Like a VPPA, this is a contract-for-difference because the contractual buyer pays the difference between a floating market price and a guaranteed strike price for the supplier.
+The GPA is a fixed length “contract-for-difference” (e.g 10 years) between a supplier and a _contractual buyer_. During this time, the supplier sells its product to _physical buyers_ on the open market, who are not involved in the contract. Under the GPA, the contractual buyer will pay the supplier a green premium plus a fixed profit margin for each unit that is sold, and receive decarbonization credits in return. Like a VPPA, this is a contract-for-difference because the contractual buyer pays the difference between a floating market price and a guaranteed strike price for the supplier.
 
 ### Benefits to the supplier
 
@@ -50,9 +50,9 @@ The GPA is not a guaranteed offtake agreement for the product itself, since the 
 
 ### Benefits to the buyer
 
-* Green premium agreements have a much higher climate impact than many other offsets, since they help commercialize technologies that the world needs to decarbonize.  
-* GPAs are suitable for ton-for-ton, beyond value chain mitigation (BVCM). Some companies may prefer to make climate contributions to these kinds of quantifiable projects.  
-* Currently, the [GHG Protocol](https://ghgprotocol.org/sites/default/files/standards/Corporate-Value-Chain-Accounting-Reporing-Standard_041613_2.pdf) rules allow companies to include avoided emissions as a separate metric in their reporting. GPAs could be counted towards a company’s official avoided emissions figure.
+- Green premium agreements have a much higher climate impact than many other offsets, since they help commercialize technologies that the world needs to decarbonize.
+- GPAs are suitable for ton-for-ton, beyond value chain mitigation (BVCM). Some companies may prefer to make climate contributions to these kinds of quantifiable projects.
+- Currently, the [GHG Protocol](https://ghgprotocol.org/sites/default/files/standards/Corporate-Value-Chain-Accounting-Reporing-Standard_041613_2.pdf) rules allow companies to include avoided emissions as a separate metric in their reporting. GPAs could be counted towards a company’s official avoided emissions figure.
 
 ### Setting the strike price
 
@@ -72,9 +72,8 @@ Eventually, the green product may reach price parity with the incumbent product,
 
 **Bundled vs. unbundled decarbonization credits**
 
-When the contractual buyer receives decarbonization credit through a green premium agreement, these credits are considered “bundled”. In theory, the contractual buyer could sell these decarbonization credits to a third party, in which case they would become unbundled.  
+When the contractual buyer receives decarbonization credit through a green premium agreement, these credits are considered “bundled”. In theory, the contractual buyer could sell these decarbonization credits to a third party, in which case they would become unbundled.
 
+[^1]: The regional fragmentation of the cement industry makes geographic constraints particularly important. Once cement is shipped to a ready-mix facility, it must be delivered to the construction site within 60 to 90 minutes before it cures. Even if a construction company wanted to use green cement, they would have to be close to a ready-mix facility that is also close to a green cement production facility. Given that green cement is currently being demonstrated at a very small scale, buyers in many geographic locations will be unable to procure green cement in the near future.
 
-[^1]:  The regional fragmentation of the cement industry makes geographic constraints particularly important. Once cement is shipped to a ready-mix facility, it must be delivered to the construction site within 60 to 90 minutes before it cures. Even if a construction company wanted to use green cement, they would have to be close to a ready-mix facility that is also close to a green cement production facility. Given that green cement is currently being demonstrated at a very small scale, buyers in many geographic locations will be unable to procure green cement in the near future.
-
-[^2]:  Currently, most novel green products have virtually zero market share, making displacement a safe assumption. However, as the green product gains market share and reaches price parity, proving displacement may become more difficult. Over time, it may make sense to assume that each unit of the green product is displacing an average “mix” of products according to their market share.
+[^2]: Currently, most novel green products have virtually zero market share, making displacement a safe assumption. However, as the green product gains market share and reaches price parity, proving displacement may become more difficult. Over time, it may make sense to assume that each unit of the green product is displacing an average “mix” of products according to their market share.

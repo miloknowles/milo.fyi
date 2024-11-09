@@ -10,11 +10,11 @@ import { climateNeutralData } from "./data";
 export default function ClimateNeutralChart() {
   // Transform and memoize the data for the chart.
   const chartData = useMemo(() => {
-    return climateNeutralData.map(v => ({
+    return climateNeutralData.map((v) => ({
       "Total Offsets": Math.log10(v.totalOffsets),
       "Price Per Ton": v.pricePerTon,
       "Total Spending": v.totalSpending,
-      "category": v.companyName,
+      category: v.companyName,
     }));
   }, []);
 
@@ -35,14 +35,17 @@ export default function ClimateNeutralChart() {
         showOpacity={true}
         valueFormatter={{
           x: (x) => `${Math.pow(10, x).toFixed(0)} tCO₂`,
-          y: (y) => `${y.toLocaleString("default", { style: "currency", currency: "USD" })}/ton`,
-          size: (s) => `$${(s).toFixed(0)} spent`,
+          y: (y) =>
+            `${y.toLocaleString("default", { style: "currency", currency: "USD" })}/ton`,
+          size: (s) => `$${s.toFixed(0)} spent`,
         }}
         enableLegendSlider={false}
         showLegend={false}
       />
       <Text className="pt-3">
-        <RadixLink href="https://github.com/miloknowles/climateneutral">Source Code</RadixLink>
+        <RadixLink href="https://github.com/miloknowles/climateneutral">
+          Source Code
+        </RadixLink>
       </Text>
     </Card>
   );
