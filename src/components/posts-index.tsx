@@ -24,7 +24,7 @@ export default function BlogPostsIndex() {
                 {formatDate(post.metadata.publishedAt, false)}
               </p>
               <p className="text-neutral-800 tracking-tight font-medium">
-                {post.metadata.title}
+                {post.metadata.title}{post.metadata.subtitle ? ":" : ""} {post.metadata.subtitle}
               </p>
             </div>
           </Link>

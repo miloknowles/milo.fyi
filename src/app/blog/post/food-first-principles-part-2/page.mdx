@@ -1,0 +1,167 @@
+---
+title: 'First Principles of Food #2'
+subtitle: 'The artificial photosynthesis revolution'
+publishedAt: '2024-06-09'
+summary: ''
+---
+
+import Header from '@/components/blog/header'
+import Figure from '@/components/blog/figure'
+
+<Header title={frontmatter.title} subtitle={frontmatter.subtitle} publishedAt={frontmatter.publishedAt}/>
+
+### **Agriculture is only `0.0125%` efficient**
+
+In the last post, I highlighted the inefficiency of plants at turning solar energy into stored chemical energy that we can eat. Because the most efficient plants capture `<0.5%` of the solar energy that falls on a patch of ground, and because the total pool of energy drops off exponentially at higher trophic levels, it takes a huge land area to produce the human food supply. **While enough solar energy falls on `0.75 m2` of land to meet one person's theoretical energy needs, we currently farm `~6,000 m2` of land to feed one person[^1].** Crudely, this means that modern agriculture is about `0.0125%` efficient at turning sunlight into food.
+
+### **Why does land efficiency matter?**
+
+The problems of land use only become apparent when you zoom out.
+
+<Figure
+  src="/assets/blog/land-use-bloomberg.png"
+  className="max-w-[400px]"
+  alt="United States Land Use"
+  caption={
+    <span>
+      Source: <a href="https://www.bloomberg.com/graphics/2018-us-land-use/?terminal=true](https://www.bloomberg.com/graphics/2018-us-land-use/?terminal=true">Bloomberg</a>
+    </span>
+  }
+/>
+
+**Food security risks.** The obvious problem is the amount of space that it already takes to produce food. We do have enough land to feed a bigger population, but not a significantly bigger one. Looking at the picture above, we'd have difficulty doubling our food production capacity under current diets, productivity, and food waste levels. A more pressing concern is that if one region becomes much less productive (e.g, due to warmer climates or a [Dust Bowl v2](https://e360.yale.edu/features/as-the-climate-warms-could-the-u.s.-face-another-dust-bowl)), we don't have a large buffer of land where new agriculture could come from[^2]. Arable land could become more scarce in the future, or migrate across borders. By the way, this picture is fairly representative of the whole world, which has about [half](https://ourworldindata.org/global-land-for-agriculture) of all habitable land dedicated to agriculture.
+
+**Carbon opportunity cost.** The less-obvious problem is that all agricultural land was once occupied by grasslands, forests, and other wild ecosystems. Sentimentality aside, we should care about natural ecosystems for purely selfish reasons: they sequester a lot of CO₂, much more than pasture or cropland. One mind-blowing finding from [Hayek et al.](https://www.nature.com/articles/s41893-020-00603-4) is that If we stopped using the land dedicated to livestock farming (i.e, letting native vegetation regrow), we could remove about `~800` gigatons of CO₂. That's about half of cumulative anthropogenic emissions since the industrial revolution[^3]. [Eisen & Brown](https://journals.plos.org/climate/article?id=10.1371/journal.pclm.0000010) plugged several livestock phaseout[^4] scenarios like this into a climate model, and found that the negative emissions would effectively halt global warming for 30 years. Arable land is a valuable and scalable carbon sink.
+
+### **The opportunity**
+
+The inefficiency of agriculture suggests a massive opportunity for improvement. If our efficiency benchmark is `0.0125%`, it could be possible to produce orders of magnitude more food in the same area, or the same amount of food using orders of magnitude less resources. The challenge is to find more efficient ways to convert sunlight into molecules we can eat. I believe we'll make significant progress on the “solar-to-food” problem over the next decade because (1) our baseline agricultural efficiency is so poor, (2) photovoltaic solar energy is getting really really cheap, and (3) synthetic biology will make us less reliant on commodity plants/animals. Let me explain.
+
+### **The solar industrial revolution**
+
+Several writers, especially [Casey Handmer](https://caseyhandmer.wordpress.com/) and [Austin Vernon](https://austinvernon.site/), have pointed out the imminent solar-industrial revolution. It's difficult to overstate the importance and impressiveness of solar energy, so I'll do it here briefly.
+
+Solar is already the cheapest source of electricity, and is on track to get even cheaper (perhaps \$10/MWH or \$0.01/kWh by 2030). Solar is a prototypical example of Wright's Law, meaning that the price goes down by a predictable percentage (the learning rate) every time cumulative production doubles. While the law implies that progress gets exponentially harder as you go, we're also increasing the rate of solar production [exponentially](https://www.statista.com/statistics/668764/annual-solar-module-manufacturing-globally/), which nets out to a [roughly linear](https://ourworldindata.org/grapher/solar-pv-prices) looking cost decline each year. Even better, it [appears](https://caseyhandmer.wordpress.com/2024/05/22/the-solar-industrial-revolution-is-the-biggest-investment-opportunity-in-history/) that the learning rate for solar sped up around 2009, going from 27% to 44%.
+
+<Figure
+  src="/assets/blog/solar-learning.webp"
+  className="max-w-[400px]"
+  alt="Cost declines in solar over time"
+  caption={
+    <span>
+      Source: <a href="https://caseyhandmer.wordpress.com/2024/05/22/the-solar-industrial-revolution-is-the-biggest-investment-opportunity-in-history/">Casey Handmer's blog</a>
+    </span>
+  }
+/>
+
+Casey Handmer's essays have convinced me that **for any commodity X, if we can commercialize a solar-to-X pathway, then X could become very cheap[^5]**. His startup, Terraform Industries, is focused on natural gas and synthetic fuels, but the *solar industrial revolution* could also give us cheaper chemicals, materials, fertilizers, carbon removal, manufacturing, compute power, etc.
+
+The important caveat is that any solar-to-X process must accept intermittent DC electricity as input, since that's what you get from a solar array. Just converting to AC adds significant cost ([\~30%](https://austinvernon.site/blog/hydrogen.html) more). Energy prices from the grid will remain much higher than raw solar due to transmission, distribution, losses, energy storage, profit margins between you and the generator, etc. So the most cost-competitive solar-to-X industries will source their energy off-grid (onsite) and need to be economically viable under a low utilization factor (e.g operating perhaps only 25% of the day).
+
+### **The artificial photosynthesis revolution**
+
+My prediction is this: cheap solar and synthetic biology will make it possible to grow any food anywhere in the world, using electricity, air, and water. Cheap solar will provide a distributed[^6] and abundant source of energy, and synthetic biology will allow us to turn energy and simple building blocks into complex configurations of matter that are enjoyable to eat. This pathway from solar energy to food is analogous to *artificial photosynthesis*.
+
+Why should we photosynthesize food in solar-powered bioreactors, when plants accomplish this feat already?
+
+**First, we could decouple farming from arable land.** Plants require soil and a relatively narrow range of climates to grow, but synthetic food could be grown out in the middle of the desert, where there are no competing uses for land. Places like Nevada could become the new breadbaskets of the world. Small islands like Singapore could have domestic food security.
+
+**Second, synthetic food would be robust to droughts, natural disasters, swarms of [cicadas](https://news.ycombinator.com/item?id=14670951), etc.** The biggest tail risk to worry about would be a sun-blocking event, but in that scenario we could swap out solar for another electricity source. The fungibility of electricity is key. In a disaster scenario, you could imagine France turning nuclear energy into food, or Iceland turning geothermal energy into food.
+
+**Third, synthetic food production should be much less land-intensive.** As I mentioned earlier, plants are `<0.5%` efficient on an annual, areawide, “sun-to-food” basis. Modern solar panels are about `20%` efficient on an areawide, “sun-to-electricity” basis. So to match plants, we'd need to convert electricity into food with a mere `~2.5%` efficiency. The existing literature and few startups working on this indicate that we can do much better. For example, Solar Foods claims that they're `~20%` efficient at converting electricity into Solein, a protein powder.
+
+**Finally, synthetic food is programmable.** In principle, biomanufacturing could produce any molecule we want, including foods, chemicals, or materials that haven't been made before. There's a long way to go before it will be economically viable or easy to produce any molecule, of course. Priority \#1 should be to bring back those [legendary bananas](https://www.atlasobscura.com/articles/gros-michel-bananas).
+
+### **Connecting solar panels to biology**
+
+So far I've ignored the central challenge of synthetic food production, which is the conversion step from electricity to food. The most basic electricity-to-food pathways are already being commercialized, while others are still in the lab. I'll introduce some of the pathways that I believe are promising for proteins and carbohydrates, and expand on them in future posts.
+
+**Biomass Fermentation using Hydrogen Oxidizing Bacteria**  
+A subset of autotrophs, called [hydrogen oxidizing bacteria](https://en.wikipedia.org/wiki/Hydrogen-oxidizing_bacteria) (HOBs), can grow off of an H₂/CO₂ gas mixture[^7]. The hydrogen acts as an electron donor (providing energy), and CO₂ provides a carbon source. The CO₂ is assimilated directly through the Calvin-Benson-Bassham cycle, which is basically the same “dark reaction” that plants use for photosynthesis. The [easiest](https://www.sciencedirect.com/science/article/pii/S2352550920305534) thing to make with [HOBs](https://pubmed.ncbi.nlm.nih.gov/36970394/) is protein-rich biomass, which is probably why Solar Foods, Air Protein, Farmless, and a few other companies are doing that first. Precision fermentation (manufacturing specific target proteins) is harder, and has not been commercially demonstrated using hydrogen to my knowledge. The EU's [HYDROCOW](https://www.hydrocow.eu/) project is attempting a demo.
+
+My main concern around using hydrogen feedstock is intermittency and storage. Fed-batch or continuous fermentation requires a steady supply of feedstock, but cheap solar is only available for electrolysis during the day[^8]. You could produce and store excess hydrogen during the day, but the consensus seems to be that hydrogen is notoriously expensive and difficult to [store](https://www.thechemicalengineer.com/features/the-unbearable-lightness-of-hydrogen/) and [transport](https://en.wikipedia.org/wiki/Hydrogen_embrittlement).
+
+<Figure
+  src="/assets/blog/sunlight-to-biomass.png"
+  className="max-w-[400px]"
+  alt="Solar to biomass pathway"
+  caption={
+    <span>
+      Source: <a href="https://www.pnas.org/doi/10.1073/pnas.2015025118">
+      D. Leger, S. Matassa, E. Noor, A. Shepon, R. Milo, A. Bar-Even, Photovoltaic-driven microbial protein production can use land and sunlight more efficiently than conventional crops, Proc. Natl. Acad. Sci. U.S.A. 118 (26) e2015025118,
+      </a>
+    </span>
+  }
+/>
+
+**Precision/Biomass Fermentation Using C1 Feedstocks**  
+More promising options, in my opinion, are single-carbon (C1) liquid feedstocks like formate and methanol or methane (gas). Several [great](https://www.pnas.org/doi/10.1073/pnas.2015025118) [papers](https://www.sciencedirect.com/science/article/pii/S0958166919301004?ref=pdf_download&fr=RR-2&rr=86e0d2384b837d24) enumerate the natural metabolic pathways by which autotrophs can consume these. Most model organisms (e.g E. coli) prefer glucose, so genetic engineering would be required to get them to grow productively on C1 compounds. There are some notable exceptions like the *Pichia pastoris* yeast, which can grow on methanol. In fact, biomass/precision fermentation on methanol using *P. pastoris* seems like the least technologically risky option of the ones I'm surveying.  
+
+<Figure
+  src="/assets/blog/c1-cycles.png"
+  className="max-w-[400px]"
+  alt="Efficiency of C1 metabolic pathways"
+  caption={
+    <span>
+      Source: <a href="https://www.sciencedirect.com/science/article/pii/S0958166919301004">
+      Charles AR Cotton, Nico J Claassens, Sara Benito-Vaquerizo, Arren Bar-Even.
+      Renewable methanol and formate as microbial feedstocks.
+      Current Opinion in Biotechnology, Volume 62. 2020.
+      </a>
+    </span>
+  }
+/>
+
+Both methanol and formate are liquid at room temperature, making them much easier to store, transport, and work with than hydrogen. You can make renewable [formate](https://pubs.acs.org/doi/10.1021/acsenergylett.3c00489) and methanol through the electrochemical reduction of CO₂, and methanol can also be made [thermochemically](https://www.youtube.com/watch?v=GzjpmmtGBqU). For this reason, I've seen both the “[formate economy](https://pubmed.ncbi.nlm.nih.gov/27459678/)” and “[methanol economy](https://en.wikipedia.org/wiki/Methanol_economy)” proposed. The main downside of formate and methanol is their toxicity at high enough concentrations.
+
+**Cell-Free Protein Synthesis**  
+The biggest philosophical issue I have with precision fermentation is that it feels wasteful; you grow a huge mass of cells, but only harvest a specific target protein of interest[^9]. You might be able to sell the waste biomass, but it feels a bit like you're growing a haystack in order to manufacture needles. A lot of the energy input goes into just building and keeping your microbial cell factories alive, and the metabolic agenda of natural organisms is not necessarily aligned with yours.
+
+Avoiding the wasted energy and complexity of cells is the main motivation for [cell-free protein synthesis](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6481089/) (CFPS),which is an alternative to precision fermentation. In CFPS, you carry out the DNA → RNA → Protein (transcription/translation) process in an open system (i.e, a bioreactor instead of a cell). Cell-free systems are closer to a programmable liquid than an organism. They seem well-positioned to consume intermittent energy, since there are no cells that could die if the supply of feedstock is cut off overnight.
+
+I should mention that current CFPS is not actually cell-free, since you need to produce the TX/TL machinery (e.g, ribosomes, RNA polymerase, co-factors) in a cell and then extract them[^10]. In theory, one big advantage of cell-free is that you could keep recycling the TX/TL machinery in a continuous process, since it isn't consumed.
+
+Once you have all the building blocks – a DNA template, TX/TL extract, and amino acids – you still need to provide energy to the system in the form of ATP. Usually, a consumable like creatine phosphate must be continually added to the system to regenerate ATP (from ADP/AMP). However, a [recent paper](https://www.sciencedirect.com/science/article/pii/S2542435123003100) showed that it's possible to regenerate ATP using an electrochemical cycle (the acid/aldehyde ATP cycle, or AAA cycle for short). I'm sure the system needs to be made cheaper and more efficient, but being able to regenerate ATP – the universal energy currency of biology – from electricity seems like a noteworthy and foundational achievement. Chemical regeneration of ATP is also possible, for example through [this](https://pubs.acs.org/doi/abs/10.1021/acssynbio.3c00172) synthetic NAD(P)H cycle. Of course, you could regenerate ATP using glucose/glycolysis, but then you need sugar crops, defeating the original purpose of the enterprise.
+
+CFPS is currently more expensive than precision fermentation, and it appears that the titers (g/L of product) achieved by CFPS systems are also quite low. Using electricity to regenerate ATP, figuring out how to recycle the TX/TL machinery, increasing titers, and moving to a continuous process could all bring down cost, but I don't know enough to predict if/when cell-free becomes cheaper. At the end of the day, the minimalism, energy efficiency, and elegance of CFPS makes it the better long-term solution for producing proteins in my view.
+
+**Cell-Free Carbohydrate Synthesis**  
+Staple cereal crops, like maize, wheat, rice, and barley are the foundation of the human food system and supply [most](https://www.wri.org/insights/crop-expansion-food-security-trends#:~:text=Just%2010%20global%20crops%20provide,harvested%20for%20direct%20food%20use.) of our calories in the form of carbohydrates. I don't have anything against cereals (and happily eat a lot of them), but wanted to explore how we might create an [artificial carbohydrate supply](https://www.frontiersin.org/articles/10.3389/fsufs.2020.00090/full#:~:text=In%20contrast%2C%20the%20artificial%20synthesis,by%20several%20orders%20of%20magnitude.) that has all the benefits mentioned above.
+
+The first possibility is to produce sugars thermochemically. This [paper](https://www.frontiersin.org/articles/10.3389/fsufs.2020.00090/full#:~:text=In%20contrast%2C%20the%20artificial%20synthesis,by%20several%20orders%20of%20magnitude.) theorizes one possible route: from CO₂, to syngas, to methanol (C1), to formaldehyde (C3), to sugar (C6). Under assumed efficiencies for each step, the pathway would be 31% efficient at converting electricity into sugars. This paper enumerates a few other [options](https://www.sciencedirect.com/science/article/pii/S2542435122004081). In both papers, the final step from formaldehyde to sugar (called the “[formose reaction](https://en.wikipedia.org/wiki/Formose_reaction)”) has a fatal flaw: it produces a racemic mixture of C1-C8 sugars, of which only the D-glucose (C6) enantiomer is edible. Despite its sweet taste, the L-glucose molecule cannot be metabolized by most organisms. I believe the formose reaction, and thermochemical pathways more generally, are a dead end because of their poor selectivity. Despite being discovered in [1959](https://www.sciencedirect.com/science/article/abs/pii/S0040403901994870), I was unable to find an example of industrial sugar production using the formose reaction.
+
+The second approach is to use an *enzymatic* process. Enzymes could introduce stereochemistry into the reaction pathway and improve the specificity of each step. Similar to cell-free protein synthesis, the idea behind cell-free carbohydrate synthesis is to carry out the steps of photosynthesis and [gluconeogenesis](https://en.wikipedia.org/wiki/Gluconeogenesis) outside of a cell. An end-to-end example is the [ASAP cycle](https://www.science.org/doi/10.1126/science.abh4049), whose authors produced starch in a cell-free process that can be fed with either methanol or CO₂. Many other cycles or linear carbon fixation pathways have been [surveyed](https://spj.science.org/doi/10.34133/2021/9898316), such as the [CBB Cycle](https://chemistry-europe.onlinelibrary.wiley.com/doi/full/10.1002/cctc.202300746), [Reductive Glycine (rGly) Pathway](https://www.frontiersin.org/articles/10.3389/fbioe.2023.1091899/full), [THETA Cycle](https://www.nature.com/articles/s41929-023-01079-z), Serine Cycle, RuMP Cycle, and more[^11].
+
+There are tradeoffs among the cell-free pathways, such as the energy efficiency, the number of cofactors that must be regenerated, and the number of enzymes involved, but they all face the same core challenges. Any cell-free carbohydrate pathway probably requires several dozen enzymes, as well as an ATP-regeneration system to drive the reaction/cycle forward. Furthermore, enzyme manufacturing is still relatively expensive, and enzymes usually require immobilization or protein engineering to improve their [useful lifetime](https://pubmed.ncbi.nlm.nih.gov/33753504/). Nonetheless, companies like [Solugen](https://solugen.com/) are an existence proof that you can make things cheaply and at an industrial scale using enzymes[^12].
+
+### **Food superabundance**
+
+By now, I hope to have convinced you that solar-to-food pathways are at least worthy of more exploration. If clean energy becomes abundant, and we can turn electricity into food, I can't see a first principle reason why supplying cheap and nutritious food to every person on Earth should be difficult. There is more than enough energy and carbon to go around. We [produced](https://ourworldindata.org/grapher/global-energy-substitution) `~22 MWh` of energy per person in 2022, while the food-energy needs of a person are on the order of `1-2 MWh`[^13] per year. There are about `~119` tons of excess CO₂ in the atmosphere per person alive today[^14] – a liability to human civilization, but a valuable asset if you're in the business of photosynthesis.
+
+[^1]:  The 0.75 m2 figure is based on calculations in this paper's [introduction](https://www.frontiersin.org/articles/10.3389/fsufs.2020.00090/full), and is the lower bound for how much land you need to feed a person if they could somehow absorb sunlight with 100% efficiency. Total [land use](https://ourworldindata.org/global-land-for-agriculture) for agriculture is 48M km2, and there are about 8.1B people, coming out to \~6,000 m2 per person.
+
+[^2]:  Of course, phasing out animal agriculture would free up a massive amount of land, as I explained in the previous post. Land scarcity is driven much more by what we eat than how much we eat, or how many people there are.
+
+[^3]:  [Our World in Data](https://ourworldindata.org/grapher/cumulative-co-emissions?tab=table) puts cumulative global emissions around \~1,700 gigatons CO₂.
+
+[^4]:  Rewilding cropland would sequester a lot of carbon too; livestock isn't the only culprit. I think livestock should be the focus of land restoration because (1) they cover the largest fraction of agricultural land, and (2) they are a much less productive form of food in terms of kcal/hectare.
+
+[^5]:  As long as CapEx is not the majority of cost. For example, if 90% of a product's cost is CapEx, then even free energy will not make it significantly cheaper.
+
+[^6]:  Renewable energy is very equitable, in the sense that most countries have at least one option among solar, wind, hydro, or geothermal. Mineable fossil fuels, on the other hand, are concentrated in relatively few places. 
+
+[^7]:  A nitrogen source, like ammonia, is also required for fermentation. However, I'm going to sidestep the problem of sourcing green ammonia for now.
+
+[^8]:  Even if you did draw power from the grid, the cheapest electricity prices are also intermittent. So you'd still want to be able to ramp feedstock production up and down, which also creates a need for temporary feedstock storage.
+
+[^9]:  This complaint applies mainly to batch and fed-batch fermentation. A few companies (e.g, Cauldron and Pow.bio) are working on *continuous fermentation*, where the cells continue expressing the target protein over many iterations of harvesting. Continuous fermentation would improve unit economics considerably, because it amortizes the cost of setup, cleaning/sterilization, growing the cells, etc, over multiple batches.
+
+[^10]:  One quite cool property of the cell extract is its portability: you can [freeze-dry it](https://www.cell.com/fulltext/S0092-8674\(16\)31246-6), ship it, and use it somewhere else when needed.
+
+[^11]:  I would be remiss if I did not acknowledge how much of the existing research on synthetic carbon fixation pathways was either inspired or done by [Arren Bar-Even](https://en.wikipedia.org/wiki/Arren_Bar-Even).
+
+[^12]:  Solugen has a slightly easier challenge, since their process starts from sugar rather than raw CO₂. So the hard work of photosynthesis is still done by a plant.
+
+[^13]:  To be generous, 3,000 kcal/day \* 365 days/year \* 1.162 Wh / kcal \= 1.27 MWh. If you could eat electricity, your food would cost a few hundred dollars per year.
+
+[^14]:  An [estimated](https://en.wikipedia.org/wiki/Carbon_dioxide_in_Earth%27s_atmosphere#:~:text=It%20has%20been%20estimated%20that,gigatons%20remaining%20in%20the%20atmosphere.) 950 gigatons of excess CO₂ are in the atmosphere right now, which does not include the excess emissions that have been absorbed by the ocean, forests, soils, etc. 950 gigatons / 8 billion people \= 118.8 tons per person.
