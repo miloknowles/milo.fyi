@@ -9,7 +9,6 @@ export default function Header({ title, publishedAt }) {
   })
   return (
     <header className="mb-8">
-      <Separator className="w-full"/>
       <h1 className="text-4xl font-bold">{title}</h1>
       <span className="text-neutral-600 font-medium">{formattedDate}</span>
       <Separator className="w-full mt-4"/>

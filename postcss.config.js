@@ -1,8 +1,10 @@
 module.exports = {
   plugins: {
-    '@tailwindcss/postcss': {},
-    // tailwindcss: {},
+    // https://tailwindcss.com/docs/using-with-preprocessors
+    'postcss-import': {},
     // https://tailwindcss.com/blog/tailwindcss-v4-alpha
-    // autoprefixer: {},
+    // '@tailwindcss/postcss': {},
+    tailwindcss: {},
+    autoprefixer: {},
   },
 };

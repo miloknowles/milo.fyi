@@ -1,12 +1,8 @@
-@import 'tailwindcss';
+@import "tailwindcss/base";
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@theme {
-  --color-custom: #ff0000;
-}
 
 ::selection {
   background-color: #47a3f3;

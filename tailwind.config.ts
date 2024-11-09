@@ -2,18 +2,22 @@
 
 const colors = require("tailwindcss/colors");
 
-console.debug("TAILWINDCSS")
-
 module.exports = {
   darkMode: ["class"],
   content: [
+    // Make sure to include .mdx files!
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
     './components/**/*.{js,ts,jsx,tsx,mdx}',
     './app/**/*.{js,ts,jsx,tsx,mdx}',
     './src/**/*.{js,ts,jsx,tsx,mdx}',
+
+    // Path to Tremor module
+    './node_modules/@tremor/**/*.{js,ts,jsx,tsx}',
   ],
   prefix: "",
   theme: {
+    transparent: 'transparent',
+    current: 'currentColor',
     container: {
       center: true,
       padding: "2rem",
@@ -23,7 +27,6 @@ module.exports = {
     },
     extend: {
       colors: {
-        custom: "#ff0000",
         // light mode
         tremor: {
           brand: {
@@ -189,7 +192,7 @@ module.exports = {
       },
     },
   },
-  // plugins: [require("tailwindcss-animate"), require("@headlessui/tailwindcss"), require("@tailwindcss/forms")],
+  plugins: [require("tailwindcss-animate"), require("@headlessui/tailwindcss"), require("@tailwindcss/forms")],
   safelist: [
     {
       pattern:
