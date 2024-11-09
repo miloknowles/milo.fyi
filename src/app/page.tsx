@@ -9,6 +9,7 @@ export default function Page() {
       <h1 className="mb-8 text-5xl font-semibold tracking-tighter fade-order-1">
         Hi, I'm <span className="text-indigo-500">Milo</span> – a software engineer focused on climate.
       </h1>
+      <p className="text-primary-foreground">This is a test</p>
       <div className="flex flex-col gap-4">
         <Text className="fade-order-2 text-lg">
           I studied computer science at MIT, where my research focused on <ExternalLink href="https://www.csail.mit.edu/research/robust-robotics-group">autonomous robotics and computer vision</ExternalLink>.

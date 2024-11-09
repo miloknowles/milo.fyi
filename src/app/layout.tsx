@@ -10,9 +10,10 @@ import '@radix-ui/themes/styles.css';
 // https://www.radix-ui.com/themes/docs/theme/token-reference
 import './theme-config.css';
 
+import { Theme } from '@radix-ui/themes';
+
 import './globals.css';
 
-import { Theme } from '@radix-ui/themes';
 import Navigation from 'src/components/navigation'
 
 export const metadata: Metadata = {

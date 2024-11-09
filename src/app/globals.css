@@ -4,6 +4,10 @@
 @tailwind components;
 @tailwind utilities;
 
+@theme {
+  --color-custom: #ff0000;
+}
+
 ::selection {
   background-color: #47a3f3;
   color: #fefefe;
@@ -148,7 +152,6 @@ html {
 }
 
 .prose img {
-  /* Don't apply styles to next/image */
   @apply m-0;
 }
 
