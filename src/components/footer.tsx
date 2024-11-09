@@ -12,35 +12,35 @@ function ArrowIcon() {
         fill="currentColor"
       />
     </svg>
-  )
+  );
 }
 
 const items = [
   {
-    href: '/rss',
-    label: 'rss',
+    href: "/rss",
+    label: "rss",
   },
   {
-    href: 'https://github.com/miloknowles/next.milo.fyi',
-    label: 'github',
+    href: "https://github.com/miloknowles/next.milo.fyi",
+    label: "github",
   },
   {
-    href: 'https://resume.io/r/5C7pJxyMP',
-    label: 'resume',
+    href: "https://resume.io/r/5C7pJxyMP",
+    label: "resume",
   },
   {
-    href: 'https://www.linkedin.com/in/milo-knowles/',
-    label: 'linkedin',
+    href: "https://www.linkedin.com/in/milo-knowles/",
+    label: "linkedin",
   },
   {
-    href: 'https://www.strava.com/athletes/6914634',
-    label: 'strava',
+    href: "https://www.strava.com/athletes/6914634",
+    label: "strava",
   },
   {
-    href: 'mailto:miloknowles97@gmail.com',
-    label: 'email',
+    href: "mailto:miloknowles97@gmail.com",
+    label: "email",
   },
-]
+];
 
 export default function Footer() {
   return (
@@ -61,5 +61,5 @@ export default function Footer() {
         ))}
       </ul>
     </footer>
-  )
+  );
 }

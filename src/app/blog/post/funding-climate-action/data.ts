@@ -7,7 +7,7 @@ export const climateNeutralData = [
     Scope3: 132.0,
     totalSpending: 2682.1,
     totalOffsets: 206.0,
-    pricePerTon: 13.019902912621358
+    pricePerTon: 13.019902912621358,
   },
   {
     companyName: "686",
@@ -17,7 +17,7 @@ export const climateNeutralData = [
     Scope3: 27282.0,
     totalSpending: 90057.0,
     totalOffsets: 27290.0,
-    pricePerTon: 3.3
+    pricePerTon: 3.3,
   },
   {
     companyName: "Acumatica",
@@ -27,7 +27,7 @@ export const climateNeutralData = [
     Scope3: 1620.0,
     totalSpending: 29515.0,
     totalOffsets: 2780.0,
-    pricePerTon: 10.616906474820144
+    pricePerTon: 10.616906474820144,
   },
   {
     companyName: "Adanac Tech",
@@ -37,7 +37,7 @@ export const climateNeutralData = [
     Scope3: 13.0,
     totalSpending: 200.0,
     totalOffsets: 25.0,
-    pricePerTon: 8.0
+    pricePerTon: 8.0,
   },
   {
     companyName: "AdMixt",
@@ -47,7 +47,7 @@ export const climateNeutralData = [
     Scope3: 56.0,
     totalSpending: 1692.5,
     totalOffsets: 151.0,
-    pricePerTon: 11.208609271523178
+    pricePerTon: 11.208609271523178,
   },
   {
     companyName: "advene",
@@ -57,7 +57,7 @@ export const climateNeutralData = [
     Scope3: 136.0,
     totalSpending: 719.25,
     totalOffsets: 137.0,
-    pricePerTon: 5.25
+    pricePerTon: 5.25,
   },
   {
     companyName: "All Good",
@@ -67,7 +67,7 @@ export const climateNeutralData = [
     Scope3: 3939.0,
     totalSpending: 16000.0,
     totalOffsets: 4000.0,
-    pricePerTon: 4.0
+    pricePerTon: 4.0,
   },
   {
     companyName: "Allbirds",
@@ -77,7 +77,7 @@ export const climateNeutralData = [
     Scope3: 37128.0,
     totalSpending: 371568.0,
     totalOffsets: 40964.0,
-    pricePerTon: 9.070598574357973
+    pricePerTon: 9.070598574357973,
   },
   {
     companyName: "Alliance Trading Group",
@@ -87,7 +87,7 @@ export const climateNeutralData = [
     Scope3: 83.0,
     totalSpending: 1314.0,
     totalOffsets: 90.0,
-    pricePerTon: 14.6
+    pricePerTon: 14.6,
   },
   {
     companyName: "ALOHA",
@@ -97,7 +97,7 @@ export const climateNeutralData = [
     Scope3: 5743.0,
     totalSpending: 40374.0,
     totalOffsets: 5828.0,
-    pricePerTon: 6.927590940288264
+    pricePerTon: 6.927590940288264,
   },
   {
     companyName: "Alpine Fit",
@@ -107,7 +107,7 @@ export const climateNeutralData = [
     Scope3: 120.0,
     totalSpending: 923.75,
     totalOffsets: 135.0,
-    pricePerTon: 6.842592592592593
+    pricePerTon: 6.842592592592593,
   },
   {
     companyName: "Alpine Start, Inc.",
@@ -117,7 +117,7 @@ export const climateNeutralData = [
     Scope3: 322.0,
     totalSpending: 2112.5,
     totalOffsets: 325.0,
-    pricePerTon: 6.5
+    pricePerTon: 6.5,
   },
   {
     companyName: "Alter Eco",
@@ -127,7 +127,7 @@ export const climateNeutralData = [
     Scope3: 5781.0,
     totalSpending: 66911.0,
     totalOffsets: 5786.0,
-    pricePerTon: 11.564293121327342
+    pricePerTon: 11.564293121327342,
   },
   {
     companyName: "Amika",
@@ -137,7 +137,7 @@ export const climateNeutralData = [
     Scope3: 9242.0,
     totalSpending: 79745.0,
     totalOffsets: 8849.0,
-    pricePerTon: 9.011752740422647
+    pricePerTon: 9.011752740422647,
   },
   {
     companyName: "Ana Luisa",
@@ -147,7 +147,7 @@ export const climateNeutralData = [
     Scope3: 3821.0,
     totalSpending: 21872.01,
     totalOffsets: 3885.0,
-    pricePerTon: 5.629861003861003
+    pricePerTon: 5.629861003861003,
   },
   {
     companyName: "Ananday",
@@ -157,7 +157,7 @@ export const climateNeutralData = [
     Scope3: 32.0,
     totalSpending: 274.9,
     totalOffsets: 32.0,
-    pricePerTon: 8.590625
+    pricePerTon: 8.590625,
   },
   {
     companyName: "Ancient + Brave",
@@ -167,7 +167,7 @@ export const climateNeutralData = [
     Scope3: 264.0,
     totalSpending: 3904.5,
     totalOffsets: 274.0,
-    pricePerTon: 14.25
+    pricePerTon: 14.25,
   },
   {
     companyName: "&BACK COFFEE",
@@ -177,7 +177,7 @@ export const climateNeutralData = [
     Scope3: 58.0,
     totalSpending: 1004.76,
     totalOffsets: 60.0,
-    pricePerTon: 16.746
+    pricePerTon: 16.746,
   },
   {
     companyName: "Angel Chang LLC",
@@ -187,7 +187,7 @@ export const climateNeutralData = [
     Scope3: 4.0,
     totalSpending: 77.52,
     totalOffsets: 4.0,
-    pricePerTon: 19.38
+    pricePerTon: 19.38,
   },
   {
     companyName: "Another Tomorrow",
@@ -197,7 +197,7 @@ export const climateNeutralData = [
     Scope3: 1554.0,
     totalSpending: 32120.91,
     totalOffsets: 1557.0,
-    pricePerTon: 20.63
+    pricePerTon: 20.63,
   },
   {
     companyName: "Appalachian Gap Distillery",
@@ -207,7 +207,7 @@ export const climateNeutralData = [
     Scope3: 72.0,
     totalSpending: 1812.0,
     totalOffsets: 89.0,
-    pricePerTon: 20.359550561797754
+    pricePerTon: 20.359550561797754,
   },
   {
     companyName: "Aquila's Nest Vineyards",
@@ -217,7 +217,7 @@ export const climateNeutralData = [
     Scope3: 115.0,
     totalSpending: 1400.0,
     totalOffsets: 200.0,
-    pricePerTon: 7.0
+    pricePerTon: 7.0,
   },
   {
     companyName: "Athletic Greens",
@@ -227,7 +227,7 @@ export const climateNeutralData = [
     Scope3: 92360.0,
     totalSpending: 232843.71,
     totalOffsets: 92536.0,
-    pricePerTon: 2.51625
+    pricePerTon: 2.51625,
   },
   {
     companyName: "August",
@@ -237,7 +237,7 @@ export const climateNeutralData = [
     Scope3: 1934.0,
     totalSpending: 24950.75,
     totalOffsets: 1936.0,
-    pricePerTon: 12.887784090909092
+    pricePerTon: 12.887784090909092,
   },
   {
     companyName: "AUVA Certification Limited",
@@ -247,7 +247,7 @@ export const climateNeutralData = [
     Scope3: 17.0,
     totalSpending: 137.75,
     totalOffsets: 19.0,
-    pricePerTon: 7.25
+    pricePerTon: 7.25,
   },
   {
     companyName: "Avocado Green Brands",
@@ -257,7 +257,7 @@ export const climateNeutralData = [
     Scope3: 31935.0,
     totalSpending: 223996.0,
     totalOffsets: 32751.0,
-    pricePerTon: 6.839363683551647
+    pricePerTon: 6.839363683551647,
   },
   {
     companyName: "Backbone Media",
@@ -267,7 +267,7 @@ export const climateNeutralData = [
     Scope3: 278.0,
     totalSpending: 5768.0,
     totalOffsets: 412.0,
-    pricePerTon: 14.0
+    pricePerTon: 14.0,
   },
   {
     companyName: "Backdrop",
@@ -277,7 +277,7 @@ export const climateNeutralData = [
     Scope3: 587.0,
     totalSpending: 5624.0,
     totalOffsets: 592.0,
-    pricePerTon: 9.5
+    pricePerTon: 9.5,
   },
   {
     companyName: "Balega",
@@ -287,7 +287,7 @@ export const climateNeutralData = [
     Scope3: 5844.0,
     totalSpending: 60883.8,
     totalOffsets: 5969.0,
-    pricePerTon: 10.200000000000001
+    pricePerTon: 10.200000000000001,
   },
   {
     companyName: "Bambu",
@@ -297,7 +297,7 @@ export const climateNeutralData = [
     Scope3: 1153.0,
     totalSpending: 9975.0,
     totalOffsets: 1153.0,
-    pricePerTon: 8.65134431916739
+    pricePerTon: 8.65134431916739,
   },
   {
     companyName: "Baobab Foods",
@@ -307,7 +307,7 @@ export const climateNeutralData = [
     Scope3: 342.0,
     totalSpending: 3429.5,
     totalOffsets: 361.0,
-    pricePerTon: 9.5
+    pricePerTon: 9.5,
   },
   {
     companyName: "Barrett Dixon Bell Limited",
@@ -317,7 +317,7 @@ export const climateNeutralData = [
     Scope3: 132.0,
     totalSpending: 1800.0,
     totalOffsets: 150.0,
-    pricePerTon: 12.0
+    pricePerTon: 12.0,
   },
   {
     companyName: "Bayrli",
@@ -327,7 +327,7 @@ export const climateNeutralData = [
     Scope3: 8.0,
     totalSpending: 108.0,
     totalOffsets: 8.0,
-    pricePerTon: 13.5
+    pricePerTon: 13.5,
   },
   {
     companyName: "Be Ultimate",
@@ -337,7 +337,7 @@ export const climateNeutralData = [
     Scope3: 131.0,
     totalSpending: 1783.5,
     totalOffsets: 246.0,
-    pricePerTon: 7.25
+    pricePerTon: 7.25,
   },
   {
     companyName: "Beam",
@@ -347,7 +347,7 @@ export const climateNeutralData = [
     Scope3: 17646.0,
     totalSpending: 220857.0,
     totalOffsets: 18103.0,
-    pricePerTon: 12.20002209578523
+    pricePerTon: 12.20002209578523,
   },
   {
     companyName: "Beco",
@@ -357,7 +357,7 @@ export const climateNeutralData = [
     Scope3: 2156.0,
     totalSpending: 29495.4,
     totalOffsets: 2398.0,
-    pricePerTon: 12.3
+    pricePerTon: 12.3,
   },
   {
     companyName: "Become Current PBC",
@@ -367,7 +367,7 @@ export const climateNeutralData = [
     Scope3: 48.0,
     totalSpending: 1650.0,
     totalOffsets: 138.0,
-    pricePerTon: 11.956521739130435
+    pricePerTon: 11.956521739130435,
   },
   {
     companyName: "Belong Wines",
@@ -377,7 +377,7 @@ export const climateNeutralData = [
     Scope3: 38.0,
     totalSpending: 530.01,
     totalOffsets: 39.0,
-    pricePerTon: 13.59
+    pricePerTon: 13.59,
   },
   {
     companyName: "BIO RAW INC.",
@@ -387,7 +387,7 @@ export const climateNeutralData = [
     Scope3: 435.0,
     totalSpending: 5928.0,
     totalOffsets: 494.0,
-    pricePerTon: 12.0
+    pricePerTon: 12.0,
   },
   {
     companyName: "Biome",
@@ -397,7 +397,7 @@ export const climateNeutralData = [
     Scope3: 28.0,
     totalSpending: 360.0,
     totalOffsets: 36.0,
-    pricePerTon: 10.0
+    pricePerTon: 10.0,
   },
   {
     companyName: "Blackfish Ventures LLC",
@@ -407,7 +407,7 @@ export const climateNeutralData = [
     Scope3: 604.0,
     totalSpending: 4192.5,
     totalOffsets: 645.0,
-    pricePerTon: 6.5
+    pricePerTon: 6.5,
   },
   {
     companyName: "BLDG Active",
@@ -417,7 +417,7 @@ export const climateNeutralData = [
     Scope3: 1872.0,
     totalSpending: 16974.84,
     totalOffsets: 1884.0,
-    pricePerTon: 9.01
+    pricePerTon: 9.01,
   },
   {
     companyName: "Bloobloom",
@@ -427,7 +427,7 @@ export const climateNeutralData = [
     Scope3: 126.0,
     totalSpending: 1043.2,
     totalOffsets: 160.0,
-    pricePerTon: 6.5200000000000005
+    pricePerTon: 6.5200000000000005,
   },
   {
     companyName: "Blossom Coffee Roasters",
@@ -437,7 +437,7 @@ export const climateNeutralData = [
     Scope3: 156.0,
     totalSpending: 1670.0,
     totalOffsets: 168.0,
-    pricePerTon: 9.94047619047619
+    pricePerTon: 9.94047619047619,
   },
   {
     companyName: "Blue Dot Way, LLC",
@@ -447,7 +447,7 @@ export const climateNeutralData = [
     Scope3: 8.0,
     totalSpending: 273.25,
     totalOffsets: 8.0,
-    pricePerTon: 34.15625
+    pricePerTon: 34.15625,
   },
   {
     companyName: "Blue Planet Outdoors",
@@ -457,7 +457,7 @@ export const climateNeutralData = [
     Scope3: 24.0,
     totalSpending: 252.0,
     totalOffsets: 24.0,
-    pricePerTon: 10.5
+    pricePerTon: 10.5,
   },
   {
     companyName: "Blueland",
@@ -467,7 +467,7 @@ export const climateNeutralData = [
     Scope3: 13203.0,
     totalSpending: 98627.5,
     totalOffsets: 13205.0,
-    pricePerTon: 7.468951154865581
+    pricePerTon: 7.468951154865581,
   },
   {
     companyName: "BlueStar Marketing, LLC",
@@ -477,7 +477,7 @@ export const climateNeutralData = [
     Scope3: 57.0,
     totalSpending: 819.25,
     totalOffsets: 113.0,
-    pricePerTon: 7.25
+    pricePerTon: 7.25,
   },
   {
     companyName: "Bona Furtuna N.A.",
@@ -487,7 +487,7 @@ export const climateNeutralData = [
     Scope3: 338.0,
     totalSpending: 2830.24,
     totalOffsets: 342.0,
-    pricePerTon: 8.275555555555554
+    pricePerTon: 8.275555555555554,
   },
   {
     companyName: "Bondi Born",
@@ -497,7 +497,7 @@ export const climateNeutralData = [
     Scope3: 603.0,
     totalSpending: 5979.6,
     totalOffsets: 604.0,
-    pricePerTon: 9.9
+    pricePerTon: 9.9,
   },
   {
     companyName: "Bonterra",
@@ -507,7 +507,7 @@ export const climateNeutralData = [
     Scope3: 9767.0,
     totalSpending: 111992.4,
     totalOffsets: 10205.0,
-    pricePerTon: 10.974267515923566
+    pricePerTon: 10.974267515923566,
   },
   {
     companyName: "bookshop.org",
@@ -517,7 +517,7 @@ export const climateNeutralData = [
     Scope3: 620.0,
     totalSpending: 5947.0,
     totalOffsets: 626.0,
-    pricePerTon: 9.5
+    pricePerTon: 9.5,
   },
   {
     companyName: "Boonboo",
@@ -527,7 +527,7 @@ export const climateNeutralData = [
     Scope3: 5.0,
     totalSpending: 130.5,
     totalOffsets: 9.0,
-    pricePerTon: 14.5
+    pricePerTon: 14.5,
   },
   {
     companyName: "Booth & Partners",
@@ -537,7 +537,7 @@ export const climateNeutralData = [
     Scope3: 525.0,
     totalSpending: 11600.0,
     totalOffsets: 800.0,
-    pricePerTon: 14.5
+    pricePerTon: 14.5,
   },
   {
     companyName: "Botanica Wines",
@@ -547,7 +547,7 @@ export const climateNeutralData = [
     Scope3: 198.0,
     totalSpending: 2868.75,
     totalOffsets: 255.0,
-    pricePerTon: 11.25
+    pricePerTon: 11.25,
   },
   {
     companyName: "Bread Alone Bakery",
@@ -557,7 +557,7 @@ export const climateNeutralData = [
     Scope3: 2115.0,
     totalSpending: 33894.0,
     totalOffsets: 2421.0,
-    pricePerTon: 14.0
+    pricePerTon: 14.0,
   },
   {
     companyName: "Brook Farm Veterinary Center",
@@ -567,7 +567,7 @@ export const climateNeutralData = [
     Scope3: 152.0,
     totalSpending: 4225.0,
     totalOffsets: 300.0,
-    pricePerTon: 14.083333333333334
+    pricePerTon: 14.083333333333334,
   },
   {
     companyName: "Bronwen Jewelry LLC",
@@ -577,7 +577,7 @@ export const climateNeutralData = [
     Scope3: 170.0,
     totalSpending: 2507.75,
     totalOffsets: 210.0,
-    pricePerTon: 11.941666666666666
+    pricePerTon: 11.941666666666666,
   },
   {
     companyName: "BRUNA the Label",
@@ -587,7 +587,7 @@ export const climateNeutralData = [
     Scope3: 1119.0,
     totalSpending: 12672.0,
     totalOffsets: 1133.0,
-    pricePerTon: 11.184466019417476
+    pricePerTon: 11.184466019417476,
   },
   {
     companyName: "Bud Light NEXT",
@@ -597,7 +597,7 @@ export const climateNeutralData = [
     Scope3: 17701.0,
     totalSpending: 289629.6,
     totalOffsets: 18566.0,
-    pricePerTon: 15.599999999999998
+    pricePerTon: 15.599999999999998,
   },
   {
     companyName: "By Rosie Jane",
@@ -607,7 +607,7 @@ export const climateNeutralData = [
     Scope3: 220.0,
     totalSpending: 5355.0,
     totalOffsets: 385.0,
-    pricePerTon: 13.909090909090908
+    pricePerTon: 13.909090909090908,
   },
   {
     companyName: "Calgee",
@@ -617,7 +617,7 @@ export const climateNeutralData = [
     Scope3: 64.0,
     totalSpending: 643.0,
     totalOffsets: 92.0,
-    pricePerTon: 6.989130434782608
+    pricePerTon: 6.989130434782608,
   },
   {
     companyName: "CAMP Eyewear",
@@ -627,7 +627,7 @@ export const climateNeutralData = [
     Scope3: 347.0,
     totalSpending: 3800.0,
     totalOffsets: 475.0,
-    pricePerTon: 8.0
+    pricePerTon: 8.0,
   },
   {
     companyName: "Canary Marketing",
@@ -637,7 +637,7 @@ export const climateNeutralData = [
     Scope3: 2592.0,
     totalSpending: 21068.27,
     totalOffsets: 2709.0,
-    pricePerTon: 7.777139165743817
+    pricePerTon: 7.777139165743817,
   },
   {
     companyName: "Cape Clasp",
@@ -647,7 +647,7 @@ export const climateNeutralData = [
     Scope3: 229.0,
     totalSpending: 1848.0,
     totalOffsets: 231.0,
-    pricePerTon: 8.0
+    pricePerTon: 8.0,
   },
   {
     companyName: "Cariloop",
@@ -657,7 +657,7 @@ export const climateNeutralData = [
     Scope3: 343.0,
     totalSpending: 11005.0,
     totalOffsets: 710.0,
-    pricePerTon: 15.5
+    pricePerTon: 15.5,
   },
   {
     companyName: "Ceremonia",
@@ -667,7 +667,7 @@ export const climateNeutralData = [
     Scope3: 1875.0,
     totalSpending: 11322.0,
     totalOffsets: 1887.0,
-    pricePerTon: 6.0
+    pricePerTon: 6.0,
   },
   {
     companyName: "ChicoEco, Inc",
@@ -677,7 +677,7 @@ export const climateNeutralData = [
     Scope3: 671.0,
     totalSpending: 2073.0,
     totalOffsets: 691.0,
-    pricePerTon: 3.0
+    pricePerTon: 3.0,
   },
   {
     companyName: "CHNGE",
@@ -687,7 +687,7 @@ export const climateNeutralData = [
     Scope3: 1252.0,
     totalSpending: 9518.0,
     totalOffsets: 1253.0,
-    pricePerTon: 7.596169193934557
+    pricePerTon: 7.596169193934557,
   },
   {
     companyName: "Chris Burkard Studio",
@@ -697,7 +697,7 @@ export const climateNeutralData = [
     Scope3: 58.0,
     totalSpending: 872.58,
     totalOffsets: 88.0,
-    pricePerTon: 9.915681818181818
+    pricePerTon: 9.915681818181818,
   },
   {
     companyName: "CLIF Kid",
@@ -707,7 +707,7 @@ export const climateNeutralData = [
     Scope3: 25470.0,
     totalSpending: 317590.0,
     totalOffsets: 27559.0,
-    pricePerTon: 11.524003048006096
+    pricePerTon: 11.524003048006096,
   },
   {
     companyName: "Climate Neutral",
@@ -717,7 +717,7 @@ export const climateNeutralData = [
     Scope3: 42.0,
     totalSpending: 350.9,
     totalOffsets: 43.0,
-    pricePerTon: 8.160465116279068
+    pricePerTon: 8.160465116279068,
   },
   {
     companyName: "Clove & Twine",
@@ -727,7 +727,7 @@ export const climateNeutralData = [
     Scope3: 321.0,
     totalSpending: 10101.92,
     totalOffsets: 352.0,
-    pricePerTon: 28.698636363636364
+    pricePerTon: 28.698636363636364,
   },
   {
     companyName: "Collective Logistics",
@@ -737,7 +737,7 @@ export const climateNeutralData = [
     Scope3: 18.0,
     totalSpending: 144.0,
     totalOffsets: 18.0,
-    pricePerTon: 8.0
+    pricePerTon: 8.0,
   },
   {
     companyName: "Collins Hume",
@@ -747,7 +747,7 @@ export const climateNeutralData = [
     Scope3: 58.0,
     totalSpending: 476.25,
     totalOffsets: 61.0,
-    pricePerTon: 7.807377049180328
+    pricePerTon: 7.807377049180328,
   },
   {
     companyName: "Common Heir",
@@ -757,17 +757,18 @@ export const climateNeutralData = [
     Scope3: 680.0,
     totalSpending: 5676.75,
     totalOffsets: 783.0,
-    pricePerTon: 7.25
+    pricePerTon: 7.25,
   },
   {
     companyName: "Consolidare Wealth Management Ltd",
-    dataUrl: "https://www.climateneutral.org/brand/consolidare-wealth-management",
+    dataUrl:
+      "https://www.climateneutral.org/brand/consolidare-wealth-management",
     Scope1: 0.0,
     Scope2: 0.0,
     Scope3: 3.0,
     totalSpending: 40.5,
     totalOffsets: 3.0,
-    pricePerTon: 13.5
+    pricePerTon: 13.5,
   },
   {
     companyName: "Convert",
@@ -777,7 +778,7 @@ export const climateNeutralData = [
     Scope3: 142.0,
     totalSpending: 1086.0,
     totalOffsets: 181.0,
-    pricePerTon: 6.0
+    pricePerTon: 6.0,
   },
   {
     companyName: "Coracao Confections",
@@ -787,7 +788,7 @@ export const climateNeutralData = [
     Scope3: 535.0,
     totalSpending: 9653.7,
     totalOffsets: 998.0,
-    pricePerTon: 9.67304609218437
+    pricePerTon: 9.67304609218437,
   },
   {
     companyName: "Cotopaxi",
@@ -797,7 +798,7 @@ export const climateNeutralData = [
     Scope3: 13531.0,
     totalSpending: 124862.0,
     totalOffsets: 13859.0,
-    pricePerTon: 9.009452341438775
+    pricePerTon: 9.009452341438775,
   },
   {
     companyName: "COUNSEL",
@@ -807,7 +808,7 @@ export const climateNeutralData = [
     Scope3: 68.0,
     totalSpending: 10852.3,
     totalOffsets: 546.0,
-    pricePerTon: 19.876007326007326
+    pricePerTon: 19.876007326007326,
   },
   {
     companyName: "Creative Solutions",
@@ -817,7 +818,7 @@ export const climateNeutralData = [
     Scope3: 1611.0,
     totalSpending: 3952.7,
     totalOffsets: 1682.0,
-    pricePerTon: 2.35
+    pricePerTon: 2.35,
   },
   {
     companyName: "DeeBee's Organics",
@@ -827,7 +828,7 @@ export const climateNeutralData = [
     Scope3: 3863.0,
     totalSpending: 54890.0,
     totalOffsets: 4000.0,
-    pricePerTon: 13.7225
+    pricePerTon: 13.7225,
   },
   {
     companyName: "Della Terra",
@@ -837,7 +838,7 @@ export const climateNeutralData = [
     Scope3: 86.0,
     totalSpending: 889.5,
     totalOffsets: 90.0,
-    pricePerTon: 9.883333333333333
+    pricePerTon: 9.883333333333333,
   },
   {
     companyName: "Denomination",
@@ -847,7 +848,7 @@ export const climateNeutralData = [
     Scope3: 151.0,
     totalSpending: 2519.0,
     totalOffsets: 229.0,
-    pricePerTon: 11.0
+    pricePerTon: 11.0,
   },
   {
     companyName: "DEPT\u00c2\u00ae",
@@ -857,7 +858,7 @@ export const climateNeutralData = [
     Scope3: 9761.0,
     totalSpending: 177924.05,
     totalOffsets: 11113.0,
-    pricePerTon: 16.010442724736794
+    pricePerTon: 16.010442724736794,
   },
   {
     companyName: "Dermatone Labs, LLC",
@@ -867,7 +868,7 @@ export const climateNeutralData = [
     Scope3: 258.0,
     totalSpending: 2947.7,
     totalOffsets: 260.0,
-    pricePerTon: 11.337307692307691
+    pricePerTon: 11.337307692307691,
   },
   {
     companyName: "Dewerstone",
@@ -877,7 +878,7 @@ export const climateNeutralData = [
     Scope3: 138.0,
     totalSpending: 1128.0,
     totalOffsets: 141.0,
-    pricePerTon: 8.0
+    pricePerTon: 8.0,
   },
   {
     companyName: "Dimagi",
@@ -887,7 +888,7 @@ export const climateNeutralData = [
     Scope3: 785.0,
     totalSpending: 7529.6,
     totalOffsets: 938.0,
-    pricePerTon: 8.027292110874201
+    pricePerTon: 8.027292110874201,
   },
   {
     companyName: "DoThings",
@@ -897,7 +898,7 @@ export const climateNeutralData = [
     Scope3: 67.0,
     totalSpending: 1249.5,
     totalOffsets: 102.0,
-    pricePerTon: 12.25
+    pricePerTon: 12.25,
   },
   {
     companyName: "Earth Harbor Naturals",
@@ -907,7 +908,7 @@ export const climateNeutralData = [
     Scope3: 37.0,
     totalSpending: 539.5,
     totalOffsets: 56.0,
-    pricePerTon: 9.633928571428571
+    pricePerTon: 9.633928571428571,
   },
   {
     companyName: "EarthHero",
@@ -917,7 +918,7 @@ export const climateNeutralData = [
     Scope3: 282.0,
     totalSpending: 4386.5,
     totalOffsets: 322.0,
-    pricePerTon: 13.622670807453416
+    pricePerTon: 13.622670807453416,
   },
   {
     companyName: "EarthKind, LLC",
@@ -927,7 +928,7 @@ export const climateNeutralData = [
     Scope3: 2886.0,
     totalSpending: 29146.0,
     totalOffsets: 3068.0,
-    pricePerTon: 9.5
+    pricePerTon: 9.5,
   },
   {
     companyName: "Elizabeth Suzann, LLC",
@@ -937,7 +938,7 @@ export const climateNeutralData = [
     Scope3: 80.0,
     totalSpending: 896.0,
     totalOffsets: 83.0,
-    pricePerTon: 10.795180722891565
+    pricePerTon: 10.795180722891565,
   },
   {
     companyName: "Elm Organics Norway",
@@ -947,7 +948,7 @@ export const climateNeutralData = [
     Scope3: 189.0,
     totalSpending: 1997.73,
     totalOffsets: 189.0,
-    pricePerTon: 10.57
+    pricePerTon: 10.57,
   },
   {
     companyName: "Emikeni",
@@ -957,7 +958,7 @@ export const climateNeutralData = [
     Scope3: 355.0,
     totalSpending: 3372.5,
     totalOffsets: 355.0,
-    pricePerTon: 9.5
+    pricePerTon: 9.5,
   },
   {
     companyName: "Engedi Salon",
@@ -967,7 +968,7 @@ export const climateNeutralData = [
     Scope3: 153.0,
     totalSpending: 2066.12,
     totalOffsets: 329.0,
-    pricePerTon: 6.279999999999999
+    pricePerTon: 6.279999999999999,
   },
   {
     companyName: "EthicDrinks",
@@ -977,7 +978,7 @@ export const climateNeutralData = [
     Scope3: 466.0,
     totalSpending: 5650.0,
     totalOffsets: 500.0,
-    pricePerTon: 11.3
+    pricePerTon: 11.3,
   },
   {
     companyName: "ettitude",
@@ -987,7 +988,7 @@ export const climateNeutralData = [
     Scope3: 1922.0,
     totalSpending: 42284.0,
     totalOffsets: 1922.0,
-    pricePerTon: 22.0
+    pricePerTon: 22.0,
   },
   {
     companyName: "Eva-NYC",
@@ -997,7 +998,7 @@ export const climateNeutralData = [
     Scope3: 5365.0,
     totalSpending: 54723.0,
     totalOffsets: 6188.0,
-    pricePerTon: 8.843406593406593
+    pricePerTon: 8.843406593406593,
   },
   {
     companyName: "Everoot Consulting",
@@ -1007,7 +1008,7 @@ export const climateNeutralData = [
     Scope3: 6.0,
     totalSpending: 156.75,
     totalOffsets: 11.0,
-    pricePerTon: 14.25
+    pricePerTon: 14.25,
   },
   {
     companyName: "Everywhere Apparel, Inc",
@@ -1017,7 +1018,7 @@ export const climateNeutralData = [
     Scope3: 272.0,
     totalSpending: 2288.44,
     totalOffsets: 287.0,
-    pricePerTon: 7.973658536585366
+    pricePerTon: 7.973658536585366,
   },
   {
     companyName: "Evolution Service Corp",
@@ -1027,7 +1028,7 @@ export const climateNeutralData = [
     Scope3: 43.0,
     totalSpending: 516.0,
     totalOffsets: 43.0,
-    pricePerTon: 12.0
+    pricePerTon: 12.0,
   },
   {
     companyName: "ExquisiteCrystals.com LLC",
@@ -1037,7 +1038,7 @@ export const climateNeutralData = [
     Scope3: 165.0,
     totalSpending: 2351.25,
     totalOffsets: 165.0,
-    pricePerTon: 14.25
+    pricePerTon: 14.25,
   },
   {
     companyName: "F Bass Inc.",
@@ -1047,7 +1048,7 @@ export const climateNeutralData = [
     Scope3: 124.0,
     totalSpending: 1260.0,
     totalOffsets: 144.0,
-    pricePerTon: 8.75
+    pricePerTon: 8.75,
   },
   {
     companyName: "Falcon Engineering",
@@ -1057,7 +1058,7 @@ export const climateNeutralData = [
     Scope3: 141.0,
     totalSpending: 4620.0,
     totalOffsets: 154.0,
-    pricePerTon: 30.0
+    pricePerTon: 30.0,
   },
   {
     companyName: "Fireclay Tile",
@@ -1067,7 +1068,7 @@ export const climateNeutralData = [
     Scope3: 7558.0,
     totalSpending: 60411.75,
     totalOffsets: 10885.0,
-    pricePerTon: 5.55
+    pricePerTon: 5.55,
   },
   {
     companyName: "Firma",
@@ -1077,7 +1078,7 @@ export const climateNeutralData = [
     Scope3: 142.0,
     totalSpending: 1659.13,
     totalOffsets: 155.0,
-    pricePerTon: 10.704064516129034
+    pricePerTon: 10.704064516129034,
   },
   {
     companyName: "Fjorden",
@@ -1087,7 +1088,7 @@ export const climateNeutralData = [
     Scope3: 566.0,
     totalSpending: 5660.0,
     totalOffsets: 566.0,
-    pricePerTon: 10.0
+    pricePerTon: 10.0,
   },
   {
     companyName: "Flaik",
@@ -1097,7 +1098,7 @@ export const climateNeutralData = [
     Scope3: 211.0,
     totalSpending: 10850.0,
     totalOffsets: 700.0,
-    pricePerTon: 15.5
+    pricePerTon: 15.5,
   },
   {
     companyName: "Flickr",
@@ -1107,7 +1108,7 @@ export const climateNeutralData = [
     Scope3: 82.0,
     totalSpending: 3199.69,
     totalOffsets: 163.0,
-    pricePerTon: 19.63
+    pricePerTon: 19.63,
   },
   {
     companyName: "Flint",
@@ -1117,7 +1118,7 @@ export const climateNeutralData = [
     Scope3: 20.0,
     totalSpending: 190.3,
     totalOffsets: 20.0,
-    pricePerTon: 9.515
+    pricePerTon: 9.515,
   },
   {
     companyName: "Flooret",
@@ -1127,7 +1128,7 @@ export const climateNeutralData = [
     Scope3: 9841.0,
     totalSpending: 107924.0,
     totalOffsets: 9921.0,
-    pricePerTon: 10.878338877129321
+    pricePerTon: 10.878338877129321,
   },
   {
     companyName: "Fluf Textile Goods Inc.",
@@ -1137,7 +1138,7 @@ export const climateNeutralData = [
     Scope3: 364.0,
     totalSpending: 3206.25,
     totalOffsets: 365.0,
-    pricePerTon: 8.784246575342467
+    pricePerTon: 8.784246575342467,
   },
   {
     companyName: "Foehn Clothing",
@@ -1147,7 +1148,7 @@ export const climateNeutralData = [
     Scope3: 356.0,
     totalSpending: 4272.0,
     totalOffsets: 356.0,
-    pricePerTon: 12.0
+    pricePerTon: 12.0,
   },
   {
     companyName: "Form",
@@ -1157,7 +1158,7 @@ export const climateNeutralData = [
     Scope3: 38.0,
     totalSpending: 266.0,
     totalOffsets: 38.0,
-    pricePerTon: 7.0
+    pricePerTon: 7.0,
   },
   {
     companyName: "Forsake",
@@ -1167,7 +1168,7 @@ export const climateNeutralData = [
     Scope3: 2645.0,
     totalSpending: 45738.0,
     totalOffsets: 2670.0,
-    pricePerTon: 17.130337078651685
+    pricePerTon: 17.130337078651685,
   },
   {
     companyName: "FUSION Performance Group",
@@ -1177,7 +1178,7 @@ export const climateNeutralData = [
     Scope3: 72.0,
     totalSpending: 825.0,
     totalOffsets: 110.0,
-    pricePerTon: 7.5
+    pricePerTon: 7.5,
   },
   {
     companyName: "GEARTRADE",
@@ -1187,7 +1188,7 @@ export const climateNeutralData = [
     Scope3: 73.0,
     totalSpending: 1248.0,
     totalOffsets: 104.0,
-    pricePerTon: 12.0
+    pricePerTon: 12.0,
   },
   {
     companyName: "Gifts for Good",
@@ -1197,7 +1198,7 @@ export const climateNeutralData = [
     Scope3: 71.0,
     totalSpending: 1178.75,
     totalOffsets: 82.0,
-    pricePerTon: 14.375
+    pricePerTon: 14.375,
   },
   {
     companyName: "GLIDE",
@@ -1207,7 +1208,7 @@ export const climateNeutralData = [
     Scope3: 77.0,
     totalSpending: 1541.25,
     totalOffsets: 117.0,
-    pricePerTon: 13.173076923076923
+    pricePerTon: 13.173076923076923,
   },
   {
     companyName: "Glow Recipe",
@@ -1217,7 +1218,7 @@ export const climateNeutralData = [
     Scope3: 49923.0,
     totalSpending: 302988.44,
     totalOffsets: 49923.0,
-    pricePerTon: 6.069115237465697
+    pricePerTon: 6.069115237465697,
   },
   {
     companyName: "Good Clean Love",
@@ -1227,7 +1228,7 @@ export const climateNeutralData = [
     Scope3: 4633.0,
     totalSpending: 58450.0,
     totalOffsets: 4676.0,
-    pricePerTon: 12.5
+    pricePerTon: 12.5,
   },
   {
     companyName: "Good Good Good",
@@ -1237,7 +1238,7 @@ export const climateNeutralData = [
     Scope3: 34.0,
     totalSpending: 340.0,
     totalOffsets: 34.0,
-    pricePerTon: 10.0
+    pricePerTon: 10.0,
   },
   {
     companyName: "Goodee",
@@ -1247,7 +1248,7 @@ export const climateNeutralData = [
     Scope3: 27.0,
     totalSpending: 441.75,
     totalOffsets: 31.0,
-    pricePerTon: 14.25
+    pricePerTon: 14.25,
   },
   {
     companyName: "goodr",
@@ -1257,7 +1258,7 @@ export const climateNeutralData = [
     Scope3: 18511.0,
     totalSpending: 246852.0,
     totalOffsets: 24024.0,
-    pricePerTon: 10.275224775224775
+    pricePerTon: 10.275224775224775,
   },
   {
     companyName: "Gorilla Computing GmbH",
@@ -1267,7 +1268,7 @@ export const climateNeutralData = [
     Scope3: 29.0,
     totalSpending: 955.0,
     totalOffsets: 80.0,
-    pricePerTon: 11.9375
+    pricePerTon: 11.9375,
   },
   {
     companyName: "Grain",
@@ -1277,7 +1278,7 @@ export const climateNeutralData = [
     Scope3: 99.0,
     totalSpending: 808.78,
     totalOffsets: 109.0,
-    pricePerTon: 7.42
+    pricePerTon: 7.42,
   },
   {
     companyName: "Graphene X",
@@ -1287,7 +1288,7 @@ export const climateNeutralData = [
     Scope3: 227.0,
     totalSpending: 2079.32,
     totalOffsets: 227.0,
-    pricePerTon: 9.16
+    pricePerTon: 9.16,
   },
   {
     companyName: "GrowthJet",
@@ -1297,7 +1298,7 @@ export const climateNeutralData = [
     Scope3: 137.0,
     totalSpending: 1515.25,
     totalOffsets: 209.0,
-    pricePerTon: 7.25
+    pricePerTon: 7.25,
   },
   {
     companyName: "Happy Earth LLC",
@@ -1307,7 +1308,7 @@ export const climateNeutralData = [
     Scope3: 400.0,
     totalSpending: 2985.78,
     totalOffsets: 402.0,
-    pricePerTon: 7.427313432835821
+    pricePerTon: 7.427313432835821,
   },
   {
     companyName: "Heady",
@@ -1317,7 +1318,7 @@ export const climateNeutralData = [
     Scope3: 73.0,
     totalSpending: 2392.0,
     totalOffsets: 117.0,
-    pricePerTon: 20.444444444444443
+    pricePerTon: 20.444444444444443,
   },
   {
     companyName: "HigherRing, Inc.",
@@ -1327,7 +1328,7 @@ export const climateNeutralData = [
     Scope3: 103.0,
     totalSpending: 1570.0,
     totalOffsets: 158.0,
-    pricePerTon: 9.936708860759493
+    pricePerTon: 9.936708860759493,
   },
   {
     companyName: "Hikers Brew Coffee",
@@ -1337,7 +1338,7 @@ export const climateNeutralData = [
     Scope3: 6.0,
     totalSpending: 252.0,
     totalOffsets: 12.0,
-    pricePerTon: 21.0
+    pricePerTon: 21.0,
   },
   {
     companyName: "Hitch",
@@ -1347,7 +1348,7 @@ export const climateNeutralData = [
     Scope3: 294.0,
     totalSpending: 1917.5,
     totalOffsets: 295.0,
-    pricePerTon: 6.5
+    pricePerTon: 6.5,
   },
   {
     companyName: "Holden Rings",
@@ -1357,7 +1358,7 @@ export const climateNeutralData = [
     Scope3: 1745.0,
     totalSpending: 10632.0,
     totalOffsets: 1772.0,
-    pricePerTon: 6.0
+    pricePerTon: 6.0,
   },
   {
     companyName: "Hune",
@@ -1367,7 +1368,7 @@ export const climateNeutralData = [
     Scope3: 82.0,
     totalSpending: 573.5,
     totalOffsets: 82.0,
-    pricePerTon: 6.9939024390243905
+    pricePerTon: 6.9939024390243905,
   },
   {
     companyName: "Ibex",
@@ -1377,7 +1378,7 @@ export const climateNeutralData = [
     Scope3: 709.0,
     totalSpending: 3545.0,
     totalOffsets: 709.0,
-    pricePerTon: 5.0
+    pricePerTon: 5.0,
   },
   {
     companyName: "ICEBUG",
@@ -1387,7 +1388,7 @@ export const climateNeutralData = [
     Scope3: 5241.0,
     totalSpending: 33920.0,
     totalOffsets: 5300.0,
-    pricePerTon: 6.4
+    pricePerTon: 6.4,
   },
   {
     companyName: "IM Digital",
@@ -1397,7 +1398,7 @@ export const climateNeutralData = [
     Scope3: 289.0,
     totalSpending: 4565.0,
     totalOffsets: 440.0,
-    pricePerTon: 10.375
+    pricePerTon: 10.375,
   },
   {
     companyName: "INC Architecture & Design",
@@ -1407,7 +1408,7 @@ export const climateNeutralData = [
     Scope3: 181.0,
     totalSpending: 3770.0,
     totalOffsets: 216.0,
-    pricePerTon: 17.453703703703702
+    pricePerTon: 17.453703703703702,
   },
   {
     companyName: "Infinum",
@@ -1417,7 +1418,7 @@ export const climateNeutralData = [
     Scope3: 738.0,
     totalSpending: 6922.0,
     totalOffsets: 863.0,
-    pricePerTon: 8.020857473928158
+    pricePerTon: 8.020857473928158,
   },
   {
     companyName: "Innersense Organic Beauty",
@@ -1427,7 +1428,7 @@ export const climateNeutralData = [
     Scope3: 2869.0,
     totalSpending: 28182.5,
     totalOffsets: 2886.0,
-    pricePerTon: 9.765246015246015
+    pricePerTon: 9.765246015246015,
   },
   {
     companyName: "iota",
@@ -1437,7 +1438,7 @@ export const climateNeutralData = [
     Scope3: 98.0,
     totalSpending: 750.72,
     totalOffsets: 99.0,
-    pricePerTon: 7.583030303030303
+    pricePerTon: 7.583030303030303,
   },
   {
     companyName: "JADE Swim",
@@ -1447,7 +1448,7 @@ export const climateNeutralData = [
     Scope3: 87.0,
     totalSpending: 1634.0,
     totalOffsets: 172.0,
-    pricePerTon: 9.5
+    pricePerTon: 9.5,
   },
   {
     companyName: "Jiant",
@@ -1457,7 +1458,7 @@ export const climateNeutralData = [
     Scope3: 2641.0,
     totalSpending: 13206.6,
     totalOffsets: 2668.0,
-    pricePerTon: 4.95
+    pricePerTon: 4.95,
   },
   {
     companyName: "Jikoni",
@@ -1467,7 +1468,7 @@ export const climateNeutralData = [
     Scope3: 57.0,
     totalSpending: 1056.7,
     totalOffsets: 60.0,
-    pricePerTon: 17.611666666666668
+    pricePerTon: 17.611666666666668,
   },
   {
     companyName: "Joobwear",
@@ -1477,7 +1478,7 @@ export const climateNeutralData = [
     Scope3: 6.0,
     totalSpending: 165.83,
     totalOffsets: 7.0,
-    pricePerTon: 23.69
+    pricePerTon: 23.69,
   },
   {
     companyName: "JuneShine",
@@ -1487,7 +1488,7 @@ export const climateNeutralData = [
     Scope3: 8398.0,
     totalSpending: 96300.0,
     totalOffsets: 12500.0,
-    pricePerTon: 7.704
+    pricePerTon: 7.704,
   },
   {
     companyName: "Kala & Mata",
@@ -1497,7 +1498,7 @@ export const climateNeutralData = [
     Scope3: 151.0,
     totalSpending: 5285.0,
     totalOffsets: 151.0,
-    pricePerTon: 35.0
+    pricePerTon: 35.0,
   },
   {
     companyName: "Kammok",
@@ -1507,7 +1508,7 @@ export const climateNeutralData = [
     Scope3: 1996.0,
     totalSpending: 21560.0,
     totalOffsets: 3080.0,
-    pricePerTon: 7.0
+    pricePerTon: 7.0,
   },
   {
     companyName: "Kate McLeod",
@@ -1517,7 +1518,7 @@ export const climateNeutralData = [
     Scope3: 1078.0,
     totalSpending: 10908.25,
     totalOffsets: 1119.0,
-    pricePerTon: 9.748212689901697
+    pricePerTon: 9.748212689901697,
   },
   {
     companyName: "KBS Pets",
@@ -1527,7 +1528,7 @@ export const climateNeutralData = [
     Scope3: 493.0,
     totalSpending: 3871.75,
     totalOffsets: 493.0,
-    pricePerTon: 7.853448275862069
+    pricePerTon: 7.853448275862069,
   },
   {
     companyName: "Keeper Denim",
@@ -1537,7 +1538,7 @@ export const climateNeutralData = [
     Scope3: 2.0,
     totalSpending: 27.18,
     totalOffsets: 2.0,
-    pricePerTon: 13.59
+    pricePerTon: 13.59,
   },
   {
     companyName: "Kenna Group",
@@ -1547,7 +1548,7 @@ export const climateNeutralData = [
     Scope3: 602.0,
     totalSpending: 4298.0,
     totalOffsets: 614.0,
-    pricePerTon: 7.0
+    pricePerTon: 7.0,
   },
   {
     companyName: "KENT",
@@ -1557,7 +1558,7 @@ export const climateNeutralData = [
     Scope3: 27.0,
     totalSpending: 400.5,
     totalOffsets: 27.0,
-    pricePerTon: 14.833333333333334
+    pricePerTon: 14.833333333333334,
   },
   {
     companyName: "Kickstarter",
@@ -1567,7 +1568,7 @@ export const climateNeutralData = [
     Scope3: 496.0,
     totalSpending: 10664.35,
     totalOffsets: 559.0,
-    pricePerTon: 19.077549194991057
+    pricePerTon: 19.077549194991057,
   },
   {
     companyName: "Kindhumans",
@@ -1577,7 +1578,7 @@ export const climateNeutralData = [
     Scope3: 8.0,
     totalSpending: 116.0,
     totalOffsets: 8.0,
-    pricePerTon: 14.5
+    pricePerTon: 14.5,
   },
   {
     companyName: "Kindship Group",
@@ -1587,7 +1588,7 @@ export const climateNeutralData = [
     Scope3: 11.0,
     totalSpending: 222.82,
     totalOffsets: 18.0,
-    pricePerTon: 12.378888888888888
+    pricePerTon: 12.378888888888888,
   },
   {
     companyName: "Klean Kanteen",
@@ -1597,7 +1598,7 @@ export const climateNeutralData = [
     Scope3: 6283.0,
     totalSpending: 49627.0,
     totalOffsets: 6304.0,
-    pricePerTon: 7.872303299492386
+    pricePerTon: 7.872303299492386,
   },
   {
     companyName: "Knowmium",
@@ -1607,7 +1608,7 @@ export const climateNeutralData = [
     Scope3: 94.0,
     totalSpending: 952.0,
     totalOffsets: 119.0,
-    pricePerTon: 8.0
+    pricePerTon: 8.0,
   },
   {
     companyName: "Koos Service Design",
@@ -1617,7 +1618,7 @@ export const climateNeutralData = [
     Scope3: 305.0,
     totalSpending: 4984.0,
     totalOffsets: 356.0,
-    pricePerTon: 14.0
+    pricePerTon: 14.0,
   },
   {
     companyName: "KORA Organics",
@@ -1627,7 +1628,7 @@ export const climateNeutralData = [
     Scope3: 2956.0,
     totalSpending: 41923.0,
     totalOffsets: 2986.0,
-    pricePerTon: 14.03985264567984
+    pricePerTon: 14.03985264567984,
   },
   {
     companyName: "KORARU",
@@ -1637,7 +1638,7 @@ export const climateNeutralData = [
     Scope3: 179.0,
     totalSpending: 1638.0,
     totalOffsets: 180.0,
-    pricePerTon: 9.1
+    pricePerTon: 9.1,
   },
   {
     companyName: "KraveBeauty",
@@ -1647,7 +1648,7 @@ export const climateNeutralData = [
     Scope3: 767.0,
     totalSpending: 7670.0,
     totalOffsets: 767.0,
-    pricePerTon: 10.0
+    pricePerTon: 10.0,
   },
   {
     companyName: "La Honda Winery",
@@ -1657,7 +1658,7 @@ export const climateNeutralData = [
     Scope3: 131.0,
     totalSpending: 1288.0,
     totalOffsets: 161.0,
-    pricePerTon: 8.0
+    pricePerTon: 8.0,
   },
   {
     companyName: "La Sportiva N.A.",
@@ -1667,7 +1668,7 @@ export const climateNeutralData = [
     Scope3: 20135.0,
     totalSpending: 122880.2,
     totalOffsets: 20418.0,
-    pricePerTon: 6.0182290136154375
+    pricePerTon: 6.0182290136154375,
   },
   {
     companyName: "Laid Back Snacks Inc.",
@@ -1677,7 +1678,7 @@ export const climateNeutralData = [
     Scope3: 554.0,
     totalSpending: 5301.0,
     totalOffsets: 558.0,
-    pricePerTon: 9.5
+    pricePerTon: 9.5,
   },
   {
     companyName: "Laumiere Gourmet Fruits",
@@ -1687,7 +1688,7 @@ export const climateNeutralData = [
     Scope3: 77.0,
     totalSpending: 1188.0,
     totalOffsets: 88.0,
-    pricePerTon: 13.5
+    pricePerTon: 13.5,
   },
   {
     companyName: "Leaf Shave",
@@ -1697,7 +1698,7 @@ export const climateNeutralData = [
     Scope3: 382.0,
     totalSpending: 3840.0,
     totalOffsets: 384.0,
-    pricePerTon: 10.0
+    pricePerTon: 10.0,
   },
   {
     companyName: "Le.mu",
@@ -1707,7 +1708,7 @@ export const climateNeutralData = [
     Scope3: 307.0,
     totalSpending: 2132.0,
     totalOffsets: 328.0,
-    pricePerTon: 6.5
+    pricePerTon: 6.5,
   },
   {
     companyName: "LifeStraw",
@@ -1717,7 +1718,7 @@ export const climateNeutralData = [
     Scope3: 5131.0,
     totalSpending: 88842.0,
     totalOffsets: 5226.0,
-    pricePerTon: 17.0
+    pricePerTon: 17.0,
   },
   {
     companyName: "Live Story Inc",
@@ -1727,7 +1728,7 @@ export const climateNeutralData = [
     Scope3: 55.0,
     totalSpending: 1575.0,
     totalOffsets: 63.0,
-    pricePerTon: 25.0
+    pricePerTon: 25.0,
   },
   {
     companyName: "Lomond Coffee Ltd",
@@ -1737,7 +1738,7 @@ export const climateNeutralData = [
     Scope3: 9.0,
     totalSpending: 104.5,
     totalOffsets: 11.0,
-    pricePerTon: 9.5
+    pricePerTon: 9.5,
   },
   {
     companyName: "loqa",
@@ -1747,7 +1748,7 @@ export const climateNeutralData = [
     Scope3: 16.0,
     totalSpending: 126.0,
     totalOffsets: 18.0,
-    pricePerTon: 7.0
+    pricePerTon: 7.0,
   },
   {
     companyName: "Lubanzi Wines",
@@ -1757,7 +1758,7 @@ export const climateNeutralData = [
     Scope3: 526.0,
     totalSpending: 7509.75,
     totalOffsets: 527.0,
-    pricePerTon: 14.25
+    pricePerTon: 14.25,
   },
   {
     companyName: "Made Trade",
@@ -1767,7 +1768,7 @@ export const climateNeutralData = [
     Scope3: 229.0,
     totalSpending: 2138.75,
     totalOffsets: 295.0,
-    pricePerTon: 7.25
+    pricePerTon: 7.25,
   },
   {
     companyName: "Maison Louis Marie",
@@ -1777,7 +1778,7 @@ export const climateNeutralData = [
     Scope3: 1056.0,
     totalSpending: 7750.25,
     totalOffsets: 1069.0,
-    pricePerTon: 7.25
+    pricePerTon: 7.25,
   },
   {
     companyName: "Mananalu",
@@ -1787,7 +1788,7 @@ export const climateNeutralData = [
     Scope3: 1012.0,
     totalSpending: 10515.0,
     totalOffsets: 1014.0,
-    pricePerTon: 10.3698224852071
+    pricePerTon: 10.3698224852071,
   },
   {
     companyName: "Mantra",
@@ -1797,7 +1798,7 @@ export const climateNeutralData = [
     Scope3: 2149.0,
     totalSpending: 18037.5,
     totalOffsets: 2150.0,
-    pricePerTon: 8.38953488372093
+    pricePerTon: 8.38953488372093,
   },
   {
     companyName: "Marine Agency Corp",
@@ -1807,7 +1808,7 @@ export const climateNeutralData = [
     Scope3: 141.0,
     totalSpending: 2825.28,
     totalOffsets: 144.0,
-    pricePerTon: 19.62
+    pricePerTon: 19.62,
   },
   {
     companyName: "Marnie Hawson",
@@ -1817,7 +1818,7 @@ export const climateNeutralData = [
     Scope3: 4.0,
     totalSpending: 358.75,
     totalOffsets: 25.0,
-    pricePerTon: 14.35
+    pricePerTon: 14.35,
   },
   {
     companyName: "Mast Furniture",
@@ -1827,7 +1828,7 @@ export const climateNeutralData = [
     Scope3: 240.0,
     totalSpending: 1518.0,
     totalOffsets: 264.0,
-    pricePerTon: 5.75
+    pricePerTon: 5.75,
   },
   {
     companyName: "MATE the Label",
@@ -1837,7 +1838,7 @@ export const climateNeutralData = [
     Scope3: 1261.0,
     totalSpending: 10088.0,
     totalOffsets: 1261.0,
-    pricePerTon: 8.0
+    pricePerTon: 8.0,
   },
   {
     companyName: "Memori",
@@ -1847,7 +1848,7 @@ export const climateNeutralData = [
     Scope3: 1061.0,
     totalSpending: 10108.0,
     totalOffsets: 1064.0,
-    pricePerTon: 9.5
+    pricePerTon: 9.5,
   },
   {
     companyName: "MiiR",
@@ -1857,7 +1858,7 @@ export const climateNeutralData = [
     Scope3: 13039.0,
     totalSpending: 158204.6,
     totalOffsets: 13151.0,
-    pricePerTon: 12.029853243099385
+    pricePerTon: 12.029853243099385,
   },
   {
     companyName: "MindEdge",
@@ -1867,7 +1868,7 @@ export const climateNeutralData = [
     Scope3: 277.0,
     totalSpending: 2679.0,
     totalOffsets: 282.0,
-    pricePerTon: 9.5
+    pricePerTon: 9.5,
   },
   {
     companyName: "Minty Made",
@@ -1877,7 +1878,7 @@ export const climateNeutralData = [
     Scope3: 5.0,
     totalSpending: 93.75,
     totalOffsets: 8.0,
-    pricePerTon: 11.71875
+    pricePerTon: 11.71875,
   },
   {
     companyName: "Modern Adventure",
@@ -1887,7 +1888,7 @@ export const climateNeutralData = [
     Scope3: 335.0,
     totalSpending: 5874.75,
     totalOffsets: 511.0,
-    pricePerTon: 11.496575342465754
+    pricePerTon: 11.496575342465754,
   },
   {
     companyName: "Modern Standard Coffee",
@@ -1897,7 +1898,7 @@ export const climateNeutralData = [
     Scope3: 81.0,
     totalSpending: 565.5,
     totalOffsets: 87.0,
-    pricePerTon: 6.5
+    pricePerTon: 6.5,
   },
   {
     companyName: "Molly Mutt",
@@ -1907,7 +1908,7 @@ export const climateNeutralData = [
     Scope3: 1842.0,
     totalSpending: 16900.0,
     totalOffsets: 1900.0,
-    pricePerTon: 8.894736842105264
+    pricePerTon: 8.894736842105264,
   },
   {
     companyName: "Monos",
@@ -1917,7 +1918,7 @@ export const climateNeutralData = [
     Scope3: 31142.0,
     totalSpending: 412699.6,
     totalOffsets: 31384.0,
-    pricePerTon: 13.149999999999999
+    pricePerTon: 13.149999999999999,
   },
   {
     companyName: "MyHEAT",
@@ -1927,7 +1928,7 @@ export const climateNeutralData = [
     Scope3: 64.0,
     totalSpending: 957.22,
     totalOffsets: 78.0,
-    pricePerTon: 12.272051282051283
+    pricePerTon: 12.272051282051283,
   },
   {
     companyName: "NAAWA CONSULTING",
@@ -1937,7 +1938,7 @@ export const climateNeutralData = [
     Scope3: 11.0,
     totalSpending: 87.0,
     totalOffsets: 12.0,
-    pricePerTon: 7.25
+    pricePerTon: 7.25,
   },
   {
     companyName: "Nanimarquina",
@@ -1947,7 +1948,7 @@ export const climateNeutralData = [
     Scope3: 3120.0,
     totalSpending: 16553.25,
     totalOffsets: 3153.0,
-    pricePerTon: 5.25
+    pricePerTon: 5.25,
   },
   {
     companyName: "Natural Learning Northwest",
@@ -1957,7 +1958,7 @@ export const climateNeutralData = [
     Scope3: 2.0,
     totalSpending: 21.0,
     totalOffsets: 3.0,
-    pricePerTon: 7.0
+    pricePerTon: 7.0,
   },
   {
     companyName: "Necessaire",
@@ -1967,7 +1968,7 @@ export const climateNeutralData = [
     Scope3: 3773.0,
     totalSpending: 64264.0,
     totalOffsets: 3834.0,
-    pricePerTon: 16.761606677099635
+    pricePerTon: 16.761606677099635,
   },
   {
     companyName: "Needed",
@@ -1977,17 +1978,18 @@ export const climateNeutralData = [
     Scope3: 1421.0,
     totalSpending: 9295.0,
     totalOffsets: 1430.0,
-    pricePerTon: 6.5
+    pricePerTon: 6.5,
   },
   {
     companyName: "New Sprout Organic Farms, LLC",
-    dataUrl: "https://www.climateneutral.org/brand/new-sprout-organic-farms-llc",
+    dataUrl:
+      "https://www.climateneutral.org/brand/new-sprout-organic-farms-llc",
     Scope1: 0.0,
     Scope2: 1.0,
     Scope3: 3094.0,
     totalSpending: 16712.5,
     totalOffsets: 3094.0,
-    pricePerTon: 5.40158371040724
+    pricePerTon: 5.40158371040724,
   },
   {
     companyName: "Nimble",
@@ -1997,7 +1999,7 @@ export const climateNeutralData = [
     Scope3: 1322.0,
     totalSpending: 12999.25,
     totalOffsets: 1327.0,
-    pricePerTon: 9.795968349660889
+    pricePerTon: 9.795968349660889,
   },
   {
     companyName: "Nisolo",
@@ -2007,7 +2009,7 @@ export const climateNeutralData = [
     Scope3: 4430.0,
     totalSpending: 60736.5,
     totalOffsets: 4499.0,
-    pricePerTon: 13.5
+    pricePerTon: 13.5,
   },
   {
     companyName: "Nocs",
@@ -2017,7 +2019,7 @@ export const climateNeutralData = [
     Scope3: 1008.0,
     totalSpending: 8995.5,
     totalOffsets: 1011.0,
-    pricePerTon: 8.897626112759644
+    pricePerTon: 8.897626112759644,
   },
   {
     companyName: "Nomad",
@@ -2027,7 +2029,7 @@ export const climateNeutralData = [
     Scope3: 4892.0,
     totalSpending: 31211.0,
     totalOffsets: 4951.0,
-    pricePerTon: 6.303978994142597
+    pricePerTon: 6.303978994142597,
   },
   {
     companyName: "NOMADIX",
@@ -2037,7 +2039,7 @@ export const climateNeutralData = [
     Scope3: 771.0,
     totalSpending: 6224.0,
     totalOffsets: 776.0,
-    pricePerTon: 8.02061855670103
+    pricePerTon: 8.02061855670103,
   },
   {
     companyName: "Numi Organic Tea",
@@ -2047,7 +2049,7 @@ export const climateNeutralData = [
     Scope3: 2844.0,
     totalSpending: 35433.0,
     totalOffsets: 2844.0,
-    pricePerTon: 12.458860759493671
+    pricePerTon: 12.458860759493671,
   },
   {
     companyName: "Nuun",
@@ -2057,7 +2059,7 @@ export const climateNeutralData = [
     Scope3: 15427.0,
     totalSpending: 125040.0,
     totalOffsets: 15437.0,
-    pricePerTon: 8.100019433827816
+    pricePerTon: 8.100019433827816,
   },
   {
     companyName: "NW Commonwealth LLC",
@@ -2067,7 +2069,7 @@ export const climateNeutralData = [
     Scope3: 28577.0,
     totalSpending: 171517.0,
     totalOffsets: 32124.0,
-    pricePerTon: 5.339216784958286
+    pricePerTon: 5.339216784958286,
   },
   {
     companyName: "O2 Recovery Drink",
@@ -2077,7 +2079,7 @@ export const climateNeutralData = [
     Scope3: 2054.0,
     totalSpending: 19290.0,
     totalOffsets: 2116.0,
-    pricePerTon: 9.116257088846881
+    pricePerTon: 9.116257088846881,
   },
   {
     companyName: "Ocio Leisurewear",
@@ -2087,7 +2089,7 @@ export const climateNeutralData = [
     Scope3: 96.0,
     totalSpending: 1132.13,
     totalOffsets: 100.0,
-    pricePerTon: 11.3213
+    pricePerTon: 11.3213,
   },
   {
     companyName: "Omnia 1 Analytics",
@@ -2097,7 +2099,7 @@ export const climateNeutralData = [
     Scope3: 39.0,
     totalSpending: 549.75,
     totalOffsets: 59.0,
-    pricePerTon: 9.317796610169491
+    pricePerTon: 9.317796610169491,
   },
   {
     companyName: "Once Films",
@@ -2107,7 +2109,7 @@ export const climateNeutralData = [
     Scope3: 45.0,
     totalSpending: 520.0,
     totalOffsets: 80.0,
-    pricePerTon: 6.5
+    pricePerTon: 6.5,
   },
   {
     companyName: "Open Water",
@@ -2117,7 +2119,7 @@ export const climateNeutralData = [
     Scope3: 4515.0,
     totalSpending: 40750.0,
     totalOffsets: 5000.0,
-    pricePerTon: 8.15
+    pricePerTon: 8.15,
   },
   {
     companyName: "Orbitkey",
@@ -2127,7 +2129,7 @@ export const climateNeutralData = [
     Scope3: 4121.0,
     totalSpending: 35465.0,
     totalOffsets: 4410.0,
-    pricePerTon: 8.041950113378684
+    pricePerTon: 8.041950113378684,
   },
   {
     companyName: "Ornot",
@@ -2137,7 +2139,7 @@ export const climateNeutralData = [
     Scope3: 902.0,
     totalSpending: 7705.0,
     totalOffsets: 980.0,
-    pricePerTon: 7.862244897959184
+    pricePerTon: 7.862244897959184,
   },
   {
     companyName: "OSEA Malibu",
@@ -2147,7 +2149,7 @@ export const climateNeutralData = [
     Scope3: 7623.0,
     totalSpending: 137232.0,
     totalOffsets: 7624.0,
-    pricePerTon: 18.0
+    pricePerTon: 18.0,
   },
   {
     companyName: "Outer Shell",
@@ -2157,7 +2159,7 @@ export const climateNeutralData = [
     Scope3: 79.0,
     totalSpending: 972.0,
     totalOffsets: 102.0,
-    pricePerTon: 9.529411764705882
+    pricePerTon: 9.529411764705882,
   },
   {
     companyName: "Oxygen Plus, Inc.",
@@ -2167,7 +2169,7 @@ export const climateNeutralData = [
     Scope3: 2169.0,
     totalSpending: 14150.5,
     totalOffsets: 2177.0,
-    pricePerTon: 6.5
+    pricePerTon: 6.5,
   },
   {
     companyName: "P.F. Candle Co.",
@@ -2177,7 +2179,7 @@ export const climateNeutralData = [
     Scope3: 1899.0,
     totalSpending: 16167.0,
     totalOffsets: 1902.0,
-    pricePerTon: 8.5
+    pricePerTon: 8.5,
   },
   {
     companyName: "Pacific Watch Co",
@@ -2187,7 +2189,7 @@ export const climateNeutralData = [
     Scope3: 4.0,
     totalSpending: 71.25,
     totalOffsets: 5.0,
-    pricePerTon: 14.25
+    pricePerTon: 14.25,
   },
   {
     companyName: "Pamela Love",
@@ -2197,7 +2199,7 @@ export const climateNeutralData = [
     Scope3: 1048.0,
     totalSpending: 7222.5,
     totalOffsets: 1138.0,
-    pricePerTon: 6.3466608084358525
+    pricePerTon: 6.3466608084358525,
   },
   {
     companyName: "Parachute Home",
@@ -2207,7 +2209,7 @@ export const climateNeutralData = [
     Scope3: 22949.0,
     totalSpending: 321194.7,
     totalOffsets: 23177.0,
-    pricePerTon: 13.858338007507443
+    pricePerTon: 13.858338007507443,
   },
   {
     companyName: "Paravel",
@@ -2217,7 +2219,7 @@ export const climateNeutralData = [
     Scope3: 6721.0,
     totalSpending: 80097.0,
     totalOffsets: 6723.0,
-    pricePerTon: 11.913877733154841
+    pricePerTon: 11.913877733154841,
   },
   {
     companyName: "Peak Design",
@@ -2227,7 +2229,7 @@ export const climateNeutralData = [
     Scope3: 31835.0,
     totalSpending: 127348.0,
     totalOffsets: 31837.0,
-    pricePerTon: 4.0
+    pricePerTon: 4.0,
   },
   {
     companyName: "Pela",
@@ -2237,7 +2239,7 @@ export const climateNeutralData = [
     Scope3: 3727.0,
     totalSpending: 45677.0,
     totalOffsets: 3744.0,
-    pricePerTon: 12.200053418803419
+    pricePerTon: 12.200053418803419,
   },
   {
     companyName: "Perr & Knight Consulting",
@@ -2247,7 +2249,7 @@ export const climateNeutralData = [
     Scope3: 221.0,
     totalSpending: 8875.0,
     totalOffsets: 450.0,
-    pricePerTon: 19.72222222222222
+    pricePerTon: 19.72222222222222,
   },
   {
     companyName: "Petaluma",
@@ -2257,7 +2259,7 @@ export const climateNeutralData = [
     Scope3: 309.0,
     totalSpending: 2028.0,
     totalOffsets: 312.0,
-    pricePerTon: 6.5
+    pricePerTon: 6.5,
   },
   {
     companyName: "Pine & Palm Home",
@@ -2267,7 +2269,7 @@ export const climateNeutralData = [
     Scope3: 27.0,
     totalSpending: 198.75,
     totalOffsets: 27.0,
-    pricePerTon: 7.361111111111111
+    pricePerTon: 7.361111111111111,
   },
   {
     companyName: "Planet+Purpose Solutions",
@@ -2277,7 +2279,7 @@ export const climateNeutralData = [
     Scope3: 23.0,
     totalSpending: 360.0,
     totalOffsets: 36.0,
-    pricePerTon: 10.0
+    pricePerTon: 10.0,
   },
   {
     companyName: "Point B",
@@ -2287,7 +2289,7 @@ export const climateNeutralData = [
     Scope3: 6047.0,
     totalSpending: 73359.5,
     totalOffsets: 6192.0,
-    pricePerTon: 11.847464470284237
+    pricePerTon: 11.847464470284237,
   },
   {
     companyName: "PopSockets",
@@ -2297,7 +2299,7 @@ export const climateNeutralData = [
     Scope3: 8933.0,
     totalSpending: 121621.08,
     totalOffsets: 8946.0,
-    pricePerTon: 13.595023474178404
+    pricePerTon: 13.595023474178404,
   },
   {
     companyName: "Post Company",
@@ -2307,7 +2309,7 @@ export const climateNeutralData = [
     Scope3: 139.0,
     totalSpending: 1696.0,
     totalOffsets: 212.0,
-    pricePerTon: 8.0
+    pricePerTon: 8.0,
   },
   {
     companyName: "Project Reef",
@@ -2317,7 +2319,7 @@ export const climateNeutralData = [
     Scope3: 257.0,
     totalSpending: 3781.4,
     totalOffsets: 259.0,
-    pricePerTon: 14.6
+    pricePerTon: 14.6,
   },
   {
     companyName: "Prose",
@@ -2327,7 +2329,7 @@ export const climateNeutralData = [
     Scope3: 14525.0,
     totalSpending: 183936.0,
     totalOffsets: 15328.0,
-    pricePerTon: 12.0
+    pricePerTon: 12.0,
   },
   {
     companyName: "PROVEN Partners",
@@ -2337,7 +2339,7 @@ export const climateNeutralData = [
     Scope3: 26.0,
     totalSpending: 453.75,
     totalOffsets: 27.0,
-    pricePerTon: 16.805555555555557
+    pricePerTon: 16.805555555555557,
   },
   {
     companyName: "Pure Project",
@@ -2347,7 +2349,7 @@ export const climateNeutralData = [
     Scope3: 721.0,
     totalSpending: 7912.0,
     totalOffsets: 989.0,
-    pricePerTon: 8.0
+    pricePerTon: 8.0,
   },
   {
     companyName: "Purps",
@@ -2357,7 +2359,7 @@ export const climateNeutralData = [
     Scope3: 135.0,
     totalSpending: 2108.24,
     totalOffsets: 156.0,
-    pricePerTon: 13.514358974358974
+    pricePerTon: 13.514358974358974,
   },
   {
     companyName: "QEJA SOCKS",
@@ -2367,7 +2369,7 @@ export const climateNeutralData = [
     Scope3: 11.0,
     totalSpending: 156.5,
     totalOffsets: 11.0,
-    pricePerTon: 14.227272727272727
+    pricePerTon: 14.227272727272727,
   },
   {
     companyName: "Rainbo",
@@ -2377,7 +2379,7 @@ export const climateNeutralData = [
     Scope3: 525.0,
     totalSpending: 6348.0,
     totalOffsets: 529.0,
-    pricePerTon: 12.0
+    pricePerTon: 12.0,
   },
   {
     companyName: "REBO Bottle",
@@ -2387,7 +2389,7 @@ export const climateNeutralData = [
     Scope3: 828.0,
     totalSpending: 7866.0,
     totalOffsets: 828.0,
-    pricePerTon: 9.5
+    pricePerTon: 9.5,
   },
   {
     companyName: "Reformation",
@@ -2397,7 +2399,7 @@ export const climateNeutralData = [
     Scope3: 34353.0,
     totalSpending: 263205.12,
     totalOffsets: 36822.0,
-    pricePerTon: 7.148039758839824
+    pricePerTon: 7.148039758839824,
   },
   {
     companyName: "REI",
@@ -2407,7 +2409,7 @@ export const climateNeutralData = [
     Scope3: 314437.0,
     totalSpending: 1144318.25,
     totalOffsets: 320300.0,
-    pricePerTon: 3.5726451763971276
+    pricePerTon: 3.5726451763971276,
   },
   {
     companyName: "Renoun",
@@ -2417,7 +2419,7 @@ export const climateNeutralData = [
     Scope3: 217.0,
     totalSpending: 1580.5,
     totalOffsets: 218.0,
-    pricePerTon: 7.25
+    pricePerTon: 7.25,
   },
   {
     companyName: "Rep Your Water",
@@ -2427,7 +2429,7 @@ export const climateNeutralData = [
     Scope3: 1953.0,
     totalSpending: 15173.5,
     totalOffsets: 1960.0,
-    pricePerTon: 7.7415816326530615
+    pricePerTon: 7.7415816326530615,
   },
   {
     companyName: "Rhoback, INC",
@@ -2437,7 +2439,7 @@ export const climateNeutralData = [
     Scope3: 7338.0,
     totalSpending: 44771.0,
     totalOffsets: 7719.0,
-    pricePerTon: 5.800103640367923
+    pricePerTon: 5.800103640367923,
   },
   {
     companyName: "Rizos Curls",
@@ -2447,7 +2449,7 @@ export const climateNeutralData = [
     Scope3: 2891.0,
     totalSpending: 27740.0,
     totalOffsets: 2920.0,
-    pricePerTon: 9.5
+    pricePerTon: 9.5,
   },
   {
     companyName: "RoAndCo",
@@ -2457,7 +2459,7 @@ export const climateNeutralData = [
     Scope3: 238.0,
     totalSpending: 2880.98,
     totalOffsets: 364.0,
-    pricePerTon: 7.91478021978022
+    pricePerTon: 7.91478021978022,
   },
   {
     companyName: "Rocky Talkie",
@@ -2467,7 +2469,7 @@ export const climateNeutralData = [
     Scope3: 1627.0,
     totalSpending: 22339.0,
     totalOffsets: 1629.0,
-    pricePerTon: 13.713321055862492
+    pricePerTon: 13.713321055862492,
   },
   {
     companyName: "Rumpl",
@@ -2477,7 +2479,7 @@ export const climateNeutralData = [
     Scope3: 9504.0,
     totalSpending: 103612.5,
     totalOffsets: 9526.0,
-    pricePerTon: 10.876810833508292
+    pricePerTon: 10.876810833508292,
   },
   {
     companyName: "rygr",
@@ -2487,7 +2489,7 @@ export const climateNeutralData = [
     Scope3: 74.0,
     totalSpending: 2334.0,
     totalOffsets: 112.0,
-    pricePerTon: 20.839285714285715
+    pricePerTon: 20.839285714285715,
   },
   {
     companyName: "Saie",
@@ -2497,7 +2499,7 @@ export const climateNeutralData = [
     Scope3: 10510.0,
     totalSpending: 114133.6,
     totalOffsets: 10669.0,
-    pricePerTon: 10.697684881432187
+    pricePerTon: 10.697684881432187,
   },
   {
     companyName: "salty aura",
@@ -2507,7 +2509,7 @@ export const climateNeutralData = [
     Scope3: 132.0,
     totalSpending: 1495.25,
     totalOffsets: 133.0,
-    pricePerTon: 11.242481203007518
+    pricePerTon: 11.242481203007518,
   },
   {
     companyName: "Salvona",
@@ -2517,7 +2519,7 @@ export const climateNeutralData = [
     Scope3: 1990.0,
     totalSpending: 29976.0,
     totalOffsets: 2498.0,
-    pricePerTon: 12.0
+    pricePerTon: 12.0,
   },
   {
     companyName: "saucybean",
@@ -2527,7 +2529,7 @@ export const climateNeutralData = [
     Scope3: 107.0,
     totalSpending: 1040.95,
     totalOffsets: 109.0,
-    pricePerTon: 9.55
+    pricePerTon: 9.55,
   },
   {
     companyName: "SAYLOR NYC INC",
@@ -2537,7 +2539,7 @@ export const climateNeutralData = [
     Scope3: 2319.0,
     totalSpending: 23337.5,
     totalOffsets: 2322.0,
-    pricePerTon: 10.050602928509905
+    pricePerTon: 10.050602928509905,
   },
   {
     companyName: "Scout Books",
@@ -2547,7 +2549,7 @@ export const climateNeutralData = [
     Scope3: 66.0,
     totalSpending: 725.0,
     totalOffsets: 100.0,
-    pricePerTon: 7.25
+    pricePerTon: 7.25,
   },
   {
     companyName: "Seadon",
@@ -2557,7 +2559,7 @@ export const climateNeutralData = [
     Scope3: 70.0,
     totalSpending: 507.5,
     totalOffsets: 70.0,
-    pricePerTon: 7.25
+    pricePerTon: 7.25,
   },
   {
     companyName: "Season Eqpt",
@@ -2567,7 +2569,7 @@ export const climateNeutralData = [
     Scope3: 158.0,
     totalSpending: 1685.0,
     totalOffsets: 169.0,
-    pricePerTon: 9.970414201183432
+    pricePerTon: 9.970414201183432,
   },
   {
     companyName: "Seed Phytonutrients",
@@ -2577,7 +2579,7 @@ export const climateNeutralData = [
     Scope3: 273.0,
     totalSpending: 2517.0,
     totalOffsets: 274.0,
-    pricePerTon: 9.186131386861314
+    pricePerTon: 9.186131386861314,
   },
   {
     companyName: "Sendle",
@@ -2587,7 +2589,7 @@ export const climateNeutralData = [
     Scope3: 1049.0,
     totalSpending: 190600.0,
     totalOffsets: 7000.0,
-    pricePerTon: 27.228571428571428
+    pricePerTon: 27.228571428571428,
   },
   {
     companyName: "Sensiba",
@@ -2597,7 +2599,7 @@ export const climateNeutralData = [
     Scope3: 1041.0,
     totalSpending: 19158.0,
     totalOffsets: 1259.0,
-    pricePerTon: 15.216838760921366
+    pricePerTon: 15.216838760921366,
   },
   {
     companyName: "Sevilla Smith",
@@ -2607,7 +2609,7 @@ export const climateNeutralData = [
     Scope3: 50.0,
     totalSpending: 754.0,
     totalOffsets: 52.0,
-    pricePerTon: 14.5
+    pricePerTon: 14.5,
   },
   {
     companyName: "Sh\u00c4\u0081r",
@@ -2617,7 +2619,7 @@ export const climateNeutralData = [
     Scope3: 114.0,
     totalSpending: 2170.2,
     totalOffsets: 131.0,
-    pricePerTon: 16.566412213740456
+    pricePerTon: 16.566412213740456,
   },
   {
     companyName: "Simple & Dainty",
@@ -2627,7 +2629,7 @@ export const climateNeutralData = [
     Scope3: 136.0,
     totalSpending: 2680.0,
     totalOffsets: 268.0,
-    pricePerTon: 10.0
+    pricePerTon: 10.0,
   },
   {
     companyName: "Simpleswitch.org",
@@ -2637,7 +2639,7 @@ export const climateNeutralData = [
     Scope3: 5.0,
     totalSpending: 128.25,
     totalOffsets: 9.0,
-    pricePerTon: 14.25
+    pricePerTon: 14.25,
   },
   {
     companyName: "Ski Butlers",
@@ -2647,7 +2649,7 @@ export const climateNeutralData = [
     Scope3: 433.0,
     totalSpending: 9156.0,
     totalOffsets: 763.0,
-    pricePerTon: 12.0
+    pricePerTon: 12.0,
   },
   {
     companyName: "Ski Utah",
@@ -2657,7 +2659,7 @@ export const climateNeutralData = [
     Scope3: 76.0,
     totalSpending: 4408.0,
     totalOffsets: 116.0,
-    pricePerTon: 38.0
+    pricePerTon: 38.0,
   },
   {
     companyName: "SmugMug",
@@ -2667,7 +2669,7 @@ export const climateNeutralData = [
     Scope3: 2234.0,
     totalSpending: 48976.85,
     totalOffsets: 2495.0,
-    pricePerTon: 19.63
+    pricePerTon: 19.63,
   },
   {
     companyName: "Snaplinc Consulting",
@@ -2677,7 +2679,7 @@ export const climateNeutralData = [
     Scope3: 12.0,
     totalSpending: 261.0,
     totalOffsets: 18.0,
-    pricePerTon: 14.5
+    pricePerTon: 14.5,
   },
   {
     companyName: "Soar Organics",
@@ -2687,7 +2689,7 @@ export const climateNeutralData = [
     Scope3: 40.0,
     totalSpending: 400.0,
     totalOffsets: 40.0,
-    pricePerTon: 10.0
+    pricePerTon: 10.0,
   },
   {
     companyName: "Soleil Soleil",
@@ -2697,7 +2699,7 @@ export const climateNeutralData = [
     Scope3: 52.0,
     totalSpending: 567.0,
     totalOffsets: 53.0,
-    pricePerTon: 10.69811320754717
+    pricePerTon: 10.69811320754717,
   },
   {
     companyName: "Someone Somewhere",
@@ -2707,7 +2709,7 @@ export const climateNeutralData = [
     Scope3: 1365.0,
     totalSpending: 12986.5,
     totalOffsets: 1367.0,
-    pricePerTon: 9.5
+    pricePerTon: 9.5,
   },
   {
     companyName: "Sozy",
@@ -2717,7 +2719,7 @@ export const climateNeutralData = [
     Scope3: 424.0,
     totalSpending: 5208.0,
     totalOffsets: 434.0,
-    pricePerTon: 12.0
+    pricePerTon: 12.0,
   },
   {
     companyName: "Standart",
@@ -2727,7 +2729,7 @@ export const climateNeutralData = [
     Scope3: 152.0,
     totalSpending: 1828.5,
     totalOffsets: 152.0,
-    pricePerTon: 12.029605263157896
+    pricePerTon: 12.029605263157896,
   },
   {
     companyName: "StatusGator",
@@ -2737,7 +2739,7 @@ export const climateNeutralData = [
     Scope3: 17.0,
     totalSpending: 848.0,
     totalOffsets: 25.0,
-    pricePerTon: 33.92
+    pricePerTon: 33.92,
   },
   {
     companyName: "Sterling Rope",
@@ -2747,7 +2749,7 @@ export const climateNeutralData = [
     Scope3: 4184.0,
     totalSpending: 45040.0,
     totalOffsets: 4478.0,
-    pricePerTon: 10.05806163465833
+    pricePerTon: 10.05806163465833,
   },
   {
     companyName: "Stickbulb",
@@ -2757,7 +2759,7 @@ export const climateNeutralData = [
     Scope3: 230.0,
     totalSpending: 2570.0,
     totalOffsets: 257.0,
-    pricePerTon: 10.0
+    pricePerTon: 10.0,
   },
   {
     companyName: "Stio",
@@ -2767,7 +2769,7 @@ export const climateNeutralData = [
     Scope3: 14582.0,
     totalSpending: 0.0,
     totalOffsets: 7609.0,
-    pricePerTon: 0.0
+    pricePerTon: 0.0,
   },
   {
     companyName: "Stranda Snowboards",
@@ -2777,7 +2779,7 @@ export const climateNeutralData = [
     Scope3: 180.0,
     totalSpending: 1267.0,
     totalOffsets: 181.0,
-    pricePerTon: 7.0
+    pricePerTon: 7.0,
   },
   {
     companyName: "Stubble and Co.",
@@ -2787,7 +2789,7 @@ export const climateNeutralData = [
     Scope3: 1482.0,
     totalSpending: 14079.0,
     totalOffsets: 1482.0,
-    pricePerTon: 9.5
+    pricePerTon: 9.5,
   },
   {
     companyName: "Summit Coffee Roasting Co.",
@@ -2797,7 +2799,7 @@ export const climateNeutralData = [
     Scope3: 458.0,
     totalSpending: 5640.0,
     totalOffsets: 564.0,
-    pricePerTon: 10.0
+    pricePerTon: 10.0,
   },
   {
     companyName: "Sunday Afternoons",
@@ -2807,7 +2809,7 @@ export const climateNeutralData = [
     Scope3: 4114.0,
     totalSpending: 21172.2,
     totalOffsets: 4260.0,
-    pricePerTon: 4.97
+    pricePerTon: 4.97,
   },
   {
     companyName: "Sunday Beer Co.",
@@ -2817,7 +2819,7 @@ export const climateNeutralData = [
     Scope3: 59.0,
     totalSpending: 1284.0,
     totalOffsets: 60.0,
-    pricePerTon: 21.4
+    pricePerTon: 21.4,
   },
   {
     companyName: "Sunski",
@@ -2827,7 +2829,7 @@ export const climateNeutralData = [
     Scope3: 1245.0,
     totalSpending: 11896.0,
     totalOffsets: 1252.0,
-    pricePerTon: 9.501597444089457
+    pricePerTon: 9.501597444089457,
   },
   {
     companyName: "Supercharge Ltd",
@@ -2837,7 +2839,7 @@ export const climateNeutralData = [
     Scope3: 498.0,
     totalSpending: 3796.0,
     totalOffsets: 584.0,
-    pricePerTon: 6.5
+    pricePerTon: 6.5,
   },
   {
     companyName: "Sustainability Accelerator",
@@ -2847,7 +2849,7 @@ export const climateNeutralData = [
     Scope3: 7.0,
     totalSpending: 140.75,
     totalOffsets: 12.0,
-    pricePerTon: 11.729166666666666
+    pricePerTon: 11.729166666666666,
   },
   {
     companyName: "Sutsu",
@@ -2857,7 +2859,7 @@ export const climateNeutralData = [
     Scope3: 1126.0,
     totalSpending: 3378.0,
     totalOffsets: 1126.0,
-    pricePerTon: 3.0
+    pricePerTon: 3.0,
   },
   {
     companyName: "Tandem Coffee",
@@ -2867,7 +2869,7 @@ export const climateNeutralData = [
     Scope3: 1135.0,
     totalSpending: 18315.25,
     totalOffsets: 1473.0,
-    pricePerTon: 12.43397827562797
+    pricePerTon: 12.43397827562797,
   },
   {
     companyName: "TECODA",
@@ -2877,7 +2879,7 @@ export const climateNeutralData = [
     Scope3: 35.0,
     totalSpending: 341.0,
     totalOffsets: 44.0,
-    pricePerTon: 7.75
+    pricePerTon: 7.75,
   },
   {
     companyName: "tentree",
@@ -2887,7 +2889,7 @@ export const climateNeutralData = [
     Scope3: 13744.0,
     totalSpending: 63525.0,
     totalOffsets: 14000.0,
-    pricePerTon: 4.5375
+    pricePerTon: 4.5375,
   },
   {
     companyName: "Thatcher",
@@ -2897,17 +2899,18 @@ export const climateNeutralData = [
     Scope3: 468.0,
     totalSpending: 3846.75,
     totalOffsets: 469.0,
-    pricePerTon: 8.202025586353944
+    pricePerTon: 8.202025586353944,
   },
   {
     companyName: "The Chris Bertish Foundation",
-    dataUrl: "https://www.climateneutral.org/brand/the-chris-bertish-foundation",
+    dataUrl:
+      "https://www.climateneutral.org/brand/the-chris-bertish-foundation",
     Scope1: 0.0,
     Scope2: 1.0,
     Scope3: 1.0,
     totalSpending: 19.0,
     totalOffsets: 2.0,
-    pricePerTon: 9.5
+    pricePerTon: 9.5,
   },
   {
     companyName: "The Cushion Lab",
@@ -2917,7 +2920,7 @@ export const climateNeutralData = [
     Scope3: 513.0,
     totalSpending: 10733.0,
     totalOffsets: 1004.0,
-    pricePerTon: 10.6902390438247
+    pricePerTon: 10.6902390438247,
   },
   {
     companyName: "The Disruption Society",
@@ -2927,7 +2930,7 @@ export const climateNeutralData = [
     Scope3: 11.0,
     totalSpending: 136.0,
     totalOffsets: 17.0,
-    pricePerTon: 8.0
+    pricePerTon: 8.0,
   },
   {
     companyName: "The Earthling Co.",
@@ -2937,7 +2940,7 @@ export const climateNeutralData = [
     Scope3: 686.0,
     totalSpending: 4973.5,
     totalOffsets: 686.0,
-    pricePerTon: 7.25
+    pricePerTon: 7.25,
   },
   {
     companyName: "The Longest Thread",
@@ -2947,7 +2950,7 @@ export const climateNeutralData = [
     Scope3: 84.0,
     totalSpending: 1134.0,
     totalOffsets: 84.0,
-    pricePerTon: 13.5
+    pricePerTon: 13.5,
   },
   {
     companyName: "The Resell Club",
@@ -2957,7 +2960,7 @@ export const climateNeutralData = [
     Scope3: 13.0,
     totalSpending: 182.0,
     totalOffsets: 28.0,
-    pricePerTon: 6.5
+    pricePerTon: 6.5,
   },
   {
     companyName: "The Scrubba",
@@ -2967,7 +2970,7 @@ export const climateNeutralData = [
     Scope3: 672.0,
     totalSpending: 5801.0,
     totalOffsets: 672.0,
-    pricePerTon: 8.632440476190476
+    pricePerTon: 8.632440476190476,
   },
   {
     companyName: "thinkPARALLAX",
@@ -2977,7 +2980,7 @@ export const climateNeutralData = [
     Scope3: 253.0,
     totalSpending: 5245.74,
     totalOffsets: 386.0,
-    pricePerTon: 13.59
+    pricePerTon: 13.59,
   },
   {
     companyName: "Thrive Market",
@@ -2987,7 +2990,7 @@ export const climateNeutralData = [
     Scope3: 46262.0,
     totalSpending: 296255.0,
     totalOffsets: 47500.0,
-    pricePerTon: 6.236947368421053
+    pricePerTon: 6.236947368421053,
   },
   {
     companyName: "Topiku",
@@ -2997,7 +3000,7 @@ export const climateNeutralData = [
     Scope3: 64.0,
     totalSpending: 603.9,
     totalOffsets: 64.0,
-    pricePerTon: 9.4359375
+    pricePerTon: 9.4359375,
   },
   {
     companyName: "TOPO Collective",
@@ -3007,7 +3010,7 @@ export const climateNeutralData = [
     Scope3: 7.0,
     totalSpending: 159.5,
     totalOffsets: 11.0,
-    pricePerTon: 14.5
+    pricePerTon: 14.5,
   },
   {
     companyName: "Tripulse",
@@ -3017,7 +3020,7 @@ export const climateNeutralData = [
     Scope3: 21.0,
     totalSpending: 220.65,
     totalOffsets: 21.0,
-    pricePerTon: 10.507142857142858
+    pricePerTon: 10.507142857142858,
   },
   {
     companyName: "True North Gear",
@@ -3027,7 +3030,7 @@ export const climateNeutralData = [
     Scope3: 3250.0,
     totalSpending: 33170.0,
     totalOffsets: 3317.0,
-    pricePerTon: 10.0
+    pricePerTon: 10.0,
   },
   {
     companyName: "Untold Storytelling",
@@ -3037,7 +3040,7 @@ export const climateNeutralData = [
     Scope3: 42.0,
     totalSpending: 1027.0,
     totalOffsets: 90.0,
-    pricePerTon: 11.411111111111111
+    pricePerTon: 11.411111111111111,
   },
   {
     companyName: "Vahdam Teas",
@@ -3047,7 +3050,7 @@ export const climateNeutralData = [
     Scope3: 2215.0,
     totalSpending: 11474.75,
     totalOffsets: 2765.0,
-    pricePerTon: 4.15
+    pricePerTon: 4.15,
   },
   {
     companyName: "Vargo Outdoors",
@@ -3057,7 +3060,7 @@ export const climateNeutralData = [
     Scope3: 1331.0,
     totalSpending: 8241.0,
     totalOffsets: 1340.0,
-    pricePerTon: 6.15
+    pricePerTon: 6.15,
   },
   {
     companyName: "Vincero",
@@ -3067,7 +3070,7 @@ export const climateNeutralData = [
     Scope3: 2376.0,
     totalSpending: 13183.5,
     totalOffsets: 2397.0,
-    pricePerTon: 5.5
+    pricePerTon: 5.5,
   },
   {
     companyName: "Vintner's Daughter",
@@ -3077,7 +3080,7 @@ export const climateNeutralData = [
     Scope3: 897.0,
     totalSpending: 24957.75,
     totalOffsets: 933.0,
-    pricePerTon: 26.75
+    pricePerTon: 26.75,
   },
   {
     companyName: "Vuori",
@@ -3087,7 +3090,7 @@ export const climateNeutralData = [
     Scope3: 62433.0,
     totalSpending: 670987.81,
     totalOffsets: 63248.0,
-    pricePerTon: 10.608838382241336
+    pricePerTon: 10.608838382241336,
   },
   {
     companyName: "Walrus Oil",
@@ -3097,7 +3100,7 @@ export const climateNeutralData = [
     Scope3: 457.0,
     totalSpending: 8000.0,
     totalOffsets: 800.0,
-    pricePerTon: 10.0
+    pricePerTon: 10.0,
   },
   {
     companyName: "west~bourne",
@@ -3107,7 +3110,7 @@ export const climateNeutralData = [
     Scope3: 421.0,
     totalSpending: 5002.5,
     totalOffsets: 421.0,
-    pricePerTon: 11.882422802850357
+    pricePerTon: 11.882422802850357,
   },
   {
     companyName: "Whitewater Brewing",
@@ -3117,7 +3120,7 @@ export const climateNeutralData = [
     Scope3: 860.0,
     totalSpending: 8521.5,
     totalOffsets: 897.0,
-    pricePerTon: 9.5
+    pricePerTon: 9.5,
   },
   {
     companyName: "Wild Elements",
@@ -3127,7 +3130,7 @@ export const climateNeutralData = [
     Scope3: 179.0,
     totalSpending: 2393.8,
     totalOffsets: 273.0,
-    pricePerTon: 8.76849816849817
+    pricePerTon: 8.76849816849817,
   },
   {
     companyName: "Wild Rye",
@@ -3137,7 +3140,7 @@ export const climateNeutralData = [
     Scope3: 1595.0,
     totalSpending: 11977.5,
     totalOffsets: 1597.0,
-    pricePerTon: 7.5
+    pricePerTon: 7.5,
   },
   {
     companyName: "WILDFANG",
@@ -3147,7 +3150,7 @@ export const climateNeutralData = [
     Scope3: 4395.0,
     totalSpending: 49227.0,
     totalOffsets: 4404.0,
-    pricePerTon: 11.177792915531334
+    pricePerTon: 11.177792915531334,
   },
   {
     companyName: "Wildway",
@@ -3157,7 +3160,7 @@ export const climateNeutralData = [
     Scope3: 273.0,
     totalSpending: 2124.0,
     totalOffsets: 312.0,
-    pricePerTon: 6.8076923076923075
+    pricePerTon: 6.8076923076923075,
   },
   {
     companyName: "Will's Vegan Store",
@@ -3167,7 +3170,7 @@ export const climateNeutralData = [
     Scope3: 929.0,
     totalSpending: 6742.5,
     totalOffsets: 930.0,
-    pricePerTon: 7.25
+    pricePerTon: 7.25,
   },
   {
     companyName: "Wingback Ltd",
@@ -3177,7 +3180,7 @@ export const climateNeutralData = [
     Scope3: 245.0,
     totalSpending: 2977.08,
     totalOffsets: 246.0,
-    pricePerTon: 12.101951219512195
+    pricePerTon: 12.101951219512195,
   },
   {
     companyName: "Wolven",
@@ -3187,7 +3190,7 @@ export const climateNeutralData = [
     Scope3: 980.0,
     totalSpending: 9463.5,
     totalOffsets: 981.0,
-    pricePerTon: 9.646788990825687
+    pricePerTon: 9.646788990825687,
   },
   {
     companyName: "WOODSANDWAVES",
@@ -3197,7 +3200,7 @@ export const climateNeutralData = [
     Scope3: 76.0,
     totalSpending: 476.0,
     totalOffsets: 76.0,
-    pricePerTon: 6.2631578947368425
+    pricePerTon: 6.2631578947368425,
   },
   {
     companyName: "XCoSports",
@@ -3207,7 +3210,7 @@ export const climateNeutralData = [
     Scope3: 766.0,
     totalSpending: 6664.0,
     totalOffsets: 833.0,
-    pricePerTon: 8.0
+    pricePerTon: 8.0,
   },
   {
     companyName: "YAMA Mountain Gear",
@@ -3217,7 +3220,7 @@ export const climateNeutralData = [
     Scope3: 28.0,
     totalSpending: 442.0,
     totalOffsets: 35.0,
-    pricePerTon: 12.628571428571428
+    pricePerTon: 12.628571428571428,
   },
   {
     companyName: "zkipster",
@@ -3227,7 +3230,7 @@ export const climateNeutralData = [
     Scope3: 253.0,
     totalSpending: 3120.0,
     totalOffsets: 260.0,
-    pricePerTon: 12.0
+    pricePerTon: 12.0,
   },
   {
     companyName: "Zuar",
@@ -3237,7 +3240,7 @@ export const climateNeutralData = [
     Scope3: 340.0,
     totalSpending: 3153.75,
     totalOffsets: 435.0,
-    pricePerTon: 7.25
+    pricePerTon: 7.25,
   },
   {
     companyName: "Zusa",
@@ -3247,6 +3250,6 @@ export const climateNeutralData = [
     Scope3: 123.0,
     totalSpending: 988.9,
     totalOffsets: 124.0,
-    pricePerTon: 7.975
-  }
-]
+    pricePerTon: 7.975,
+  },
+];

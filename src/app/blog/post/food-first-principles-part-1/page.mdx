@@ -1,22 +1,27 @@
 ---
-title: 'First Principles of Food #1'
-subtitle: 'Sunlight, thermodynamics, and trophic levels'
-publishedAt: '2024-03-05'
-summary: 'In my view, the math implies only one plausible direction for decarbonizing the food system: eating lower on the food pyramid.'
+title: "First Principles of Food #1"
+subtitle: "Sunlight, thermodynamics, and trophic levels"
+publishedAt: "2024-03-05"
+summary: "In my view, the math implies only one plausible direction for decarbonizing the food system: eating lower on the food pyramid."
 ---
 
-import Header from '@/components/blog/header'
-import Figure from '@/components/blog/figure'
+import Header from "@/components/blog/header";
+import Figure from "@/components/blog/figure";
 
-<Header title={frontmatter.title} subtitle={frontmatter.subtitle} publishedAt={frontmatter.publishedAt}/>
+<Header
+  title={frontmatter.title}
+  subtitle={frontmatter.subtitle}
+  publishedAt={frontmatter.publishedAt}
+/>
 
 ### All food comes from air, water, and sunlight
 
 At a first principles level, all of the food we eat is stored sunlight, assembled from air and water. Using photons as an energy source, plants absorb CO₂ from the air, strip the carbon atom off and combine it with water to produce stored carbohydrates.
 
-$$  
+$$
 CO_2 + 2H_2O + \mathtt{photons} \implies C_xH_yO_z + O_2 + H_2O
 $$
+
 <div className="text-center">**Equation 1:** Photosynthesis</div>
 
 Depending on the plant, the carbohydrates could be a mix of glucose, cellulose, etc, although the details aren't that important for our sake. Light energy is stored in chemical bonds that we can break to release it. Plants also need nitrogen and some minerals, which is why they've evolved to exchange sugar with symbiotic bacteria for other compounds.
@@ -35,10 +40,13 @@ As you move to higher trophic levels, energy is inevitably lost as heat due to t
 
 Using the `1%` efficiency bound on photosynthesis and the `10%` upper bound on feed conversion, the fraction of the sun's energy available at level $L$ is:
 
-$$  
+$$
 E(L) < \frac{1}{100} \enspace \times \enspace \frac{1}{10^{L - 1}} = \frac{1}{10^{L+1}}
 $$
-<div className="text-center">**Equation 2:** Energy available at trophic level $L$</div>
+
+<div className="text-center">
+  **Equation 2:** Energy available at trophic level $L$
+</div>
 
 So $L_1$ herbivores have $E(1) < 1\%$ of the sun's energy available to eat, $L_2$ carnivores have $< 0.1\%$, $L_3$ carnivores $< 0.01\%$, and so on. Another way to think about this is that each additional trophic level has an order of magnitude less available energy or [carrying capacity](https://en.wikipedia.org/wiki/Carrying_capacity) to sustain life[^3].
 
@@ -52,7 +60,7 @@ You're probably aware that animal products, like meat, dairy, and eggs, tend to 
 
 ### Implications for climate change
 
-**What I'm building towards is an *amoral*, *first-principles* intuition for why food choices matter for climate change.** Because of Equation 2, the world can support at least an order of magnitude more herbivores ($L_1$s) than carnivores ($L_2$s). **Equivalently, we could support the same number of herbivores using an order of magnitude less land, emissions, and other resources.**
+**What I'm building towards is an _amoral_, _first-principles_ intuition for why food choices matter for climate change.** Because of Equation 2, the world can support at least an order of magnitude more herbivores ($L_1$s) than carnivores ($L_2$s). **Equivalently, we could support the same number of herbivores using an order of magnitude less land, emissions, and other resources.**
 
 We are already running into the practical limitations of inefficient food production, simply because there are a lot of people and finite arable land. Most people are unaware that [half of Earth's land](https://ourworldindata.org/global-land-for-agriculture) is used for agriculture, that `80%` of agricultural land is dedicated to livestock farming[^6]. Flying over the midwestern United States actually provides a pretty accurate picture of how Earth's surface has been terraformed to capture sunlight and turn it into food. As the world's population grows and more people improve their quality of life (to be clear: a very good thing), we'll need more land to produce more calories. That land comes from somewhere, and historically it has [cost](https://ourworldindata.org/deforestation) us valuable carbon storing ecosystems, like grasslands and forests.
 
@@ -68,18 +76,18 @@ Eating lower on the food pyramid doesn't mean eating grass, as the straw-man cou
 
 A plant-based diet is much more energy- and land-efficient than an omnivorous diet, but it still runs up against the poor efficiency of photosynthesis (well below 1%, as we saw above). **Is photosynthetic efficiency a hard upper bound on the efficiency of food production? Short answer: no\!** In the next post, I'll explore a NASA-inspired food production technology that can outperform the efficiency of photosynthesis.
 
-[^1]:  See the supplemental data from this [paper](https://www.pnas.org/doi/suppl/10.1073/pnas.2015025118). For comparison, a modern [solar panel](https://en.wikipedia.org/wiki/Solar-cell_efficiency%2020%%20efficiency%20of%20solar%20panels) has a [theoretical efficiency of \~32%](https://en.wikipedia.org/wiki/Shockley%E2%80%93Queisser_limit), a \~20% efficiency under ideal conditions, and more like a 5% efficiency if you factor in cloudy days, suboptimal sun angles, etc. At 5% efficiency, solar panels are still more than 10x more efficient than the most efficient plants.
+[^1]: See the supplemental data from this [paper](https://www.pnas.org/doi/suppl/10.1073/pnas.2015025118). For comparison, a modern [solar panel](https://en.wikipedia.org/wiki/Solar-cell_efficiency%2020%%20efficiency%20of%20solar%20panels) has a [theoretical efficiency of \~32%](https://en.wikipedia.org/wiki/Shockley%E2%80%93Queisser_limit), a \~20% efficiency under ideal conditions, and more like a 5% efficiency if you factor in cloudy days, suboptimal sun angles, etc. At 5% efficiency, solar panels are still more than 10x more efficient than the most efficient plants.
 
-[^2]:  Decomposers like mushrooms make the picture slightly more complicated, since they can recycle energy from higher trophic levels down to lower levels.
+[^2]: Decomposers like mushrooms make the picture slightly more complicated, since they can recycle energy from higher trophic levels down to lower levels.
 
-[^3]:  Carrying capacity is why you'd probably find far fewer carnivores in a given area of land, and maybe why they tend to be more solitary than herbivores?
+[^3]: Carrying capacity is why you'd probably find far fewer carnivores in a given area of land, and maybe why they tend to be more solitary than herbivores?
 
-[^4]:  The “food pyramid” is actually an apt metaphor, as you need a very wide area of the base (photosynthesis) to support the increasingly narrow levels above.
+[^4]: The “food pyramid” is actually an apt metaphor, as you need a very wide area of the base (photosynthesis) to support the increasingly narrow levels above.
 
-[^5]:  Cows and other ruminant animals are infamous for their methane emissions, which is more due to the idiosyncrasies of their digestive biology than a consequence of trophic levels.
+[^5]: Cows and other ruminant animals are infamous for their methane emissions, which is more due to the idiosyncrasies of their digestive biology than a consequence of trophic levels.
 
-[^6]:  Despite using the majority of farmland, livestock only supply `17%` of the world's calories and `38%` of its protein.
+[^6]: Despite using the majority of farmland, livestock only supply `17%` of the world's calories and `38%` of its protein.
 
-[^7]:  Reducing food waste is critical too, of course, since about one-third of food is wasted. However, I want to re-emphasize the point that livestock are the largest source of food waste by far, since most of the calories they eat are lost from the human food supply as heat. Counterintuitively, reducing the number of farmed animals actually leads to a net increase in food, since feed crops become available for direct human consumption.
+[^7]: Reducing food waste is critical too, of course, since about one-third of food is wasted. However, I want to re-emphasize the point that livestock are the largest source of food waste by far, since most of the calories they eat are lost from the human food supply as heat. Counterintuitively, reducing the number of farmed animals actually leads to a net increase in food, since feed crops become available for direct human consumption.
 
-[^8]:  [Regenerative grazing](https://newrepublic.com/article/163735/myth-regenerative-ranching) may promote soil carbon, but proponents fail to acknowledge the fine print and [limitations](https://drawdown.org/insights/regenerative-grazing-is-overhyped-as-a-climate-solution-we-should-do-it-anyway): it requires way more land, and the cows grow more slowly, which means they'll produce more methane in their lifetime. The push for regenerative grazing also implies a false choice between factory-farmed beef and sustainable beef. There is a third option, where we turn pastureland back into its natural state and eat something else.
+[^8]: [Regenerative grazing](https://newrepublic.com/article/163735/myth-regenerative-ranching) may promote soil carbon, but proponents fail to acknowledge the fine print and [limitations](https://drawdown.org/insights/regenerative-grazing-is-overhyped-as-a-climate-solution-we-should-do-it-anyway): it requires way more land, and the cows grow more slowly, which means they'll produce more methane in their lifetime. The push for regenerative grazing also implies a false choice between factory-farmed beef and sustainable beef. There is a third option, where we turn pastureland back into its natural state and eat something else.
