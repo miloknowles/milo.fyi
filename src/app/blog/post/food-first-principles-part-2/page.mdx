@@ -1,6 +1,6 @@
 ---
 title: "First Principles of Food #2"
-subtitle: "The artificial photosynthesis revolution"
+subtitle: "Artificial photosynthesis"
 publishedAt: "2024-06-09"
 summary: ""
 ---
@@ -16,7 +16,7 @@ import Figure from "@/components/blog/figure";
 
 ### **Agriculture is only `0.0125%` efficient**
 
-In the last post, I highlighted the inefficiency of plants at turning solar energy into stored chemical energy that we can eat. Because the most efficient plants capture `<0.5%` of the solar energy that falls on a patch of ground, and because the total pool of energy drops off exponentially at higher trophic levels, it takes a huge land area to produce the human food supply. **While enough solar energy falls on `0.75 m2` of land to meet one person's theoretical energy needs, we currently farm `~6,000 m2` of land to feed one person[^1].** Crudely, this means that modern agriculture is about `0.0125%` efficient at turning sunlight into food.
+In the [last post](/blog/post/food-first-principles-part-1), I highlighted the inefficiency of plants at turning solar energy into stored chemical energy that we can eat. Because the most efficient crops capture `<0.5%` of the solar energy that falls on a patch of ground, and because the total pool of energy drops off exponentially at higher trophic levels, it takes a huge land area to produce the human food supply. **While enough solar energy falls on `0.75 m2` of land to meet one person's theoretical energy needs, we currently farm `~6,000 m2` of land to feed one person[^1].** Crudely, this means that modern agriculture is about `0.0125%` efficient at turning sunlight into food.
 
 ### **Why does land efficiency matter?**
 
@@ -42,16 +42,16 @@ The problems of land use only become apparent when you zoom out.
 
 ### **The opportunity**
 
-The inefficiency of agriculture suggests a massive opportunity for improvement. If our efficiency benchmark is `0.0125%`, it could be possible to produce orders of magnitude more food in the same area, or the same amount of food using orders of magnitude less resources. The challenge is to find more efficient ways to convert sunlight into molecules we can eat. I believe we'll make significant progress on the “solar-to-food” problem over the next decade because (1) our baseline agricultural efficiency is so poor, (2) photovoltaic solar energy is getting really really cheap, and (3) synthetic biology will make us less reliant on commodity plants/animals. Let me explain.
+**The inefficiency of agriculture suggests a massive opportunity for improvement. If our efficiency benchmark is `0.0125%`, it could be possible to produce orders of magnitude more food in the same area, or the same amount of food using orders of magnitude less resources.** The challenge is to find efficient (and low-cost) ways to convert sunlight into molecules we can eat. I believe we'll make significant progress on the “solar-to-food” problem over the next decade because (1) our baseline agricultural efficiency is so poor, (2) photovoltaic solar energy is getting really really cheap, and (3) synthetic biology will make us less reliant on commodity plants/animals. Let me explain.
 
 ### **The solar industrial revolution**
 
 Several writers, especially [Casey Handmer](https://caseyhandmer.wordpress.com/) and [Austin Vernon](https://austinvernon.site/), have pointed out the imminent solar-industrial revolution. It's difficult to overstate the importance and impressiveness of solar energy, so I'll do it here briefly.
 
-Solar is already the cheapest source of electricity, and is on track to get even cheaper (perhaps \$10/MWH or \$0.01/kWh by 2030). Solar is a prototypical example of Wright's Law, meaning that the price goes down by a predictable percentage (the learning rate) every time cumulative production doubles. While the law implies that progress gets exponentially harder as you go, we're also increasing the rate of solar production [exponentially](https://www.statista.com/statistics/668764/annual-solar-module-manufacturing-globally/), which nets out to a [roughly linear](https://ourworldindata.org/grapher/solar-pv-prices) looking cost decline each year. Even better, it [appears](https://caseyhandmer.wordpress.com/2024/05/22/the-solar-industrial-revolution-is-the-biggest-investment-opportunity-in-history/) that the learning rate for solar sped up around 2009, going from 27% to 44%.
+Solar is already the cheapest source of electricity, and is on track to get even cheaper (perhaps `$10/MWH` or `$0.01/kWh` by 2030). Solar is a prototypical example of Wright's Law, meaning that the price goes down by a predictable percentage (the learning rate) every time cumulative production doubles. While the law implies that progress gets exponentially harder as you go, we're also increasing the rate of solar production [exponentially](https://www.statista.com/statistics/668764/annual-solar-module-manufacturing-globally/), which nets out to a [roughly linear](https://ourworldindata.org/grapher/solar-pv-prices) looking cost decline each year. Even better, it [appears](https://caseyhandmer.wordpress.com/2024/05/22/the-solar-industrial-revolution-is-the-biggest-investment-opportunity-in-history/) that the learning rate for solar sped up around 2009, going from `27%` to `44%`.
 
 <Figure
-  src="/assets/blog/solar-learning.webp"
+  src="/assets/blog/solar-learning-curve.png"
   className="max-w-[400px]"
   alt="Cost declines in solar over time"
   caption={
@@ -64,15 +64,15 @@ Solar is already the cheapest source of electricity, and is on track to get even
   }
 />
 
-Casey Handmer's essays have convinced me that **for any commodity X, if we can commercialize a solar-to-X pathway, then X could become very cheap[^5]**. His startup, Terraform Industries, is focused on natural gas and synthetic fuels, but the _solar industrial revolution_ could also give us cheaper chemicals, materials, fertilizers, carbon removal, manufacturing, compute power, etc.
+Casey Handmer's essays have convinced me that **for any commodity X, if we can commercialize a solar-to-X pathway, then X *could* become very cheap[^5]**. His startup, Terraform Industries, is focused on synthetic fuels (e.g natural gas), but the _solar industrial revolution_ could also give us cheaper chemicals, materials, fertilizers, carbon removal, manufacturing, compute power, etc.
 
-The important caveat is that any solar-to-X process must accept intermittent DC electricity as input, since that's what you get from a solar array. Just converting to AC adds significant cost ([\~30%](https://austinvernon.site/blog/hydrogen.html) more). Energy prices from the grid will remain much higher than raw solar due to transmission, distribution, losses, energy storage, profit margins between you and the generator, etc. So the most cost-competitive solar-to-X industries will source their energy off-grid (onsite) and need to be economically viable under a low utilization factor (e.g operating perhaps only 25% of the day).
+The important caveat is that any solar-to-X process should ideally accept intermittent DC electricity as input, since that's what you get from a solar array. Just converting to AC adds significant cost ([\~30%](https://austinvernon.site/blog/hydrogen.html) more), and adding batteries for load shaping also [adds cost](https://caseyhandmer.wordpress.com/2024/11/09/solar-and-batteries-for-generic-use-cases/). Energy prices from the grid will remain much higher than raw solar due to transmission, distribution, losses, energy storage, profit margins between you and the generator, etc. So the cheapest solar-to-X processes will source their energy from onsite solar, and need to be economically viable under a low utilization factor (i.e, operating perhaps only 25% of the day). Low utilization generally requires a low CapEx, since you're not spreading the cost of the equipment/facility over many hours of operation.
 
 ### **The artificial photosynthesis revolution**
 
-My prediction is this: cheap solar and synthetic biology will make it possible to grow any food anywhere in the world, using electricity, air, and water. Cheap solar will provide a distributed[^6] and abundant source of energy, and synthetic biology will allow us to turn energy and simple building blocks into complex configurations of matter that are enjoyable to eat. This pathway from solar energy to food is analogous to _artificial photosynthesis_.
+My prediction is this: abundant energy and synthetic biology will make it possible to grow many foods anywhere in the world, using electricity, air, and water. Cheap solar will provide a distributed[^6] and abundant source of energy, and synthetic biology will allow us to turn energy and simple chemical building blocks from air and water into complex configurations of matter that have nutritional value. This pathway from solar to food is analogous to _artificial photosynthesis_.
 
-Why should we photosynthesize food in solar-powered bioreactors, when plants accomplish this feat already?
+Why should we photosynthesize some foods in solar-powered bioreactors, when plants accomplish this feat already?
 
 **First, we could decouple farming from arable land.** Plants require soil and a relatively narrow range of climates to grow, but synthetic food could be grown out in the middle of the desert, where there are no competing uses for land. Places like Nevada could become the new breadbaskets of the world. Small islands like Singapore could have domestic food security.
 
@@ -80,7 +80,9 @@ Why should we photosynthesize food in solar-powered bioreactors, when plants acc
 
 **Third, synthetic food production should be much less land-intensive.** As I mentioned earlier, plants are `<0.5%` efficient on an annual, areawide, “sun-to-food” basis. Modern solar panels are about `20%` efficient on an areawide, “sun-to-electricity” basis. So to match plants, we'd need to convert electricity into food with a mere `~2.5%` efficiency. The existing literature and few startups working on this indicate that we can do much better. For example, Solar Foods claims that they're `~20%` efficient at converting electricity into Solein, a protein powder.
 
-**Finally, synthetic food is programmable.** In principle, biomanufacturing could produce any molecule we want, including foods, chemicals, or materials that haven't been made before. There's a long way to go before it will be economically viable or easy to produce any molecule, of course.
+**Finally, synthetic food is programmable.** In principle, biomanufacturing could produce any molecule we want, including foods, chemicals, or materials that haven't been made before. This is a big paradigm shift from how we've historically used biology to produce food: discovery of existing capabilities, domestication, and slow refinement through selective breeding.
+
+I'll temper my techno-optimism by saying that it doesn't make sense to produce all, or even most, of our food supply in bioreactors. Biomanufacturing facilities are expensive to build, whereas plants are self-assembling factories with zero CapEx. It will be a while, in my view, for synthetic food to compete on price with commodity crops like wheat, rice, maize, etc.
 
 ### **Connecting solar panels to biology**
 
@@ -132,7 +134,7 @@ Both methanol and formate are liquid at room temperature, making them much easie
 **Cell-Free Protein Synthesis**  
 The biggest philosophical issue I have with precision fermentation is that it feels wasteful; you grow a huge mass of cells, but only harvest a specific target protein of interest[^9]. You might be able to sell the waste biomass, but it feels a bit like you're growing a haystack in order to manufacture needles. A lot of the energy input goes into just building and keeping your microbial cell factories alive, and the metabolic agenda of natural organisms is not necessarily aligned with yours.
 
-Avoiding the wasted energy and complexity of cells is the main motivation for [cell-free protein synthesis](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6481089/) (CFPS),which is an alternative to precision fermentation. In CFPS, you carry out the DNA → RNA → Protein (transcription/translation) process in an open system (i.e, a bioreactor instead of a cell). Cell-free systems are closer to a programmable liquid than an organism. They seem well-positioned to consume intermittent energy, since there are no cells that could die if the supply of feedstock is cut off overnight.
+Avoiding the wasted energy and complexity of cells is the main motivation for [cell-free protein synthesis](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6481089/) (CFPS), which is an alternative to precision fermentation. In CFPS, you carry out the DNA → RNA → Protein (transcription/translation) process in an open system (i.e, a bioreactor instead of a cell). Cell-free systems are closer to a programmable liquid than an organism. They seem well-positioned to consume intermittent energy, since there are no cells that could die if the supply of feedstock is cut off overnight.
 
 I should mention that current CFPS is not actually cell-free, since you need to produce the TX/TL machinery (e.g, ribosomes, RNA polymerase, co-factors) in a cell and then extract them[^10]. In theory, one big advantage of cell-free is that you could keep recycling the TX/TL machinery in a continuous process, since it isn't consumed.
 
@@ -151,13 +153,13 @@ There are tradeoffs among the cell-free pathways, such as the energy efficiency,
 
 ### **Food superabundance**
 
-By now, I hope to have convinced you that solar-to-food pathways are at least worthy of more exploration. If clean energy becomes abundant, and we can turn electricity into food, I can't see a first principle reason why supplying cheap and nutritious food to every person on Earth should be difficult. There is more than enough energy and carbon to go around. We [produced](https://ourworldindata.org/grapher/global-energy-substitution) `~22 MWh` of energy per person in 2022, while the food-energy needs of a person are on the order of `1-2 MWh`[^13] per year. There are about `~119` tons of excess CO₂ in the atmosphere per person alive today[^14] – a liability to human civilization, but a valuable asset if you're in the business of photosynthesis.
+By now, I hope to have convinced you that solar-to-food pathways worthy of more exploration. If clean energy becomes abundant, and we can turn electricity into food, I can't see a first principle reason why supplying cheap and nutritious food to every person on Earth should be difficult. There is more than enough energy and carbon to go around. We [produced](https://ourworldindata.org/grapher/global-energy-substitution) `~22 MWh` of energy per person in 2022, while the food-energy needs of a person are on the order of `1-2 MWh`[^13] per year. There are about `~119` tons of excess CO₂ in the atmosphere per person alive today[^14] – a liability to human civilization, but a valuable asset if you're in the business of photosynthesis.
 
-[^1]: The 0.75 m2 figure is based on calculations in this paper's [introduction](https://www.frontiersin.org/articles/10.3389/fsufs.2020.00090/full), and is the lower bound for how much land you need to feed a person if they could somehow absorb sunlight with 100% efficiency. Total [land use](https://ourworldindata.org/global-land-for-agriculture) for agriculture is 48M km2, and there are about 8.1B people, coming out to \~6,000 m2 per person.
+[^1]: The `0.75 m2` figure is based on calculations in this paper's [introduction](https://www.frontiersin.org/articles/10.3389/fsufs.2020.00090/full), and is the lower bound for how much land you need to feed a person if they could somehow absorb sunlight with 100% efficiency. Total [land use](https://ourworldindata.org/global-land-for-agriculture) for agriculture is `48M km2`, and there are about `8.1B` people, coming out to `~6,000 m2` per person.
 
 [^2]: Of course, phasing out animal agriculture would free up a massive amount of land, as I explained in the previous post. Land scarcity is driven much more by what we eat than how much we eat, or how many people there are.
 
-[^3]: [Our World in Data](https://ourworldindata.org/grapher/cumulative-co-emissions?tab=table) puts cumulative global emissions around \~1,700 gigatons CO₂.
+[^3]: [Our World in Data](https://ourworldindata.org/grapher/cumulative-co-emissions?tab=table) puts cumulative global emissions around `~1,700` gigatons CO₂.
 
 [^4]: Rewilding cropland would sequester a lot of carbon too; livestock isn't the only culprit. I think livestock should be the focus of land restoration because (1) they cover the largest fraction of agricultural land, and (2) they are a much less productive form of food in terms of kcal/hectare.
 
@@ -177,6 +179,6 @@ By now, I hope to have convinced you that solar-to-food pathways are at least wo
 
 [^12]: Solugen has a slightly easier challenge, since their process starts from sugar rather than raw CO₂. So the hard work of photosynthesis is still done by a plant.
 
-[^13]: To be generous, 3,000 kcal/day \* 365 days/year \* 1.162 Wh / kcal \= 1.27 MWh. If you could eat electricity, your food would cost a few hundred dollars per year.
+[^13]: To be generous, `3,000 kcal/day * 365 days/year * 1.162 Wh / kcal = 1.27 MWh`. If you could eat electricity, your food would cost a few hundred dollars per year.
 
-[^14]: An [estimated](https://en.wikipedia.org/wiki/Carbon_dioxide_in_Earth%27s_atmosphere#:~:text=It%20has%20been%20estimated%20that,gigatons%20remaining%20in%20the%20atmosphere.) 950 gigatons of excess CO₂ are in the atmosphere right now, which does not include the excess emissions that have been absorbed by the ocean, forests, soils, etc. 950 gigatons / 8 billion people \= 118.8 tons per person.
+[^14]: An [estimated](https://en.wikipedia.org/wiki/Carbon_dioxide_in_Earth%27s_atmosphere#:~:text=It%20has%20been%20estimated%20that,gigatons%20remaining%20in%20the%20atmosphere.) `950 gigatons` of excess CO₂ are in the atmosphere right now, which does not include the excess emissions that have been absorbed by the ocean, forests, soils, etc. `950 gigatons / 8 billion people = 118.8 tons per person`.
