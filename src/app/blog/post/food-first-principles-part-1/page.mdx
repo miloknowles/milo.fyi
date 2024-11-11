@@ -14,7 +14,7 @@ import Figure from "@/components/blog/figure";
   publishedAt={frontmatter.publishedAt}
 />
 
-### All food comes from air, water, and sunlight
+### All food comes from sunlight
 
 At a first principles level, all of the food we eat is stored sunlight, assembled from air and water. Using photons as an energy source, plants absorb CO₂ from the air, strip the carbon atom off and combine it with water to produce stored carbohydrates.
 
@@ -28,9 +28,9 @@ Depending on the plant, the carbohydrates could be a mix of glucose, cellulose, 
 
 ### Photosynthesis isn't very efficient
 
-How efficient are plants at turning light energy into chemical energy, in the form of carbohydrates? Not very. While the theoretical efficiency of photosynthesis (energy stored per unit of solar energy received) is [about 26%](https://www.britannica.com/science/photosynthesis/Energy-efficiency-of-photosynthesis), plants have a practical efficiency of less than `1%` on an annual areawide basis. Some of the most "light-efficient" crops we farm are maize and [sugar beets](https://www.canarymedia.com/articles/air-travel/this-new-factory-will-turn-co2-into-sustainable-jet-fuel), which can capture about `0.3%` and `0.4%` of the light energy that falls on a given patch of land, respectively[^1].
+How efficient are plants at turning light energy into chemical energy, in the form of carbohydrates? Not very. While the theoretical efficiency of photosynthesis (energy stored per unit of solar energy received) is [about 26%](https://www.britannica.com/science/photosynthesis/Energy-efficiency-of-photosynthesis), plants have a practical efficiency of less than `1%` on an annual, areawide basis. Some of the most "light-efficient" crops we farm are maize and [sugar beets](https://www.canarymedia.com/articles/air-travel/this-new-factory-will-turn-co2-into-sustainable-jet-fuel), which can capture about `0.3%` and `0.4%` of the light energy that falls on a given patch of land, respectively[^1]. So when you eat a plant and metabolize its carbohydrates for energy, `>99%` of the original solar energy has already been lost.
 
-So when you eat a plant and metabolize its carbohydrates for energy, `\>99%` of the original solar energy has already been lost. This seems terribly inefficient, but you could argue that energy from sunlight is incredibly [abundant](https://blogs.ucl.ac.uk/energy/2015/05/21/fact-checking-elon-musks-blue-square-how-much-solar-to-power-the-us/) so maybe it's not that big of a deal.
+Not all of Earth's surface is suitable for growing biomass, of course. Zooming out to the global scale, the Earth's surface receives `3x10^24 J/yr` of solar energy, while the net primary production of Earth's plant biomass is `4.2x10^21 J/yr` – a `0.14%` conversion of solar to chemical energy ([Source](https://www.encyclopedie-energie.org/en/biomass-major-source-energy-unsustainable-use)).
 
 ### Trophic levels
 
@@ -38,35 +38,35 @@ Energy efficiency losses start to become a real problem when we move further up 
 
 As you move to higher trophic levels, energy is inevitably lost as heat due to the fact that organisms do a lot more than just eat and grow. An animal who eats `1000 kcal` of vegetation doesn't actually gain `1000 kcal` of edible body mass, since they do lots of other energy-consuming things for survival (or just for fun). The feed conversion efficiency of animals might be [10%](https://cbey.yale.edu/our-stories/disrupting-meat) under "ideal" (read: highly confined) conditions.
 
-Using the `1%` efficiency bound on photosynthesis and the `10%` upper bound on feed conversion, the fraction of the sun's energy available at level $L$ is:
+Using an $\eta_{sun \rightarrow plants} < 1\%$ efficiency bound on photosynthesis and an $\eta_{L_n \rightarrow L_{n+1}} < 10\%$ upper bound on feed conversion, the fraction of the sun's energy available at level $L$ is:  
 
 $$
-E(L) < \frac{1}{100} \enspace \times \enspace \frac{1}{10^{L - 1}} = \frac{1}{10^{L+1}}
+\eta(L) \ll \eta_{sun \rightarrow plants} \times (\eta_{L_n \rightarrow L_{n+1}})^{L-1} = \frac{1}{100} \times \frac{1}{10^{L-1}} = \left(\frac{1}{10}\right)^{L+1}
 $$
 
 <div className="text-center">
   **Equation 2:** Energy available at trophic level $L$
 </div>
 
-So $L_1$ herbivores have $E(1) < 1\%$ of the sun's energy available to eat, $L_2$ carnivores have $< 0.1\%$, $L_3$ carnivores $< 0.01\%$, and so on. Another way to think about this is that each additional trophic level has an order of magnitude less available energy or [carrying capacity](https://en.wikipedia.org/wiki/Carrying_capacity) to sustain life[^3].
+So $L_1$ herbivores have $\eta(1) \ll 1\%$ of the sun's energy available to eat, $L_2$ carnivores have $\ll 0.1\%$, $L_3$ carnivores $\ll 0.01\%$, and so on. Another way to think about this is that each additional trophic level has an order of magnitude less available energy or [carrying capacity](https://en.wikipedia.org/wiki/Carrying_capacity) to sustain life[^3].
 
 ### The land footprint of food
 
-Because virtually all food energy originates from sunlight hitting a leaf, energy requirements and land requirements are effectively interchangeable. Due to the upper bound on photosynthetic efficiency, there is a minimum amount of land required to produce one calorie. Because of efficiency losses, a calorie consumed from level `L + 1` requires `10x` more land to product than a calorie consumed from level `L` [^4].
+Because virtually all food energy originates from sunlight hitting a leaf, energy requirements and land requirements are effectively interchangeable. Due to the upper bound on photosynthetic efficiency, there is a minimum amount of land required to produce one calorie. Because of energy losses, a calorie consumed from level `L+1` generally requires `10x` more land to product than a calorie consumed from level `L` [^4].
 
 ### The carbon footprint of food
 
-You're probably aware that animal products, like meat, dairy, and eggs, tend to have [high carbon footprints](https://ourworldindata.org/food-choice-vs-eating-local). That's not a coincidence, and can be largely explained by trophic levels. A chicken with a 9:1 caloric efficiency wastes 8 out of 9 units of feed, including the emissions that went into producing that feed. Cows are even less efficient ([25:1](https://en.wikipedia.org/wiki/Carrying_capacity)), which would suggest that cows[^5] require [a lot of land](https://ourworldindata.org/deforestation), which is indeed the case. In sum, thermodynamics dictates that livestock must be more carbon intensive than the food they eat.
+You're probably aware that animal products, like meat, dairy, and eggs, tend to have [high carbon footprints](https://ourworldindata.org/food-choice-vs-eating-local). That's not a coincidence, and can be largely explained by trophic levels. Chickens are one of the most "efficient" farmed animals, but are only produce about [1 edible calorie for every calorie they're fed](https://awellfedworld.org/feed-ratios/). Each calorie of chicken contains the emissions from producing 10 calories of feed, transporting it, farming the chicken, etc. Cows are even less efficient, suggesting that cows[^5] should require [a lot of land](https://ourworldindata.org/deforestation), which is indeed the case. In sum, thermodynamics dictates that livestock must be significantly more carbon intensive than the food they eat.
 
 ### Implications for climate change
 
 **What I'm building towards is an _amoral_, _first-principles_ intuition for why food choices matter for climate change.** Because of Equation 2, the world can support at least an order of magnitude more herbivores ($L_1$s) than carnivores ($L_2$s). **Equivalently, we could support the same number of herbivores using an order of magnitude less land, emissions, and other resources.**
 
-We are already running into the practical limitations of inefficient food production, simply because there are a lot of people and finite arable land. Most people are unaware that [half of Earth's land](https://ourworldindata.org/global-land-for-agriculture) is used for agriculture, that `80%` of agricultural land is dedicated to livestock farming[^6]. Flying over the midwestern United States actually provides a pretty accurate picture of how Earth's surface has been terraformed to capture sunlight and turn it into food. As the world's population grows and more people improve their quality of life (to be clear: a very good thing), we'll need more land to produce more calories. That land comes from somewhere, and historically it has [cost](https://ourworldindata.org/deforestation) us valuable carbon storing ecosystems, like grasslands and forests.
+We are already running into the practical limitations of inefficient food production, simply because there are a lot of people and finite arable land. Most people are unaware that [half of Earth's land](https://ourworldindata.org/global-land-for-agriculture) is used for agriculture, that `80%` of agricultural land is dedicated to livestock farming[^6]. Flying over the midwestern United States actually provides a pretty accurate picture of how Earth's surface has been terraformed to capture sunlight and turn it into food. As the world's population grows and more people improve their quality of life, we'll need more land to produce more calories. That land comes from somewhere, and historically it has [cost](https://ourworldindata.org/deforestation) us valuable carbon storing ecosystems, like grasslands and forests.
 
 ### Eating closer to the sun
 
-**In my view, the math of trophic levels implies only one plausible direction for decarbonizing the food system: eating lower on the food pyramid[^7].** In 2018, Poore & Nemecek published [an important paper](https://www.science.org/doi/10.1126/science.aaq0216) which showed that shifting to plant-based diets would cut emission in half, and reduce land use by three-quarters. Reforesting that land, by the way, would [remove an estimated 800 gigatons of CO2](https://ourworldindata.org/carbon-opportunity-costs-food) from the atmosphere\! Another important [study](https://journals.plos.org/climate/article?id=10.1371/journal.pclm.0000010) by Eisen & Brown found that phasing out animal agriculture, over a period of 15 years, would effectively pause global warming for 30 years.
+**In my view, the math of trophic levels implies only one plausible direction for decarbonizing the food system: eating lower on the food pyramid[^7].** In 2018, Poore & Nemecek published [an important paper](https://www.science.org/doi/10.1126/science.aaq0216) which showed that shifting to plant-based diets would cut emission in half, and reduce land use by three-quarters. Reforesting that land, by the way, would [remove an estimated 800 gigatons of CO2](https://ourworldindata.org/carbon-opportunity-costs-food) from the atmosphere! Another important [study](https://journals.plos.org/climate/article?id=10.1371/journal.pclm.0000010) by Eisen & Brown found that phasing out animal agriculture, over a period of 15 years, would effectively pause global warming for 30 years.
 
 **We should be very skeptical of any climate solution that promises decarbonization without any material change to how food energy is produced.** Examples abound, like [carbon neutral milk](https://www.eatneutral.com/), regenerative grazing[^8], and feed supplements. These are solutions that partially help, partially confuse consumers, but will never scale to fully address climate change due to the basic rules of thermodynamics.
 
@@ -76,7 +76,7 @@ Eating lower on the food pyramid doesn't mean eating grass, as the straw-man cou
 
 A plant-based diet is much more energy- and land-efficient than an omnivorous diet, but it still runs up against the poor efficiency of photosynthesis (well below 1%, as we saw above). **Is photosynthetic efficiency a hard upper bound on the efficiency of food production? Short answer: no\!** In the next post, I'll explore a NASA-inspired food production technology that can outperform the efficiency of photosynthesis.
 
-[^1]: See the supplemental data from this [paper](https://www.pnas.org/doi/suppl/10.1073/pnas.2015025118). For comparison, a modern [solar panel](https://en.wikipedia.org/wiki/Solar-cell_efficiency%2020%%20efficiency%20of%20solar%20panels) has a [theoretical efficiency of \~32%](https://en.wikipedia.org/wiki/Shockley%E2%80%93Queisser_limit), a \~20% efficiency under ideal conditions, and more like a 5% efficiency if you factor in cloudy days, suboptimal sun angles, etc. At 5% efficiency, solar panels are still more than 10x more efficient than the most efficient plants.
+[^1]: See the supplemental data from this [paper](https://www.pnas.org/doi/suppl/10.1073/pnas.2015025118). For comparison, a modern [solar panel](https://en.wikipedia.org/wiki/Solar-cell_efficiency%2020%%20efficiency%20of%20solar%20panels) has a [theoretical efficiency of `~32%`](https://en.wikipedia.org/wiki/Shockley%E2%80%93Queisser_limit), a `~20%` efficiency under ideal conditions, and more like a `5%` efficiency if you factor in cloudy days, suboptimal sun angles, etc. At `5%` efficiency, solar panels are still about `10x` more efficient than most plants.
 
 [^2]: Decomposers like mushrooms make the picture slightly more complicated, since they can recycle energy from higher trophic levels down to lower levels.
 

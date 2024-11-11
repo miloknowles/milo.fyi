@@ -12,20 +12,20 @@ Recently, I drove to Yosemite. As someone who obsesses over [drag coefficients](
 
 ### Can autonomous cars safely draft on the highway?
 
-Extremely close follow-distances (and other [crazy](https://www.vox.com/2016/3/29/11324690/self-driving-cars-intersections) traffic maneuvers) could be possible on a road with mostly self-driving cars. Whereas human reaction time is on the order of `\~250 ms`, autonomous vehicles operated by a computer should be able to react to events within tens of ms[^1]. At `80 mph (35.7 m/s)`, a `3m` follow distance gives 84 ms of reaction time – an interval that’s too short for human reflexes to kick in, but long enough for a computer to sense, plan, and actuate a change in its driving. Furthermore, self-driving cars can broadcast their anticipated plans to nearby vehicles, reducing the number of sudden changes to react to.
+Extremely close follow-distances (and other [crazy](https://www.vox.com/2016/3/29/11324690/self-driving-cars-intersections) traffic maneuvers) could be possible on a road with mostly self-driving cars. Whereas human reaction time is on the order of `\~250 ms`, autonomous vehicles operated by a computer should be able to react to events within tens of ms[^1]. At `80 mph (35.7 m/s)`, a `3m` follow distance gives `84 ms` of reaction time – an interval that's too short for human reflexes to kick in, but long enough for a computer to sense, plan, and actuate a change in its driving. Furthermore, self-driving cars can broadcast their anticipated plans to nearby vehicles, reducing the number of sudden changes to react to.
 
-Altogether, I think it’s very feasible for a group of autonomous cars to safely drive in a convoy, spaced a few meters apart to minimize aerodynamic drag.
+Altogether, I think it's very feasible for a group of autonomous cars to safely drive in a convoy, spaced a few meters apart to minimize aerodynamic drag.
 
 ### How much could drafting improve fuel economy?
 
-Based on some sparse research (two papers and an episode of Mythbusters), it appears that fuel economy can be improved on the order of `\~30-40%` at highway speeds and an optimal follow-distance of about `\~3 meters`. There are probably a hundred caveats to consider based on vehicle types, the speed you’re driving at, wind, etc, but I’m just interested in a ballpark estimate. For my [analysis](https://docs.google.com/spreadsheets/d/1h4zbnR3LVJKkgjTBlCDGao-bju3XVBd2lSL7-Iv3gQ0/edit?usp=sharing), I assume a `20-40%` improvement in fuel economy (liters of gasoline per km) is possible. `20%` is my pessimistic estimate, `30%` is average, and `40%` is optimistic. I assume that the car in the front of a convoy still experiences 100% drag, but the cars behind benefit from the fuel economy improvement. This means that the average fuel economy is better for longer convoys of cars, but with diminishing returns.
+Based on some sparse research (two papers and an episode of Mythbusters), it appears that fuel economy can be improved on the order of `\~30-40%` at highway speeds and an optimal follow-distance of about `\~3 meters`. There are probably a hundred caveats to consider based on vehicle types, the speed you're driving at, wind, etc, but I'm just interested in a ballpark estimate. For my [analysis](https://docs.google.com/spreadsheets/d/1h4zbnR3LVJKkgjTBlCDGao-bju3XVBd2lSL7-Iv3gQ0/edit?usp=sharing), I assume a `20-40%` improvement in fuel economy (liters of gasoline per km) is possible. `20%` is my pessimistic estimate, `30%` is average, and `40%` is optimistic. I assume that the car in the front of a convoy still experiences 100% drag, but the cars behind benefit from the fuel economy improvement. This means that the average fuel economy is better for longer convoys of cars, but with diminishing returns.
 
 ### The math
 
 My rough calculations can be found [here](https://docs.google.com/spreadsheets/d/1h4zbnR3LVJKkgjTBlCDGao-bju3XVBd2lSL7-Iv3gQ0/edit?usp=sharing). Some important assumptions are:
 
 - `26%` of vehicle miles are driven on the highway in the US.
-- `80%` of a vehicle’s time on the highway could be spent in an “aero” formation.
+- `80%` of a vehicle's time on the highway could be spent in an “aero” formation.
 - Cars travel in groups of five (an arbitrary choice, but larger groups have diminishing aerodynamic returns).
 - In groups of five, the convoy uses `68-84%` of the fuel they would if driving individually.
 
@@ -37,8 +37,8 @@ My rough calculations can be found [here](https://docs.google.com/spreadsheets/d
 
 A potential \~1% reduction in US emissions is meaningful, but ranks low on the list of benefits from autonomous vehicles in my view, such as improved safety and [years](https://www.washingtonpost.com/opinions/interactive/2021/commute-calculator-pandemic/) of life not spent commuting.
 
-Also, my hypothetical scenario has a number of obvious problems. It assumes 100% adoption of autonomous cars (could take a while) _and_ that those autonomous cars are gas-powered (I hope this is _not_ the case due to electrificatioj). Finally, by grouping autonomous cars within 3 meters of each other on the highway, we’ve basically… reinvented the idea of a train. But with more expensive sensors, many redundant systems, and almost certainly lower end-to-end efficiency and cost-effectiveness for moving people and matter around.
+Also, my hypothetical scenario has a number of obvious problems. It assumes 100% adoption of autonomous cars (could take a while) _and_ that those autonomous cars are gas-powered (I hope this is _not_ the case due to electrification). Finally, by grouping autonomous cars within 3 meters of each other on the highway, we've basically… reinvented the idea of a train. But with more expensive sensors, many redundant systems, and almost certainly lower end-to-end efficiency and cost-effectiveness for moving people and matter around.
 
-So, while this was a fun exercise (for me, at least), I don’t think we’ve discovered a promising new climate solution. I'll restate the obvious: decarbonizing transportation in the US requires electrification, renewable generation, batteries, and better public transportation that more Americans will want to use.
+So, while this was a fun exercise (for me, at least), I don't think we've discovered a promising new climate solution. I'll restate the obvious: decarbonizing transportation in the US requires electrification, renewable generation, batteries, and better public transportation that more Americans will want to use.
 
 [^1]: The reaction time of an AV depends on the rate at which relevant sensor data is sampled. For example, a front-facing radar running at 100 Hz should be able to detect a deceleration in the car ahead on the order of 10 ms, a camera with a framerate of 30 Hz only captures data every 33.3 ms, and so on.
