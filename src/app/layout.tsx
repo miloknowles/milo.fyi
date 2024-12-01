@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { GeistSans } from "geist/font/sans";
 import { GeistMono } from "geist/font/mono";
+// import { Newsreader } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import Footer from "@/components/footer";
@@ -15,6 +16,7 @@ import { Theme } from "@radix-ui/themes";
 import "./globals.css";
 
 import Navigation from "src/components/navigation";
+import { ThemeProvider } from "@/components/theme-provider";
 
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
@@ -22,12 +24,12 @@ export const metadata: Metadata = {
     default: "Milo Knowles",
     template: "%s | Milo Knowles",
   },
-  description: "This is my portfolio.",
+  description: "Welcome to my personal website.",
   openGraph: {
-    title: "My Portfolio",
-    description: "This is my portfolio.",
+    title: "Milo Knowles",
+    description: "Welcome to my personal website.",
     url: baseUrl,
-    siteName: "My Portfolio",
+    siteName: "Milo Knowles",
     locale: "en_US",
     type: "website",
   },
@@ -46,6 +48,8 @@ export const metadata: Metadata = {
 
 const cx = (...classes) => classes.filter(Boolean).join(" ");
 
+// const newsreader = Newsreader({ subsets: ["latin"] });
+
 export default function RootLayout({
   children,
 }: {
@@ -54,22 +58,26 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={cx(
-        "bg-white text-black",
-        GeistSans.variable,
-        GeistMono.variable,
-      )}
+      className={cx(GeistSans.variable, GeistMono.variable)}
+      suppressHydrationWarning
     >
       <body className="antialiased max-w-2xl mx-4 lg:mx-auto">
-        <Theme radius="medium" grayColor="auto" accentColor="indigo">
-          <main className="flex-auto min-w-0 flex flex-col px-2 md:px-0 pt-6">
-            <Navigation />
-            {children}
-            <Footer />
-            <Analytics />
-            <SpeedInsights />
-          </main>
-        </Theme>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <Theme radius="medium" grayColor="auto" accentColor="indigo">
+            <main className="flex-auto min-w-0 flex flex-col px-2 md:px-0 pt-6">
+              <Navigation />
+              {children}
+              <Footer />
+              <Analytics />
+              <SpeedInsights />
+            </main>
+          </Theme>
+        </ThemeProvider>
       </body>
     </html>
   );

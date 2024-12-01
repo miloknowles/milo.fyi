@@ -13,7 +13,7 @@ export default function Figure({
     <figure className="flex flex-col items-center">
       <img src={src} alt={alt} className="w-full rounded-lg" />
       {caption && (
-        <figcaption className="text-sm text-gray-600 mt-2">
+        <figcaption className="text-sm text-gray-600 dark:text-gray-400 mt-2">
           {caption}
         </figcaption>
       )}
