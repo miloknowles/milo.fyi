@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import { MoonIcon, SunIcon } from "@radix-ui/react-icons";
 import { IconButton } from "@radix-ui/themes";
@@ -11,20 +11,21 @@ export default function ThemeToggle() {
 
   // Only render after first client-side mount to avoid hydration mismatch
   useEffect(() => {
-    setMounted(true)
-  }, [])
+    setMounted(true);
+  }, []);
 
   if (!mounted) {
-    return null // or a skeleton/placeholder
+    return null; // or a skeleton/placeholder
   }
 
   return (
-    <IconButton
-      size="3"
-      variant="ghost"
-    >
-      { theme === "dark" && <SunIcon width="16" height="16" onClick={() => setTheme('light')}/>}
-      { theme === "light" && <MoonIcon width="16" height="16" onClick={() => setTheme('dark')} />}
+    <IconButton size="3" variant="ghost">
+      {theme === "dark" && (
+        <SunIcon width="16" height="16" onClick={() => setTheme("light")} />
+      )}
+      {theme === "light" && (
+        <MoonIcon width="16" height="16" onClick={() => setTheme("dark")} />
+      )}
     </IconButton>
   );
 }

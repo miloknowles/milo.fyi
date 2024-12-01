@@ -1,6 +1,7 @@
 # Portfolio Blog Starter
 
 This is my personal website, built using:
+
 - Next.js
 - TailwindCSS
 - Vercel

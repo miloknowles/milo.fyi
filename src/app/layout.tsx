@@ -12,7 +12,6 @@ import "@radix-ui/themes/styles.css";
 import "./theme-config.css";
 
 import { Theme } from "@radix-ui/themes";
-// import { ThemeProvider } from "next-themes";
 
 import "./globals.css";
 
@@ -49,7 +48,7 @@ export const metadata: Metadata = {
 
 const cx = (...classes) => classes.filter(Boolean).join(" ");
 
-// const newsreader = Newsreader({ subsets: ["latin"], variable: "--newsreader" });
+// const newsreader = Newsreader({ subsets: ["latin"] });
 
 export default function RootLayout({
   children,
@@ -59,11 +58,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={cx(
-        // "bg-white text-black",
-        GeistSans.variable,
-        GeistMono.variable,
-      )}
+      className={cx(GeistSans.variable, GeistMono.variable)}
       suppressHydrationWarning
     >
       <body className="antialiased max-w-2xl mx-4 lg:mx-auto">

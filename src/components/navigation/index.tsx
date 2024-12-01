@@ -1,15 +1,7 @@
 "use client";
 
-import {
-  Cross1Icon,
-  HamburgerMenuIcon,
-} from "@radix-ui/react-icons";
-import {
-  Container,
-  Flex,
-  IconButton,
-  Section,
-} from "@radix-ui/themes";
+import { Cross1Icon, HamburgerMenuIcon } from "@radix-ui/react-icons";
+import { Container, Flex, IconButton, Section } from "@radix-ui/themes";
 
 import Link from "next/link";
 import { useState } from "react";
@@ -67,10 +59,7 @@ function Socials(props: { size: number; color?: string }) {
         />
       </LinkIcon>
       <LinkIcon href="https://www.strava.com/athletes/6914634">
-        <FaStrava
-          size={props.size}
-          className="text-black dark:text-gray-50"
-        />
+        <FaStrava size={props.size} className="text-black dark:text-gray-50" />
       </LinkIcon>
       <LinkIcon href="mailto:miloknowles97@gmail.com">
         <FaEnvelope
@@ -92,7 +81,7 @@ export default function Navigation() {
   return (
     <header className="z-[2000] fixed right-0 top-0 w-full">
       <nav className="p-4 flex gap-4 w-full items-center justify-end">
-        <ThemeToggle/>
+        <ThemeToggle />
         <IconButton
           size="3"
           variant="ghost"
@@ -100,7 +89,7 @@ export default function Navigation() {
           className="z-[5000] relative"
         >
           {open ? (
-            <Cross1Icon width="16" height="16"/>
+            <Cross1Icon width="16" height="16" />
           ) : (
             <HamburgerMenuIcon width="16" height="16" />
           )}
