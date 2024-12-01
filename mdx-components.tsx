@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { highlight } from "sugar-high";
 import React from "react";
+import MdxCode from "@/components/mdx/mdx-code";
 
 function Table({ data }) {
   let headers = data.headers.map((header, index) => (
@@ -54,14 +55,6 @@ function Code({ children, ...props }) {
   return <code dangerouslySetInnerHTML={{ __html: codeHTML }} {...props} />;
 }
 
-function SimpleCode({ children }) {
-  return (
-    <code className="bg-indigo-50 text-indigo-500 p-1 rounded-lg">
-      {children}
-    </code>
-  );
-}
-
 function slugify(str: string | undefined) {
   if (!str) return "";
   return str
@@ -105,7 +98,7 @@ let customComponents = {
   h6: createHeading(6),
   Image: RoundedImage,
   a: CustomLink,
-  code: SimpleCode,
+  code: MdxCode,
   Table,
 };
 

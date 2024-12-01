@@ -1,14 +1,12 @@
 "use client";
 
 import {
-  ArrowTopRightIcon,
   Cross1Icon,
   HamburgerMenuIcon,
 } from "@radix-ui/react-icons";
 import {
   Container,
   Flex,
-  Heading,
   IconButton,
   Section,
 } from "@radix-ui/themes";
@@ -19,6 +17,7 @@ import { useState } from "react";
 import { GitHubLogoIcon, LinkedInLogoIcon } from "@radix-ui/react-icons";
 import { FaStrava } from "react-icons/fa";
 import { FaEnvelope } from "react-icons/fa";
+import ThemeToggle from "../theme-toggle";
 
 const BigLink = (props: {
   href: string;
@@ -28,16 +27,16 @@ const BigLink = (props: {
 }) => {
   return (
     <Link href={props.href} onClick={props.onClick} target={props.target}>
-      <Heading
-        size="9"
+      <h2
         className="
-          relative
+          relative text-5xl font-semibold tracking-tighter
           after:bg-current after:absolute after:h-[3px] after:w-0 after:-bottom-2 after:left-0
           hover:after:w-full after:transition-all after:duration-200
-          cursor-pointer w-min"
+          cursor-pointer w-min
+        "
       >
         {props.children}
-      </Heading>
+      </h2>
     </Link>
   );
 };
@@ -57,21 +56,27 @@ function Socials(props: { size: number; color?: string }) {
         <LinkedInLogoIcon
           width={props.size.toString()}
           height={props.size.toString()}
-          color={props.color || "gray"}
+          className="text-black dark:text-gray-50"
         />
       </LinkIcon>
       <LinkIcon href="https://www.github.com/miloknowles">
         <GitHubLogoIcon
           width={props.size.toString()}
           height={props.size.toString()}
-          color={props.color || "gray"}
+          className="text-black dark:text-gray-50"
         />
       </LinkIcon>
       <LinkIcon href="https://www.strava.com/athletes/6914634">
-        <FaStrava size={props.size} color={props.color || "gray"} />
+        <FaStrava
+          size={props.size}
+          className="text-black dark:text-gray-50"
+        />
       </LinkIcon>
       <LinkIcon href="mailto:miloknowles97@gmail.com">
-        <FaEnvelope size={props.size} color={props.color || "gray"} />
+        <FaEnvelope
+          size={props.size}
+          className="text-black dark:text-gray-50"
+        />
       </LinkIcon>
     </Flex>
   );
@@ -85,8 +90,9 @@ export default function Navigation() {
   };
 
   return (
-    <header className="z-[2000] fixed right-0 top-0">
-      <nav className="p-4">
+    <header className="z-[2000] fixed right-0 top-0 w-full">
+      <nav className="p-4 flex gap-4 w-full items-center justify-end">
+        <ThemeToggle/>
         <IconButton
           size="3"
           variant="ghost"
@@ -94,14 +100,14 @@ export default function Navigation() {
           className="z-[5000] relative"
         >
           {open ? (
-            <Cross1Icon width="32" height="32" color="black" />
+            <Cross1Icon width="16" height="16"/>
           ) : (
-            <HamburgerMenuIcon width="32" height="32" color="black" />
+            <HamburgerMenuIcon width="16" height="16" />
           )}
         </IconButton>
       </nav>
       <Section
-        className="h-screen w-screen fixed top-0 right-0 bg-white z-[4000]"
+        className="h-screen w-screen bg-white dark:bg-black fixed top-0 right-0 z-[4000]"
         style={{
           opacity: open ? 1 : 0,
           transition: "opacity 0.25s ease",
@@ -132,7 +138,7 @@ export default function Navigation() {
               >
                 Resume
               </BigLink>
-              <Socials size={64} color="black" />
+              <Socials size={48} color="black" />
             </Flex>
           </Container>
         </nav>

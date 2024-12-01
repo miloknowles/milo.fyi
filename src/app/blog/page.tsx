@@ -10,7 +10,6 @@ export const metadata = {
 export default function Page() {
   return (
     <section className="pt-8 pb-8">
-      <h1 className="font-semibold text-3xl mb-8 tracking-tighter">Writing</h1>
       <BlogPostsIndex />
 
       <Separator className="w-full mt-6 mb-6" />
