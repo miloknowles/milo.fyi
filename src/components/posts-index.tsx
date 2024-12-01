@@ -19,10 +19,10 @@ export default function BlogPostsIndex() {
           href={`/blog/post/${post.slug}`}
         >
           <div className="w-full flex flex-col md:flex-row space-x-0 md:space-x-2">
-            <p className="text-neutral-500 w-[150px] tabular-nums">
+            <p className="text-neutral-500 dark:text-neutral-400 w-[150px] tabular-nums">
               {formatDate(post.metadata.publishedAt, false)}
             </p>
-            <p className="text-neutral-800 tracking-tight font-medium">
+            <p className="text-neutral-800 dark:text-neutral-200 tracking-tight font-medium">
               {post.metadata.title}
               {post.metadata.subtitle ? ":" : ""} {post.metadata.subtitle}
             </p>
