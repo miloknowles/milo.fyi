@@ -7,7 +7,7 @@ export default function Page() {
   return (
     <section className="pt-8 pb-8">
       <h1 className="mb-8 text-5xl font-semibold tracking-tighter fade-order-1">
-        Hi, I'm <span className="text-indigo-500">Milo</span> – a software
+        Hi, I'm <span className="text-indigo-500 dark:text-indigo-400">Milo</span> – a software
         engineer focused on climate.
       </h1>
       <div className="flex flex-col gap-4">
