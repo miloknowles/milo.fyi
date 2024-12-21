@@ -126,9 +126,9 @@ One company pursuing a chemical route to fats is called [Savor](https://www.savo
 
 I made a simple model to compare the C16 and Savor processes to commodity oil crops. Once again, I’m comparing feedstock costs only of C16 and Savor to the total commodity price for the crops. I also make a few simplifications in their favor: for C16 I’m excluding the cost of media components, and for Savor I’m assuming 100% conversion of H2 and CO₂ into triglycerides. For both processes, I’m also ignoring any heat/electricity that’s consumed in the process itself, which could be significant for a thermochemical process.
 
-Under optimistic 2030 projections for DAC and green hydrogen ($2/kg H2 and $250/ton CO₂), Savor’s input costs close to the \~10 year average prices for oil crops. If they use industrial waste CO₂ (\<\$100/ton), things start to look more promising (“CC-CO₂” in the figure). Finally, if they used extremely cheap renewable methane (\<\$10/kcf), like the kind that [Terraform Industries](https://caseyhandmer.wordpress.com/2023/01/09/terraform-industries-whitepaper-2-0/) is working on, they could reduce costs even more.
+Under optimistic 2030 projections for DAC and green hydrogen (\$2/kg H2 and \$250/ton CO₂), Savor’s input costs close to the \~10 year average prices for oil crops. If they use industrial waste CO₂ (\<\$100/ton), things start to look more promising (“CC-CO₂” in the figure). Finally, if they used extremely cheap renewable methane (\<\$10/kcf), like the kind that [Terraform Industries](https://caseyhandmer.wordpress.com/2023/01/09/terraform-industries-whitepaper-2-0/) is working on, they could reduce costs even more.
 
-I think a Savor-like process is the future of sustainable food oil production, but relies on significant cost reductions for green hydrogen and captured CO₂, or renewable natural gas. These inputs need to be much cheaper than oil crops in order to budget for labor, CAPEX, financing costs, process energy, and profit. For now, I’ll defend the unpopular opinion that oil crops are quite good at what they do, and we should engineer them to be even more productive if we can.
+I think a Savor-like process is the future of sustainable food oil production, but hinges on significant cost reductions for green hydrogen and captured CO₂, or renewable natural gas. These inputs need to be much cheaper than oil crops in order to budget for labor, CAPEX, financing costs, process energy, and profit. For now, I’ll defend the unpopular opinion that oil crops are quite good at what they do, and we should engineer them to be even more productive if we can.
 
 ## Photosynthesis is speeding up
 
@@ -161,6 +161,8 @@ Coming into this research, I assumed that crops must be at a plateau in producti
 
 <span className="text-neutral-500 text-sm">
 **Figure 7:** Staple crop yields have improved remarkably over the last \~60 years.
+The key questions are, how long will this trend continue, and can we accelerate it? If you play
+around with the chart and choose some specific countries, you'll notice that the upward trend is not universal.
 </span>
 
 ## Improving photosynthesis
@@ -172,13 +174,13 @@ This [excellent 2011 paper](https://en.wikipedia.org/wiki/Photorespiration) by B
 * You could find variants of the RuBisCO enzyme that are better suited to modern CO₂ concentrations, or more selective for CO₂ in general  
 * You could replace the Calvin Cycle (dark half of photosynthesis) with a new and more efficient CO₂ reduction pathway. The [reductive glycine (rGly) pathway](https://www.sciencedirect.com/science/article/pii/S1096717620301245) is a particularly efficient example that has been implemented in a few organisms.  
 * You could bypass photorespiration \- this is what [Living Carbon](https://www.livingcarbon.com/post/photosynthesis-enhanced-trees-grow-faster-and-capture-more-carbon) has demonstrated\!  
-* You could redesign the light reaction of photosynthesis so that its two photosystems absorb photons from separate halves of the sunlight spectrum. Instead of competing for photons in the same range of wavelengths, they would operate in tandem across a spectrum that’s twice the width. This could effectively double the theoretical efficiency of photosynthesis, from `12%` to `24%`.
+* You could redesign the light reaction of photosynthesis so that its two photosystems absorb photons from separate halves of the sunlight spectrum. Instead of competing for photons in the same range of wavelengths, they would operate in tandem across a spectrum that’s twice the width. Very crudely, this could double the theoretical efficiency of photosynthesis, from `12%` to `24%`.
 
-Maybe some of these strategies are dead ends in the idea maze – I haven’t done enough research yet to know for sure. But given the gap between actual efficiencies (\<1%) and theoretical efficiencies (12%[^9]) it seems plausible to me that we could, say, double the rate of photosynthesis in crops. Plants are currently sipping from a firehose of photons.
+Maybe some of these strategies are dead ends in the idea maze – I haven’t done enough research yet to know for sure. But given the gap between actual efficiencies (\<1%) and theoretical efficiencies (12%[^9]) it seems plausible to me that we could, say, double the rate of photosynthesis in crops. Despite doubling crop yields since the 1960s, plants are still only sipping from a firehose of photons.
 
 ## Reducing or eliminating nitrogen fertilizer use
 
-About [5%](https://www.nature.com/articles/s43016-023-00698-w#:~:text=Both%20the%20production%20and%20use,2%25%20of%20global%20energy12.) of global emissions come from nitrogen fertilizers[^10] alone, so reducing/decarbonizing fertilizer is absolutely on the critical path of getting to net zero. We can’t just get rid of fertilizer – without it, we [could only feed 3.5B](https://www.sciencedirect.com/science/article/abs/pii/S0167880903003402) people instead of 8B[^11]. Fortunately, there is a portfolio of strategies for decarbonization, including [applying fertilizer more effectively](https://ourworldindata.org/reducing-fertilizer-use), scaling [green ammonia](https://www.latitudemedia.com/news/catalyst-tea-breakdown-green-ammonia-and-synthetic-methane) production, engineering [nitrogen-fixing bacteria](https://www.kulabio.com/), and [distributed plasma reactors](https://arpa-e.energy.gov/news-and-media/blog-posts/playing-zeus).
+About [5%](https://www.nature.com/articles/s43016-023-00698-w#:~:text=Both%20the%20production%20and%20use,2%25%20of%20global%20energy12.) of global emissions come from nitrogen fertilizers[^10] alone, so reducing or decarbonizing fertilizer is absolutely on the critical path of getting to net zero. We can’t just get rid of fertilizer – without it, we [could only feed 3.5B](https://www.sciencedirect.com/science/article/abs/pii/S0167880903003402) people instead of 8B[^11]. Fortunately, there is a portfolio of strategies for decarbonization, including [applying fertilizer more effectively](https://ourworldindata.org/reducing-fertilizer-use), scaling [green ammonia](https://www.latitudemedia.com/news/catalyst-tea-breakdown-green-ammonia-and-synthetic-methane) production, engineering [nitrogen-fixing bacteria](https://www.kulabio.com/), and [distributed plasma reactors](https://arpa-e.energy.gov/news-and-media/blog-posts/playing-zeus).
 
 <iframe
   src="https://ourworldindata.org/explorers/fertilizers?facet=none&country=MMR~Eastern+Asia~ISL&hideControls=true&Input=Synthetic+fertilizer&Nutrient=Nitrogen&Metric=Applied+%28per+hectare%29&Share+of+world+total=false&tab=map"
@@ -187,9 +189,9 @@ About [5%](https://www.nature.com/articles/s43016-023-00698-w#:~:text=Both%20the
   allow="web-share; clipboard-write">
 </iframe>
 
-Some plants, like soybeans and other legumes, already need less nitrogen fertilizer due to their symbiotic relationship with nitrogen-fixing bacteria near their roots. The plants provide sugar to the bacteria in exchange for nitrogen, which I find kind of heartwarming. Companies like [Kula Bio](https://www.kulabio.com/) are enhancing the natural nitrogen fixation capabilities of these symbiotic microbes (e.g Xanthobacter).
+Some plants, like soybeans and other legumes, already need less nitrogen fertilizer due to their symbiotic relationship with nitrogen-fixing bacteria near their roots. The plants provide sugar to the bacteria in exchange for nitrogen in an elaborate handshake, which I find kind of heartwarming. Companies like [Kula Bio](https://www.kulabio.com/) are enhancing the natural nitrogen fixation capabilities of these symbiotic microbes (e.g Xanthobacter).
 
-Why haven’t all crops evolved this collaborative nitrogen strategy? It costs a lot of energy to fix nitrogen, so plants would need a strong evolutionary reason not to just extract it from the soil for free. Reducing one N2 molecule into 2NH3 requires [at least 16 ATP](https://www.nature.com/articles/ismej201697) worth of energy for the microbe. One molecule of glucose can produce [\~32 ATP](https://en.wikipedia.org/wiki/Cellular_respiration) through aerobic respiration, so the exchange rate is at best 4 molecules of NH3 per 1 molecule of hard-earned C6H12O6, or 1.5 carbons per nitrogen. For a plant with a 20:1 C:N ratio in its biomass, that would mean that at least 7.5% of energy must go to nitrogen synthesis in the form of sugars secreted at the roots (1.5 carbons spent out of each 20 earned). Luckily, any of the photosynthesis improvement strategies listed above could give plants the additional energy they need\!
+Why haven’t all crops evolved this collaborative nitrogen strategy? It costs a lot of energy to fix nitrogen, so plants would need a strong evolutionary reason not to just extract it from the soil for free. Reducing one N<sub>2</sub> molecule into 2NH<sub>3</sub> requires [at least 16 ATP](https://www.nature.com/articles/ismej201697) worth of energy for the microbe. One molecule of glucose can produce [\~32 ATP](https://en.wikipedia.org/wiki/Cellular_respiration) through aerobic respiration, so the exchange rate is at best 4 molecules of NH<sub>3</sub> per 1 molecule of hard-earned C<sub>6</sub>H<sub>12</sub>O<sub>6</sub>, or 1.5 carbons per nitrogen. For a plant with a 20:1 C:N ratio in its biomass, that would mean that at least 7.5% of energy must go to nitrogen synthesis in the form of sugars secreted at the roots (1.5 carbons spent out of each 20 earned). Luckily, any of the photosynthesis improvement strategies listed above could give plants the additional energy they need\!
 
 An even more elegant strategy would be to [introduce synthetic nitrogen fixation pathways](https://pmc.ncbi.nlm.nih.gov/articles/PMC10521693/) directly into plants, and researchers are indeed working on this. A challenge is that the key nitrogenase enzymes are damaged by oxygen, which is abundant inside of plant cells. Significant bioengineering work is needed to add oxygen protection, for example by containerizing nitrogen fixation in its own synthetic organelle. The upside of integrating nitrogen fixation into crops would be massive, especially for the [poorest farmers](https://agfundernews.com/with-a-new-grant-from-gates-foundation-legume-technology-aims-to-rescue-africas-deteriorating-soils) who probably can’t afford synthetic fertilizer.
 
@@ -213,7 +215,7 @@ I think climate change will necessitate more of this type of Borlaugian work: cr
 
 Taking a step back, what can we predict about the future of food? Will it be grown in steel tanks or on cropland? My answer is both, but mostly cropland. And the right answer depends on *what* and *where* you’re growing.
 
-In general, it’s hard to beat the cost, simplicity, and scalability of crops for producing carbohydrates, proteins, and fats for 10B+ people. I think plants will remain the foundation of our food supply, and fermentation/chemical processes will fill in the gaps.
+In general, it’s hard to beat the cost, simplicity, and scalability of crops for producing carbohydrates, proteins, and fats for 10B+ people. I think plants will remain the foundation of our food supply, and fermentation or chemical processes will fill in the gaps.
 
 Despite the struggles of plant-based meat substitutes, I think they have the best (only?) shot at competing with real meat on price since they use the cheapest ingredients. Engineering crops with higher yields and enhanced nutritional properties could give plant-based meats the tailwind they need. Adding in fermented or synthetic fats could be a game-changer too. Getting plant-based meats to price-taste-convenience-superiority is the most impactful way to address the 15-20% of global emissions that come from livestock[^13].
 
@@ -223,7 +225,7 @@ What about dairy? Plant milks already have \~15% market share despite their gree
 
 A synthetic carbohydrate supply will only be possible if we massively reduce the cost of enzymes. So plants are our only carbohydrate option for the foreseeable future.
 
-For fats, I think a thermochemical process that uses renewable H2/CO₂ or CH4 (like [Savor](https://www.savor.it/)) will start to replace oil crops if those inputs become very cheap. In the short-to-medium term, oil crops will continue to supply most of the worlds fats.
+For fats, I think a thermochemical process that uses renewable H<sub>2</sub>/CO₂ or CH<sub>4</sub> (like [Savor](https://www.savor.it/)) will start to replace oil crops if those inputs become very cheap. In the short-to-medium term, oil crops will continue to supply most of the world's fats.
 
 Another agricultural revolution is possible through genetically engineered crops. By improving photosynthetic efficiency, I think it will be possible to double crop yields. Integrating direct or symbiotic nitrogen fixation could eliminate the \~5% of emissions that come from synthetic fertilizer use. And engineering region-specific, resilient varieties of staple crops could help us stay a few steps ahead of climate change while improving outcomes for low-income farmers.
 
@@ -251,7 +253,7 @@ Thanks to Sebastian Quaade for his helpful feedback.
 
 [^9]:  And 12% isn’t even a hard limit (see above)\! That’s just the limit within the spectrum of radiation that plants can *currently* use, which could be extended through bioengineering.
 
-[^10]:  While the Haber process is energy intensive, most of the emissions in the fertilizer lifecycle occur during their use on farms. N2O is a potent greenhouse gas\!
+[^10]:  While the Haber process is energy intensive, most of the emissions in the fertilizer lifecycle occur during their use on farms. N<sub>2</sub>O is a potent greenhouse gas\!
 
 [^11]:  Synthetic fertilizer, as well as other advances in modern agriculture, have allowed crop yields to [outpace population growth](https://ourworldindata.org/yields-vs-land-use-how-has-the-world-produced-enough-food-for-a-growing-population).
 
