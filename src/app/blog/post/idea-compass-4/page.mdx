@@ -1,0 +1,137 @@
+---
+title: "The Idea Compass #4: Loonshots"
+publishedAt: "2025-01-04"
+summary: ""
+---
+
+import Header from "@/components/blog/header";
+import Figure from "@/components/blog/figure";
+
+<Header title={frontmatter.title} publishedAt={frontmatter.publishedAt} />
+
+<Figure
+  src="/assets/blog/idea-compass.svg"
+  className="my-4"
+  alt="The idea compass"
+  caption={
+    <span>
+    Good ideas sit above the x-axis axis, and the best ideas are in the top-right quadrant. If you find any points on this graph controversial, <a href="mailto:miloknowles97@gmail.com">tell me why!</a>
+    </span>
+  }
+/>
+
+In this post, we're looking at the bottom-right: the "Loonshots".
+
+Loonshots are the most interesting type of idea to research. In most cases, they were well-intentioned efforts to improve the world in a meaningful way. Yet they are exactly the kind of ideas that can attract (and ultimately waste) billions of $ in investment and millions of smart-person-hours. That's why it’s worth trying to understand why they fail.
+
+## Historical Loonshots
+
+### Mighty, and betting against the wrong trends
+
+Some paradigm-shifting ideas can be doomed from the beginning because they’re betting against a strong external trend.
+
+A few years ago I heard about a startup called [Mighty](https://news.ycombinator.com/item?id=33583830), which [Paul Graham](https://news.ycombinator.com/item?id=27062713) and others were promoting enthusiastically. They developed a $30/month[^11] remote, high-performance web browser (ad for it can be [watched here](https://www.youtube.com/watch?v=cxUN1dZ0Edk)). Mighty’s browser runs on a high-powered server instead of your computer, giving you really fast performance, even if you have Figma and Google Docs open in a hundred tabs.
+
+The company is now dead. I think it was a technical paradigm shift (outsourcing your browser to a server), but not a paradigm shift in UX. The UI/UX was undoubtedly faster, but was it radically different? I could be convinced that this is a faster horse. Most people will not pay \$360/year for a faster web browser, when they could just buy a fast new MacBook for \~$1k and have *every application* be faster and better.
+
+As the discussion in this Hacker News [post](https://news.ycombinator.com/item?id=33583830) points out, it was predictable at the time that the chips in personal computers were getting steadily faster each year (i.e, Moore’s Law). Every time a faster generation of laptops came out, it would erode Mighty’s value proposition. True, Mighty could always stay a few levels of performance ahead by upgrading its servers, but I think there are diminishing returns to making a browser faster. The days of the “pinwheel of death” or burning your lap (which are highlighted in Mighty’s [commercial](https://www.youtube.com/watch?v=cxUN1dZ0Edk)) are pretty much solved.
+
+<Figure
+  src="/assets/blog/moores-law-owid.png"
+  className="my-4"
+  alt="Moore's Law"
+  caption={
+    <span>
+      One of my favorite lines: “The number of people betting against Moore’s Law doubles every year.”
+      (<a href="https://ourworldindata.org/moores-law" target="_blank">Source: Our World in Data</a>)
+    </span>
+  }
+/>
+
+### Makani, and moving cost targets
+
+[Makani](https://en.wikipedia.org/wiki/Makani_\(company\)) was a moonshot company trying to make [airborne wind energy](https://homes.esat.kuleuven.be/~highwind/wp-content/uploads/2011/07/Loyd1980.pdf). They built a giant autonomous fixed wing aircraft that would fly in circles while generating electricity through its propellers and transmitting it to the ground through a wire tether. This approach had all sorts of theoretical advantages over stationary wind turbines: significantly lower structural costs, the ability to fly at altitudes where wind speeds are higher, and the ability to generate energy in a wider range of wind speeds.
+
+From watching their [documentary](https://www.youtube.com/watch?v=qd_hEja6bzE%20), you can get a sense of the technological feats they achieved to just get something flying and generating power. This [post](https://cleantechnica.com/2014/02/19/googles-makani-regulatory-technical-wildlife-challenges/) from 2014 (and [this one](https://jacquesmattheij.com/makani/) from 2015\) detail the technical challenges they faced. Imagine building an autonomous plane that has to do loop-de-loops at 100+ km/hour, take off and land vertically, survive storms, lightning, etc, and do that with zero failures for years on end. The aircraft probably can’t fly in subzero temperatures unless you de-ice the wings. It also probably can’t fly in extremely hot weather, when most commercial planes are unable to land. Contrast this to wind turbines, which can just sit idly when problematic weather arises. Aside from putting solar panels in space, airborne wind seems like one of the most ambitious approaches you could cook up to generate electricity.
+
+<Figure
+  src="/assets/blog/makani-m600.jpg"
+  className="my-4"
+  alt="Makani's 600 kW prototype being tested in the North Sea"
+  caption={
+    <span>
+      Makani's 600 kW prototype being tested in the North Sea.
+      (<a href="https://www.tudelft.nl/en/2020/lr/13-years-of-makani-airborne-wind-energy-knowledge-available-open-source" target="_blank">Source</a>)
+    </span>
+  }
+/>
+
+Makani faced massive [deployment challenges](https://cleantechnica.com/2014/02/19/googles-makani-regulatory-technical-wildlife-challenges/). One of Makani’s biggest selling points was that they could capture more energy than windmills, and be sited in more places where wind turbines are uneconomical or can’t be built. But because the system has eight spinning blades on the end of a basically invisible and electrified tether, it can’t be sited anywhere near power lines, humans, roads, farms, etc. If you put blinking lights or other indicators on the tether, the system has too much drag to operate. This 20 kW prototype is [pretty loud](https://www.youtube.com/watch?v=Guie8JY2FTs), so imagine what a 5 MW system would sound like. Lastly, the Makani system occupies a large hemisphere that must be spaced out much further than typical wind farms. Based on [this](https://cleantechnica.com/2014/02/19/googles-makani-regulatory-technical-wildlife-challenges/) analysis, Makani’s devices would need to have a \~40% higher capacity factor (operate 40% more hours on average) to offset their wider spacing. These practical considerations, not the idea itself, are the fatal flaw. Makani promised cheaper renewable energy everywhere, when in reality they were building a niche technology that could be advantageous in some offshore scenarios.
+
+When all is said and done, the only metric that really matters for a commodity like electricity is your cost per kWh. (For renewables, time-of-day matters a lot too, of course.) Could Makani compete on cost?
+
+<iframe
+  src="https://ourworldindata.org/grapher/levelized-cost-of-energy?tab=chart"
+  loading="lazy"
+  style={{ width: "100%", height: "600px", border: "0px none" }}
+  allow="web-share; clipboard-write">
+</iframe>
+
+Even with their theoretical advantages, Makani needed to be an absolute slam dunk over wind turbines to stay cost-competitive. When Makani was founded in 2006, onshore wind cost \$0.12/kWh and solar probably cost around \$0.50/kWh. When Makani was discontinued in 2020, onshore wind was 3x cheaper (\$0.04/kWh) and solar was down to \$0.06/kWh\! These learning curves for [wind](https://www.irena.org/News/articles/2017/Mar/Onshore-Wind-Industry-Learning-Fast) and [solar](https://ourworldindata.org/learning-curve) are remarkable, but were not unpredictable.
+
+All in all, I think Makani was a moonshot with theoretical advantages worth pursuing once. The idea, which was originally proposed in 1980, deserved one really good shot on goal. But now that we’ve let a talented Google X team navigate the idea maze, I think it’s time to double down on the simple, proven technologies we have.
+
+### Segway, and collective action problems
+
+Segway is another epic Silicon Valley fail. John Doerr [predicted](https://time.com/archive/6905012/reinventing-the-wheel-3/) that it would be bigger than the Internet and Steve Jobs [thought](https://time.com/archive/6905012/reinventing-the-wheel-3/) it could be as big as the PC. The company’s vision was to revolutionize cities by replacing cars with “empowered pedestrians.”
+
+The self-balancing technology might have been a control algorithm innovation, but did Segways actually provide value to users? It [cost](https://en.wikipedia.org/wiki/Segway) \~$5k, was too big to ride on the sidewalk, probably a nuisance to everyone else in the bike lane, and not that safe (just search “Segway crash compilation” on Youtube).
+
+<Figure
+  src="/assets/blog/segway-nyc.jpg"
+  className="my-4"
+  alt="Segways on an NYC sidewalk in 2004"
+  caption={
+    <span>
+      Segways on an NYC sidewalk in 2004
+      (<a href="https://gothamist.com/news/segways-still-illegal-on-nyc-sidewalks-but" target="_blank">Source</a>),
+      probably causing chaos for everyone else. Now imagine everyone riding those on the sidewalk!
+    </span>
+  }
+/>
+
+Steve Jobs [said](https://time.com/archive/6905012/reinventing-the-wheel-3/) that “If enough people see this machine, you won’t have to convince them to architect cities around it; it’ll just happen.” This kind of magical thinking seems to be the fatal flaw. You need a critical mass of people to decide that we should rebuild cities around the Segway for it to become a safe and useful mode of transport. There is value in the aggregate, but not a clear value for the individual early adopter. I think a lot of Loonshots make statements of the form “once everyone does XYZ, the world will be so much better.”
+
+### The Metaverse, and nebulous value propositions
+
+What happened to the Metaverse? It was supposed to be an immersive virtual world where we could do everything. But a [reported $36B](https://www.businessinsider.com/meta-lost-30-billion-on-metaverse-rivals-spent-far-less-2022-10) later, there is little to show for the effort. By 2023, the [year of efficiency](https://about.fb.com/news/2023/03/mark-zuckerberg-meta-year-of-efficiency/), Meta has laid off 10k+ people. Perhaps most telling was that even Meta's own employees [had to be forced](https://www.theverge.com/2022/10/6/23391895/meta-facebook-horizon-worlds-vr-social-network-too-buggy-leaked-memo) to use Horizon Worlds, their flagship Metaverse platform.
+
+The core problem wasn't technical \- Meta did build new VR hardware and software. Rather, the Metaverse suffered from a nebulous value proposition similar to Web3: it promised to revolutionize how we live and work, but couldn't articulate why people would actually want this revolution. The vision of attending virtual meetings as cartoonish avatars or socializing in the Metaverse solved no real pain points. If anything, it added friction to activities (like video calls) that already worked well enough. I guess all social networks have a cold start problem, but I never saw one or two killer use-cases that would make it worthwhile for a user to try out this new technology.
+
+### Theranos, and defying statistics
+
+I won’t retell the story of fraudulent biotech company Theranos, since I think it’s pretty well known from the book *Bad Blood* and Hulu show. What I am interested in is whether it was possible for a non-expert to infer that their extraordinary claims were impossible to achieve. I know basically nothing about blood testing, but can at least do back-of-the-napkin calculations.
+
+Theranos’ basic claims were that they could perform 200+ tests from a single drop of blood ( which I’m assuming is [\~35 microliters](https://www.bu.edu/globalhealthtechnologies/2016/03/21/not-every-drop-of-blood-is-identical/)). Most blood tests [seem to require](https://www.laboratoryalliance.com/healthcare-providers/laboratory-services/specimen-collection-documents/minimum-blood-collection-requirements-for-selected-tests/) on the order of 500-1000 microliters *per test*. With a single drop split 200 ways, Theranos’ device would have to do each test with at most 0.175 microliters of blood, a \~2,800x reduction in volume\![^12]
+
+If you’re measuring a mean value from a blood sample (e.g ferritin or white blood cell count) then there will be an unavoidable [sampling error](https://en.wikipedia.org/wiki/Standard_error), since your small random sample may not be perfectly representative of all the blood in someone’s body. Indeed, the consensus seems to be that blood from a finger prick is [highly variable](https://academic.oup.com/ajcp/article/144/6/885/1761216) and not representative of venous blood. The sampling error follows a 1/sqrt(n) relationship, where n is the sample size. If you’re Theranos, using a 2800x smaller blood sample means that sampling error will be sqrt(2800) \= \~53x higher\! A 0.1% sampling error is now a 5.3% error, and a 1% sampling error is now a 53% error\! This source of error cannot be mitigated by more precise sensors; it is an unavoidable consequence of using such a tiny random sample.
+
+On top of the sampling error, other crazy things happen when you shrink the sample volume by 2800x. The surface area to volume ratio grows by a factor of \~14x, so more of your sample is interacting with the container/sensor it’s in. If your test uses [spectrophotometry](https://en.wikipedia.org/wiki/Spectrophotometry#Applications_in_biochemistry) (measuring light absorbance), then you’ll have a 14x smaller path length to absorb light through (cubed root of 2800). But the signal-to-noise ratio gets worse when you reduce the path length\! This [paper](https://www.rsc.org/binaries/loc/2003/volume1/209-317.pdf) found that the signal to noise ratio of spectrophotometry decreased by \~2.5x when the path length was reduced by only a factor of 4\.
+
+Due to Theranos’ faked results, enthusiastic [media coverage](https://www.wired.com/2014/02/elizabeth-holmes-theranos/), [general](https://edition.cnn.com/2015/11/12/health/theranos-what-we-know-science/index.html) [secrecy](https://archive.ph/QMKqu), and efforts to silence critics, I can see how it was very hard to assess what they were actually building. But the quick math above reinforces just how extraordinary their claims were, and extraordinary claims should have required extraordinary evidence. The fact that Theranos was unwilling to allow any independent analysis of their machines should have been an instant red flag, and I’m honestly baffled that they existed from 2003-2018.
+
+<Figure
+  src="/assets/blog/minilab.png"
+  className="my-4"
+  alt="Thereanos' miniLab machine"
+  caption={
+    <span>
+      By 2016, Theranos had walked back most of their bold claims and was trying to sell this “miniLab” product. It could only run 40 tests (they claimed) and required multiple blood samples (not a single drop).
+      (<a href="https://www.lubio.ch/blog/the-theranos-story-part-i" target="_blank">Image Source</a>)
+    </span>
+  }
+/>
+
+[^11]:  I’m getting this subscription price from threads written about Mighty, and don’t have the exact number.
+
+[^12]: `35 ul / 200 tests \= 0.175 ul` per test. Going from a `500 ul` sample to a `0.175 ul` sample is a `2,857x` reduction in volume.
