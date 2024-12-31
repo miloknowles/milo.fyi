@@ -1,0 +1,143 @@
+---
+title: "The Idea Compass: Gimmicks"
+publishedAt: "2025-01-02"
+summary: "Gimmicks are both the easiest class of bad ideas to detect, and the most important to avoid."
+---
+
+import Header from "@/components/blog/header";
+import Figure from "@/components/blog/figure";
+
+<Header title={frontmatter.title} publishedAt={frontmatter.publishedAt} />
+
+<Figure
+  src="/assets/blog/idea-compass.svg"
+  className="my-4"
+  alt="The idea compass"
+  caption={
+    <span>
+    Good ideas sit above the x-axis axis, and the best ideas are in the top-right quadrant. If you find any points on this graph controversial, <a href="mailto:miloknowles97@gmail.com">tell me why!</a>
+    </span>
+  }
+/>
+
+Gimmicks are both the easiest class of bad ideas to detect, and the most important to avoid.
+
+### Juicero, and IoT gimmicks
+
+One of the [funnier](https://deadstartuptoys.com/product/juicero) Silicon Valley fails is [Juicero](https://www.theguardian.com/technology/2017/sep/01/juicero-silicon-valley-shutting-down), which sold a [\$400, WiFi-connected machine](https://www.cnet.com/reviews/juicero-preview/) that would take pre-chopped packets of fruits and vegetables and turn them into juice. They raised \$70M from VCs, and then Bloomberg released a video in 2017 showing that you could just squeeze the packets with your hands to make the juice\!
+
+<Figure
+  src="/assets/blog/juicero.jpeg"
+  className="my-4"
+  alt="Juicero"
+  caption={
+    <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Farstechnica.com%2Finformation-technology%2F2017%2F04%2Fthis-400-appliance-that-squeezes-juice-out-of-a-bag-appears-unnecessary%2F&psig=AOvVaw3y_7opAyEFEioAVEBibOKi&ust=1735756409181000&source=images&cd=vfe&opi=89978449&ved=0CBcQjhxqFwoTCKDUotPS0ooDFQAAAAAdAAAAABAE">Source</a>
+  }
+/>
+
+Other examples include [ovens](https://www.extremetech.com/extreme/338040-the-internet-of-shittiest-things-extremetechs-all-time-hall-of-shame) that need a [WiFi](https://www.reddit.com/r/Appliances/comments/1derqjs/got_a_ge_oven_but_dont_have_wifi_oven_doesnt_work/) connection to cook, [Amazon dash buttons](https://en.wikipedia.org/wiki/Amazon_Dash#) that you could press to reorder an item, [smart water bottles](https://www.waterh.com/) that track how much you’ve drank, [toothbrushes](https://www.engadget.com/best-electric-toothbrush-133036339.html) with a companion app, restaurants that force you to order one your phone through a QR code (post-pandemic), and anything on this [Twitter](https://x.com/internetofshit?lang=en) account. This type of add-tech-where-it-doesn’t-belong idea is so common that it was parodied in this [Silicon Valley scene](https://www.youtube.com/watch?v=ZRNEUc5k7Jw&t=32s).
+
+### Marketing gimmicks
+
+One way to make an incumbent solution incrementally better is to wrap it in better marketing. We have a nomenclature for products that entrench the status quo while making it look more appealing to consumers: “green-*washing*”, “humane-*washing*”, “AI-*washing*”, and so on.
+
+### Aspiration, and greenwashing
+
+Banks currently invest [more in fossil fuels](https://assets.bbhub.io/professional/sites/24/Financing-the-Transition_Energy-Supply-Investment-and-Bank-Facilitated-Financing-Ratios.pdf) than clean energy, although the ratio is getting closer to 1:1. The stated mission of climate-friendly “green banks” like [Aspiration](https://www.aspiration.com/) is to be 100% fossil-fuel-free, and invest customer deposits in things that are good for the planet.
+
+The claims made by Aspiration are at best misleading, and probably false as pointed out by [Scott Galloway](https://www.profgalloway.com/jumping-the-spac/) and [ProPublica](https://www.propublica.org/article/the-celebrity-backed-green-fintech-company-that-isnt-as-green-as-it-seems). In 2021, only 2.3% of Aspiration’s portfolio is renewable energy, less than the 3% of holdings in Southwest Airlines, which is obviously not fossil-fuel-free. Aspiration also makes claims around planting millions of trees, but clarifies in a footnote that their figures include trees that are going to be planted in the future.
+
+Aspiration is just a slightly greener version of the status quo. Its investments are marginally more sustainable than other banks, and it’s planted a few million trees, but it’s mostly just an effective, ESG-coded marketing strategy.
+
+### Verra, and authority-washing
+
+If I had to choose one organization that has done the most to undermine trust in carbon credits, it would be [Verra](https://verra.org/). This might sound like an unfair criticism, but as a carbon registry with about [70% market share](https://climatefocus.com/wp-content/uploads/2023/01/VCM-Dashboard-2022-Overview-1.pdf), they’ve made themselves the gatekeepers and standard setters of the voluntary carbon market. As of writing, Verra has issued 1.3B offsets and retired 771M of them[^1].
+
+Verra is an example of what I’d call *authority washing*: wrapping something questionable in bureaucracy, paperwork, governance, and fancy terminology to provide the appearance of rigor without the substance. Every project that is validated by Verra has hundreds of pages of documentation (mostly boilerplate) and is third-party verified. That must mean they’re high-quality, right? Go check out their [registry](https://registry.verra.org/app/search/VCS/All%20Projects) and see what projects look like for yourself.
+
+<Figure
+  src="/assets/blog/verra-redd.webp"
+  className="my-4"
+  alt="Analysis of Verra REDD+ credits"
+  caption={
+    <a href="https://www.carbone4.com/en/analysis-carbon-credits-verra">Source: Carbone4</a>
+  }
+/>
+
+Despite massive bureaucratic overhead imposed by Verra, their projects and methodologies do not stand the test of time. A 2021 [investigation](https://www.theguardian.com/environment/2023/jan/18/revealed-forest-carbon-offsets-biggest-provider-worthless-verra-aoe) by the Guardian analyzed 87 of Verra’s forest conservation projects and found that \~90% of the claimed emission reductions did not occur. The majority of projects overestimated their climate benefit or had none. If you want to read for yourself, the main scientific evidence for the Guardian article is in these papers ([1](https://www.pnas.org/doi/10.1073/pnas.2004334117), [2](https://arxiv.org/abs/2301.03354), and [3](https://conbio.onlinelibrary.wiley.com/doi/full/10.1111/cobi.13970)). Verra put out a [rebuttal](https://verra.org/verra-fact-check-of-die-zeit-article/), disputing the methodology of those papers and the credibility of the journalists, and adding some pedantic quips.
+
+I’m less inclined to believe Verra, who needs to approve these kinds of projects to keep the lights on. But even if you think everyone’s analysis is flawed, you must wrestle with the fact that simple changes to the way emissions are estimated can make a project look 100% solid (Verra’s conclusion) or effectively worthless (the Guardian’s conclusion). It is telling that Verra is [fighting](https://carbonplan.org/research/verra-integrity-council) efforts to bring greater oversight to methodologies, and Verra’s CEO ultimately [stepped down](https://www.theguardian.com/environment/2023/may/23/ceo-of-worlds-biggest-carbon-credit-provider-says-he-is-resigning) in 2023\.
+
+### AG1, and science-washing
+
+If you’ve ever listened to a podcast[^2] you've heard an ad for AG1. It’s a daily greens powder that costs $3/day and is usually described in ads as a nutritional safeguard, foundational nutrition, nutritional insurance, etc. I would argue that it’s really just an example of *science-washing* – wrapping something in the *appearance* of science to make it seem trustworthy.
+
+My take is largely informed by this [article](https://www.mcgill.ca/oss/article/critical-thinking-health-and-nutrition/you-probably-dont-need-green-ag1-smoothie), as well as this Bryan Johnson[^3] [video](https://www.youtube.com/watch?v=-8ijIKU-3ic), and another from [Scott Carney](https://www.youtube.com/watch?v=wb1g-Cbcjwo). Of the \~75 ingredients in AG1, many have way more than your daily value, and 49 don’t have a disclosed amount (they are in a “proprietary blend”). Their [science page](https://drinkag1.com/learn/research/scientific-research) cites an subjective observational study on 35 participants with no control group, a [paper](https://cdn.sanity.io/files/jf30o7wb/production/5b73651e677a49b0fa0e36763b42df91b9b02442.pdf) that shows higher amounts of probiotic bacteria in stool samples, a [paper](https://cdn.sanity.io/files/jf30o7wb/production/b2843483362b272a2196538ae2a5d5f2e317145e.pdf) that shows higher solubility of minerals like Mg, Zn, and Ca, and some other papers studying an [*in vitro* model](https://cdn.sanity.io/files/jf30o7wb/production/36b87e1540727488d7f58b312fa4fba72198bec1.pdf) of the gut. Notice that these studies are just showing an improvement in an intermediate marker, like the solubility of minerals, rather than an outcome in humans.
+
+I couldn’t find a single controlled study showing an objective and causal improvement in real human participants that seems meaningful (e.g, improved micronutrient levels in blood, lower cholesterol, lower inflammation, etc). Give us *something* to prove that drinking AG1 daily will objectively improve your health\! Honestly, skimming through AG1’s studies was a real chore, and most of the time I wouldn’t make the effort. That’s why science-washing works: people are busy and use the appearance of science as a proxy for the real thing.
+
+### Solutions in search of problems (SISPs)
+
+Some ideas might involve a paradigm shift in *technology*, but provide only incremental value to the user. This bucket of ideas is sometimes called “solutions in search of problems” or “[SISPs](https://www.ycombinator.com/library/DW-dalton-michael-should-you-follow-your-passion)”.
+
+### Toucan Protocol, KlimaDAO, and Climate Crypto (SISPs)
+
+When the carbon markets and crypto bubble were peaking around \~2020-2021, the worst people from your Linkedin feed got together and decided that blockchains were the key to solving climate change. There was suddenly an influx of startups trying to take environmental projects and monetize their benefits as crypto tokens.
+
+The two most prominent startups are [Toucan Protocol](https://toucan.earth/) and [KlimaDAO](https://www.klimadao.finance/), who took verified carbon credits from Verra (the biggest registry) and converted them to special blockchain-based tokens called BCTs and KLIMA tokens. For the full background, I’d suggest this [piece](https://carbonplan.org/research/toucan-crypto-offsets) from CarbonPlan.
+
+Verra’s carbon credits already had serious quality and transparency issues, and adding a blockchain on top made things many times worse. Treating all credits as fungible coins on a blockchain obfuscated any information about the underlying project, vintage of the credits, monitoring reports, etc. This created a lucrative arbitrage opportunity for the crypto companies, who basically took the lowest-quality, 10-year-old, “zombie” credits that no discerning buyer wanted, repackaged them as shiny tokens, and used crypto hype to sell them at a 100x or even 1000x higher price.
+
+<Figure
+  src="/assets/blog/carbonplan-zombies.png"
+  className="my-4"
+  alt=""
+  caption={
+    <a href="https://carbonplan.org/research/toucan-crypto-offsets">Source: CarbonPlan</a>
+  }
+/>
+
+Even the problems that Toucan Protocol and KlimaDAO *claimed* to solve were the wrong ones. They touted the traceability of blockchains, preventing double-counting, and liquidity benefits. These are maybe 5% of the actual problems in the voluntary carbon market. The issue then, and the issue now with carbon credits is [whether the original projects actually have the environmental benefit they claim](https://www.theguardian.com/environment/2023/jan/18/revealed-forest-carbon-offsets-biggest-provider-worthless-verra-aoe).
+
+CarbonPlan summarizes the fundamental problem here:  
+*\> The concept of smart contracts that offer broad eligibility for generating new carbon tokens from existing assets rests on the premise that somebody else has solved the credit quality problem.*
+
+In other words, blockchain credits are great if *someone else* solves all the actual problems around additionality, verification, permanence, robust quantification, etc.
+
+I would characterize Toucan Protocol, KlimaDAO, and many other crypto startups as solutions-in-search-of-problems ([SISPs](https://www.ycombinator.com/library/DW-dalton-michael-should-you-follow-your-passion)). Generally, they address a plausible, surface-level problem (like double-counting), but not a problem that actually moves the world forward.
+
+### Crypto and Web3
+
+Don’t get me wrong, blockchain, distributed ledgers, proof-of-stake, etc are real *technological* paradigm shifts. But I think the companies/projects that use these technologies often solve problems that are orthogonal to the real ones that people face.
+
+Take bitcoin[^4] for example (I’ll probably get some hate for this example). Most people want their money to be safe and easy to withdraw or send. They don’t want their money to disappear if they lose a hexadecimal string, and they don’t care about ideological things like whether a centralized bank is involved, or whether they have complete control over their digital assets[^5]. From the perspective of the average person, bitcoin[^6] is just a faster, more speculative, uninsured, riskier store of value.
+
+NFTs also had theoretical utility as a proof of digital ownership. But were they useful in practice? The implementation details [matter a lot](https://archive.ph/ZKHgx). First off, NFTs don’t actually store the asset, they store a pointer (link) to it. So you’re trusting someone else to run the server where your asset is stored. That person could easily swap out the asset for a different one if they wanted. What if multiple people mint the same NFT on different blockchains? Which record is authoritative? What if I take a screenshot of your digital art, host it somewhere, and mint my own NFT for the duplicate? OpenSea [found](https://archive.ph/Xcz8C) that 80% of the NFTs on their platform were fraudulent. The result of these implementation issues is that NFTs were a speculative investment rather than a real tool for digital artists and collectors. 
+
+<Figure
+  src="/assets/blog/moxie-nft.png"
+  className="my-4"
+  alt="Example of a fungible token"
+  caption={
+    <span>
+    Are NFTs actually non-fungible? Moxie Marlinspike made an NFT that would change appearance based on the site you viewed it from. This is possible because NFTs store links and not assets. The NFT was soon removed from his wallet by OpenSea, which he pointed out is antithetical to Web3. <a href="https://moxie.org/2022/01/07/web3-first-impressions.html" target="_blank">(Source)</a>
+    </span>
+  }
+/>
+
+Ironically, the poor user and developer experience of Web3 creates a centralization paradox, where you need a wallet/market like Coinbase or OpenSea to make it usable. In other words, to make Web3 useful, you need to wrap it in a bunch of Web2 applications.
+
+As Moxie wrote in his [first impressions](https://moxie.org/2022/01/07/web3-first-impressions.html) of Web3:  
+*\> … it seems like we should take notice that from the very beginning, these technologies immediately tended towards centralization through platforms in order for them to be realized, that this has \~zero negatively felt effect on the velocity of the ecosystem, and that most participants don’t even know or care it’s happening. This might suggest that decentralization itself is not actually of immediate practical or pressing importance to the majority of people downstream…*
+
+[^1]:  Based on their registry statistics as of December 17, 2024\.
+
+[^2]:  I couldn’t confirm this number, but supposedly AG1’s affiliate programs pay influencers 20-30% commission. So no wonder we’ve all heard an AG1 ad.
+
+[^3]:  Bryan Johnson also sells a supplement, so take his expose video with a grain of salt.
+
+[^4]:  I realize some people think of Bitcoin as digital gold, a hedge against inflation, and so on. But it was [conceived](https://bitcoin.org/bitcoin.pdf) of as a way to send money without going through a financial institution.
+
+[^5]:  One counterexample is [remittance payments](https://www.oecd.org/en/publications/can-blockchain-technology-reduce-the-cost-of-remittances_d4d6ac8f-en.html), where I think crypto could meet a real need for international money transfer. Bypassing centralized banks could help bring down transaction fees.
+
+[^6]:  I am fully-aware that as I write this, bitcoin has just surpassed the $100k mark for the first time\!
