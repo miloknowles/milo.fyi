@@ -1,0 +1,172 @@
+---
+title: "The Idea Compass #5: Predictions & Conclusions"
+publishedAt: "2025-01-05"
+summary: ""
+---
+
+import Header from "@/components/blog/header";
+import Figure from "@/components/blog/figure";
+
+<Header title={frontmatter.title} publishedAt={frontmatter.publishedAt} />
+
+<Figure
+  src="/assets/blog/idea-compass.svg"
+  className="my-4"
+  alt="The idea compass"
+  caption={
+    <span>
+      The Idea Compass
+    </span>
+  }
+/>
+
+## Loonshot predictions!
+
+So far, I've criticized with the benefit of hindsight. To have some skin in the game, I'll make some predictions about current ideas that I believe to be "loonshots".
+
+### Seaweed CDR will not be cost-effective
+
+One carbon dioxide removal (CDR) strategy that has been pursued by a few companies is [kelp](https://www.technologyreview.com/2021/09/19/1035889/kelp-carbon-removal-seaweed-sinking-climate-change/). Startups like [Running Tide](https://www.seafoodsource.com/news/environment-sustainability/carbon-removal-company-running-tide-shuts-down-operations) or [Phykos](https://www.ycombinator.com/companies/phykos/jobs) are trying to grow gigatons of seaweed in the open ocean and sink it, where the carbon will be stored permanently (100+ years). This is another case where I don’t think the math checks out.
+
+<Figure
+  src="/assets/blog/oceanvisions-cdr.png"
+  className="my-4"
+  alt="An illustration of macroalgae cultivation for carbon removal"
+  caption={
+    (<a href="https://oceanvisions.org/macroalgal-cultivation/" target="_blank">Source: Ocean Visions</a>)
+  }
+/>
+
+Let’s start with the assumption that an offshore kelp farm could match the productivity of nearshore farms where nutrients are abundant. This assumption is extremely optimistic, since nutrient levels in the open ocean can be much lower than nearshore. Indeed, Running Tide apparently [struggled to grow kelp](https://www.technologyreview.com/2022/06/16/1053758/running-tide-seaweed-kelp-scientist-departures-ecological-concerns-climate-carbon-removal/) at all in the open ocean. A friend who worked there told me that they were sinking things like wood chips instead of seaweed to deliver on carbon credit purchases. 
+
+Based on this [report](https://arpa-e.energy.gov/sites/default/files/Techno-Economic%20Feasibility%20Analysis%20of%20Offshore%20Seaweed%20Farming%20for%20Bioenergy%20and%20Biobased%20Products-2008.pdf), average kelp farms in China yield about 20 tons dry weight per hectare (0.8 MMT annual production spread over 40k hectares). Assuming a [30% carbon](https://iopscience.iop.org/article/10.1088/1748-9326/acdae9/pdf) content, this implies \~6 metric tonnes of C per year, or 6\*3.67 \= 22 tonnes of CO2 removal per year. At \$100/ton of carbon removal, the revenue for kelp sinking is then \$2,200/hectare. Let’s say the system lasts 10 years. Then you have a budget of \~\$22k to build a football-pitch-size (1 ha) structure that can survive in the open ocean for 10 years while autonomously growing, harvesting, and sinking kelp with no maintenance. It’s a tall order.
+
+Let’s put that cost in perspective. I used Greenwave’s [kelp farm planning tool](https://hub.greenwave.org/home) to design a 10 hectare farm[^13] that could achieve the \~11 tons dry weight per hectare target. This farm had a CAPEX of about \$950k, or \~\$95k/hectare. This doesn’t include buying a boat\! If we get rid of anchors (a massive line item), the cost goes down to about \~\$36k/hectare. This is the cost of low-tech stuff like ropes, buoys, and fasteners, which are already mass produced and unlikely to come way down in cost.
+
+It’s also worth knowing that the US has tried to grow kelp in the open ocean for biofuels [since the 1970s](https://arpa-e.energy.gov/sites/default/files/Techno-Economic%20Feasibility%20Analysis%20of%20Offshore%20Seaweed%20Farming%20for%20Bioenergy%20and%20Biobased%20Products-2008.pdf), and basically all of their experimental farms fell apart, sank, or were destroyed by the ocean. So I expect an open-ocean farm (let alone an autonomous one) to be inherently more expensive and robust than one that is anchored near the shore.
+
+If you’re interested, this [CarbonPlan model](https://carbonplan.org/research/seaweed-farming-explainer) gives some cost estimates for ocean CDR using kelp. At some of the example sites they consider, CDR costs range from \$375-2000+. This is in the same ballpark as other nascent CDR technologies, but doesn’t look promising. Their default capital cost is $100k per square *kilometer*, which is nearly two orders of magnitude cheaper than my toy farm above.
+
+### Remora is a case of selective optimism
+
+[Remora](https://remoracarbon.com/) is a startup that’s adding carbon capture to semi-trucks. The idea is that the trucks capture the CO2 from their exhaust, temporarily store it onboard, and offload it while they refuel. The captured CO2 can then be turned back into new diesel fuel – a circular economy of fuel.
+
+I would celebrate their [vision](https://remoracarbon.com/vision/) becoming reality, but I’m skeptical. I think they fall victim to *selective optimism*, which all startups must have to some degree. The company is very [confidently](https://remoracarbon.com/vision/) betting *against* strong upward trends in [battery](https://ourworldindata.org/battery-price-decline) cost, electrification, and [renewable energy](https://ourworldindata.org/electricity-mix) buildout. They argue that the *current* electricity grid is dirty, so electrification doesn’t make sense in the future. They’re also betting against companies like [Terraform Industries](https://terraformindustries.wordpress.com/2024/04/01/terraform-makes-carbon-neutral-natural-gas/), who are making synthetic fuels from air (without a complex and circular supply chain)[^14]. They believe that biofuels will somehow become cost effective (after decades of disappointments), but direct air capture won’t. To believe Remora’s vision is the right one, you have to be pessimistic about progress on basically every other climate solution except theirs.
+
+<Figure
+  src="/assets/blog/remora.jpg"
+  className="my-4"
+  alt="A rendering of a Remora truck with carbon capture"
+  caption={
+    <span>
+    A rendering of a Remora truck with carbon capture
+    (<a href="https://remoracarbon.com/vision/" target="_blank">Source</a>)
+    </span>
+  }
+/>
+
+The vision is also internally incoherent. Remora imagines a world where we aren’t able to build enough renewables or batteries for electric vehicles, but we *are* able to build out a distributed network of CO2\-to-fuel machines that can turn the captured CO2 back into diesel using… renewables[^15]? If we have a great process for turning CO2 into diesel, why not just capture the CO2 from the air directly? Remora would argue that the captured CO2 from trucks is much more concentrated, making it easier and less energy intensive to synthesize diesel. But diesel isn’t just carbon atoms – there is a lot of hydrogen[^16] in there too, and that H has to come from somewhere. So Remora would need to produce green hydrogen, which requires… cheap renewables. They also suggest that we’ll have abundant biodiesel (grown with crops), making their trucks carbon *negative*. Biofuels are a [disastrous faster horse](https://www.volts.wtf/p/whats-going-on-with-biofuels) in their own right, but if they did exist, then transportation emissions would be effectively solved already.
+
+Remora does make two arguments that I agree with. First, we need to decarbonize *existing* transportation infrastructure, which means we need drop-in replacements for fossil fuels. Second, the energy density of batteries is a [real limitation](https://www.technologyreview.com/2022/08/17/1058013/electric-planes-taking-off-challenges/). There are applications like long-haul trucking, shipping, and aviation where electrification might work. Carbon-neutral hydrocarbons are the right direction. I’m a broken record at this point, but I think the vision of companies like [Terraform Industries](https://terraformindustries.com/) is much more [compelling](https://caseyhandmer.wordpress.com/2024/06/24/how-terraform-navigated-the-idea-maze/): solar energy is getting so cheap that it will eventually make more economic sense to capture carbon from the air than dig it out of the ground. I predict Remora will be a loonshot.
+
+### Cultivated meat has near-impossible unit economics
+
+[Cultivated meat](https://gfi.org/science/the-science-of-cultivated-meat/) is a clear case of technological innovation with massive benefit to the world if successful. I personally believe that phasing out the livestock industry is the single most impactful thing we can do to address climate change, reduce suffering in the world, prevent pandemics, and reverse biodiversity loss.
+
+I agree with the “price-taste-convenience” (PTC) theory of change, which posits that alternatives to meat need to be equal or superior along all three of these axes to gain adoption. By design, cultivated meat is on track to accomplish the “taste” objective. Cultivated meat is identical to the real thing, and could be precisely tuned to taste like the best steak you’ve ever had.
+
+The problem of cultivated meat (CM) is the unit economics, which are analyzed in this extremely thorough [techno-economic assessment](https://engrxiv.org/index.php/engrxiv/preprint/view/1438) from David Humbird. (For a counterpoint on the Humbird paper, see [this GFI post](https://gfi.org/cultivated/preliminary-review-of-humbird-report/)).  
+
+<Figure
+  src="/assets/blog/humbird-breakdown.png"
+  className="my-4"
+  alt="A rendering of a Remora truck with carbon capture"
+  caption={
+    <span>
+    (<a href="https://engrxiv.org/index.php/engrxiv/preprint/view/1438" target="_blank">Source</a>)
+    </span>
+  }
+/>
+
+Let’s momentarily strip away all of the technological complexity of CM, and just think of it as a simple conversion of raw inputs to outputs. CM grows in a liquid medium containing macronutrients (amino acids and glucose) and micronutrients (electrolytes and growth factors). Pure amino acids are currently derived from fermentation, and prohibitively expensive. Even with significant economies of scale, about $19.08 of macronutrients and $3.13 of micronutrients are needed per 1 kg of meat (see table above). So we definitely can’t reach price parity with fermentation-derived amino acids.
+
+If soy protein hydrolysates can be used as a cheap source of amino acids instead (not yet demonstrated commercially), the raw input cost is reduced to \$3.39 (macro) \+ \$3.13 (macro) \= \$6.52/kg (total raw inputs). But that’s around the total cost of [boneless chicken breast](https://fred.stlouisfed.org/series/APU0000FF1101)\! The nutrients alone preclude price parity.
+
+Now let’s layer on the CAPEX (\~\$11), labor, utilities, and other consumables, which brings us to an *optimistic cost* of \$21/kg of cultivated meat. We’re still excluding the cost of turning a wet cell slurry into a finished product, packaging, marketing, transportation, and profit. We’ve also assumed a large number of technological breakthroughs, like scaffolding cells into a meat-like texture, achieving high cell densities, improving metabolic efficiency, remediating waste products, overcoming the need for cells to anchor to a substrate, precisely controlling stem cell differentiation, and so on.
+
+Like Remora, I think cultivated meat requires selective optimism. It hypothesizes a world where the only viable way to displace meat is to grow genetically identical muscle tissue at massive scale and incredibly low cost. But if we can achieve this holy grail of biological and process engineering, why couldn’t we develop plant-based products that achieve taste parity? Given sufficient knowledge, I think we can crack the magical recipe of amino acids, lipids, minerals, and water[^17] that make meat so hard to replace. But you’re forgetting about texture, you might say\! Likewise, if we can figure out how to make pluripotent stem cells grow on complex edible scaffolds, doesn’t it seem plausible that we could make big advances in plant-based processing techniques, like extrusion, electrospinning, or 3D printing?
+
+In my view, cultivated meat is an admirable but misguided effort, both a loonshot and a faster horse. People need food that is delicious, affordable, and convenient. Cultivated meat imposes unnecessary (and counterproductive) constraint that we must replicate animals exactly at the cellular level. I think this [post](https://forum.effectivealtruism.org/posts/aznn2cXbBAbdnaQbn/new-intuitions-for-cultured-meat), written by someone in the industry, summarizes why cultivated meat is a faster horse:
+
+> In reality, cultured meat requires unprecedented industrial processes to do almost everything that animals are so miraculously capable of. A few aspects of the living creature can be left out—including, notably, sentience—and others can be reused, but the challenge at hand is much more akin to creating and operating an artificial animal than to growing any one part in isolation.
+
+## Conclusions
+
+We've covered a lot of ground, looking at <a href="/blog/post/idea-compass-2">gimmicks</a>,
+<a href="/blog/post/idea-compass-3">faster horses</a>,
+<a href="/blog/post/idea-compass-4">loonshots</a>, and some predictions for the future. What are the takeaways?
+
+### Incrementalism is worthwhile
+
+The original point of this essay was to encourage people not to settle for “faster horse” ideas. In the course of writing, I’ve reversed my opinion on this. We do need faster horses\! Almost by definition, most progress in the world is incremental. Transistors get a little bit smaller each year, solar panels get a little bit cheaper, someone’s Ph.D thesis extends human knowledge a little bit further on some esoteric topic, and so on. Evolution can only produce amazing capabilities like winged flight through a series of incremental improvements that are each viable[^18].
+
+I think [Rohit Krishnan](https://www.strangeloopcanon.com/) defends incremental ideas well in [this podcast](https://podcast.clearerthinking.org/episode/147/rohit-krishnan-are-you-working-on-the-most-important-problem-in-your-field-why-not/%20):
+
+> ... I'm not entirely sure that the types of ideas that the marginal person should be pursuing are going to be more ‘Why don't you go off and try to solve cancer' kind of questions versus ‘Why don't you try and make process X within biotech that deals with clinical trials 3% more efficient?' Because I think the latter is what creates a ton of incremental efficiencies over a long enough period of time — just because there are so many more of them — that the platform that we're standing on imperceptibly slowly creeps up.
+
+There’s nothing wrong with being in the top-left. But if you do want to avoid faster horses:
+
+* **Reframe the problem in its most fundamental form.** People didn’t want a better DVD store, they wanted convenient entertainment. People didn’t want an email machine, they wanted a portable and frictionless way to use the internet.  
+* **Avoid band-aid solutions.** Don’t try to solve a problem by adding more complexity or more steps, especially if cost matters.  
+* **Avoid solutions that stack many small improvements on top of each other.** The exception is when you’re a [vertical integrator](https://www.notboring.co/p/vertical-integrators) and you are effectively your own customer\!  
+* **Look for imminent platform shifts, and make sure they won’t render your idea obsolete\!**
+
+### Avoid gimmicks
+
+Gimmicks squander valuable person-hours, we don't learn much from working on them. I think they can be avoided with a few questions:
+
+* “How much would this improve the world if it existed?”  
+* “What tangible problem is being solved? Is this a solution in search of a problem?”  
+* “Could you still deliver the same value without the proposed innovation?”  
+* “If you remove every buzzword from the product description, what is being offered?”  
+* “Does this idea/product make specific and verifiable claims?”
+
+### Identifying likely loonshots
+
+How do loonshot ideas survive for so long? Theranos had a \~15 year run, Segway 19 years, and Makani about 14 years\. Ginkgo Bioworks has been around since 2008, but has [yet to produce](https://archive.ph/ppTSU) a real breakthrough product with biology.
+
+I think that a big reason is [epistemic learned helplessness](https://slatestarcodex.com/2019/06/03/repost-epistemic-learned-helplessness/). Most of us (myself included) have been conditioned to accept that we’re not the expert on most things, so we shouldn’t trust our intuitions outside of a narrow slice of the world. We've all seen the [Dunning-Kruger](https://en.wikipedia.org/wiki/Dunning%E2%80%93Kruger_effect) effect in action. At the same time, I don’t think you need to be an expert to assess the implausibility of many ideas. **[Arithmetic is a superpower](https://blog.atomsonly.com/p/bionumbers-1) and we all have this superpower.**
+
+**For a large swath of ambitious ideas, the math just doesn’t pencil out.** As we saw above, the arithmetic of Theranos seemed all but impossible, and they never allowed the scientific community to prove otherwise. Under optimistic projections, cultivated meat still looks about an order-of-magnitude more expensive than chicken. To scale up seaweed-based ocean CDR, we need to build floating seaweed farms that achieve unprecedented levels of productivity while being fully autonomous and orders of magnitude cheaper.
+
+**For another set of loonshot ideas, the theory of change conveniently threads a needle.** Remora assumes that we’ll build out distributed carbon capture and CO2\-to-fuel infrastructure, retrofit millions of trucks, and produce abundant biofuels, but we won’t make much progress on renewable or EV deployment. Cultivated meat assumes that we’ll accomplish feats of genetic and tissue engineering, but that we can’t make plant-based substitutes cheaper and tastier. Beware of selective optimism.
+
+**For cases like Mighty and Makani, the tech might have been achievable, but the world was trending in a different direction.** Mighty’s browser had to outrun improvements in PCs to maintain its value proposition. Makani had to undercut vastly simpler technologies (solar PV and wind turbines) on cost, even as they got 4x and 10x cheaper, respectively.
+
+**I think that every moonshot company owes the world a transparent answer to the following questions:**
+
+* How will this technological achievement improve people’s lives?  
+* Is this idea supported by calculations that don’t violate laws of physics, statistics, etc?  
+* What targets must be achieved for this idea to compete on cost?  
+* What trends will help or hurt this idea?  
+* Does the success of this idea hinge upon lots of other smart and motivated failing to achieve their vision? If so, why are they all wrong?  
+* Why is there not a cheaper and simpler solution to the problem?  
+* Does the idea rely on collective adoption by lots of people? Why is it valuable to user \#1, \#100, and \#1M, and so on?
+
+**If you've made it this far, thanks for reading!**
+
+### Acknowledgements
+
+I'd like to thank Sebastian Quaade for reading early drafts of this essay.
+
+[^13]:  The Massachusetts farm is \~24 acres (10 hectares), uses a 5-line design, and yields 1.6M lbs wet weight per year (only half of the 20 tons DW / ha goal). I had to max out most assumptions to achieve this yield: 100 arrays spaced at 10 feet apart and 16 lbs kelp per foot of line.
+
+[^14]:  Remora is capturing carbon at the most difficult (wide/distributed) end of the funnel. There are thousands of [oil](https://www.investopedia.com/terms/o/oil-field.asp#:~:text=Presently%2C%20there%20are%20more%20than,than%201500%20major%20oil%20fields.) and natural gas fields in the world, but [billions](https://en.wikipedia.org/wiki/Motor_vehicle#:~:text=The%20US%20publisher%20Ward's%20estimates,in%20use%20in%20the%20world.) of vehicles and other end-uses. To put a dent in vehicle emissions, Remora needs to retrofit [millions](https://www.statista.com/statistics/261156/heavy-truck-production-worldwide-by-region/) of trucks around the world to include carbon capture and storage. Instead of adding point-source capture to millions of tailpipes, you could displace the same amount of emissions with orders of magnitude fewer factories producing carbon-free fuels.
+
+[^15]:  And these renewables would almost certainly require storage (i.e batteries) to enable continuous 24/7 operation\!
+
+[^16]:  [Diesel fuel](https://en.wikipedia.org/wiki/Diesel_fuel#Chemical_analysis) includes a range of hydrocarbons, from C10H20 to C15H28, with an average molecule of C12H23. I did some [back-of-the-napkin math](https://docs.google.com/spreadsheets/d/1btiGlhg9mEsHmDIS2rviIykoT800MyIirkOtPLtaAR8/edit?usp=sharing) here to see how much of the synthetic diesel cost comes from hydrogen vs. CO2. In a Remora-like scenario with \$100/ton captured CO2 (cheap) and \$2/kg H2, the cost breakdown is about 50/50. If CO2 costs \$350/ton, then the breakdown is more like 80/20 CO2:H2. In either case, the cost of H2 matters, but it matters even more for Remora’s use-case.
+
+[^17]:  A number of companies are [focusing](https://agfundernews.com/cultivated-meat-foodtech-fantasy-or-the-future-of-meat-none-of-this-stuff-makes-any-commercial-sense-until-everyones-eating-it) on blended products, where the cultivated meat or fat is used to enhance plant-based products at low inclusion rates.
+
+[^18]:  Evolution is not a perfect analogy for human invention. Humans are capable of creativity that leapfrogs past many incremental solutions at once, and there are plenty of “zero-to-one” moments.

@@ -155,7 +155,7 @@ html {
 }
 
 .prose h2 {
-  @apply text-xl font-medium tracking-tight mt-6 mb-2;
+  @apply text-2xl font-medium tracking-tight mt-6 mb-2;
 }
 
 .prose h3 {
@@ -167,7 +167,7 @@ html {
 }
 
 .prose strong {
-  @apply font-medium;
+  @apply font-semibold;
 }
 
 .prose ul {
@@ -176,6 +176,10 @@ html {
 
 .prose ol {
   @apply list-decimal pl-6;
+}
+
+.prose blockquote {
+  @apply border-l-4 border-neutral-200 pl-4 my-4;
 }
 
 .prose > :first-child {
