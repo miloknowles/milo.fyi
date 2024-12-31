@@ -1,0 +1,80 @@
+---
+title: "The Idea Compass #1: Overview"
+publishedAt: "2025-01-01"
+summary: "In a time of abundant leverage, good ideas matter more than ever."
+---
+
+import Header from "@/components/blog/header";
+import Figure from "@/components/blog/figure";
+
+<Header title={frontmatter.title} publishedAt={frontmatter.publishedAt} />
+
+There’s a common piece of startup advice that ideas don’t really matter, and only execution does. I think this [was never true](https://stephenmalina.com/post/2021-02-21-ideas-not-mattering-is-a-psyop/), and is even less true now. Good ideas are necessary but not sufficient to succeed.
+
+**Good ideas matter more than ever now. Why? Because we live in a time of abundant leverage.** If you create great content, you can reach your audience more easily than ever before. If you create useful software, you can scale it to millions of users from your laptop. To paraphrase [Naval Ravikant](https://nav.al/rich), all of us can summon a small army of robots in data centers to work for us while we sleep. You can order just about anything and get it in a couple days. I’ve had a dozen or so conversations with Claude to help me think through this essay, which would have sounded crazy to me a couple years ago. Nowadays, ideas are more of a bottleneck than execution.
+
+There’s a catch. **Good ideas are easier to pursue, but so are bad ones\!** More resources can be mobilized behind the wrong ideas than ever before. If we do live in the [most important century](https://www.cold-takes.com/most-important-century/) when many important problems [will be solved](https://darioamodei.com/machines-of-loving-grace), the opportunity costs of bad ideas are significant. 
+
+If you’re optimistic about the future, it’s worth spending more of your time scrutinizing ideas before devoting your precious time and attention to them.
+
+## The Idea Compass
+
+In the chart below, I've plotted some ideas along two axes:
+
+* **x-axis: Innovation.** At the time, how significant of an innovation was this idea? Is it an incremental improvement, a paradigm shift, or somewhere in between?  
+* **y-axis: Value.** How much value does this idea create for the world? High value could mean a marginal benefit to lots of people, or a huge benefit to a small number of people.
+
+<Figure
+  src="/assets/blog/idea-compass.svg"
+  className="my-4"
+  alt="The idea compass"
+  caption={
+    <span>
+    Good ideas sit above the x-axis axis, and the best ideas are in the top-right quadrant. If you find any points on this graph controversial, <a href="mailto:miloknowles97@gmail.com">tell me why!</a>
+    </span>
+  }
+/>
+
+## Top-left: “Faster Horses”
+
+If you consume the same kinds of podcasts and blogs that I do, you'll probably recognize this as a reference to the [apocryphal](https://hbr.org/2011/08/henry-ford-never-said-the-fast) quote attributed to Henry Ford:
+
+> “If I had asked people what they wanted, they would have said faster horses.”
+
+For any given problem in the world (e.g transportation), there are usually obvious, incremental solutions (e.g faster horses) and paradigm-shifting solutions (e.g internal combustion engines). People know what their problems are (or maybe they only think they do\!), but they don’t necessarily know the best way to solve them.
+
+I imagine that a faster horse would have been very useful to a lot of people at the time. The ideas in this quadrant are incremental, but create lots of value: BlackBerry phones, Netflix’s DVD rental service, hybrid cars, and traditional AI algorithms (e.g SVMs).
+
+## Bottom-left: “Gimmicks”
+
+These ideas neither innovate nor create value for people. They often are the status quo wrapped in better marketing or the appearance of innovation. For example, AG1 is a $100/month unproven multivitamin marketed as a nutritional panacea. Aspiration is a green bank investing more in airlines than renewables. For reasons I’ll explain below, many Web3 ideas (like NFTs) innovate on the wrong things and fail to solve real world problems.
+
+## Top-right: “Breakthroughs”
+
+These ideas are technological paradigm shifts that bring significant benefits to the world. A very recent example is mRNA vaccines. mRNA vaccines have saved [\~20M lives](https://pmc.ncbi.nlm.nih.gov/articles/PMC9537923/) so far, can be designed in weeks or months (instead of decades) and leverage your own cells to manufacture the immune target. A historical example is the Haber-Bosch process, which allowed us to take nitrogen from the air and turn it into fertilizer. It was a breakthrough that has allowed us to feed [billions of additional people](https://www.sciencedirect.com/science/article/abs/pii/S0167880903003402).
+
+## Bottom-right: “Loonshots”
+
+History is full of innovations that were supposed to be revolutionary, but didn’t pan out. Segways were supposed to revolutionize cities, the Metaverse was supposed to revolutionize work and social life, Makani was supposed to revolutionize renewable energy, and Ginkgo Bioworks was supposed to revolutionize bioengineering. It’s easy to make bold predictions, but hard to be bold, correct, and profitable.
+
+## Some ideas are predictably bad
+
+Given a new idea, is it possible to predict which of the four quadrants it will end up in?
+
+To disappoint you now rather than later, my answer is “sometimes.”
+
+I don’t think it’s possible to consistently predict breakthroughs (top-right). If there was, investors would just buy these needles instead of the proverbial haystack. The bottom-right quadrant is a proof by contradiction. It contains a graveyard of paradigm-shifting ideas (“Loonshots”) that were backed by a lot of smart people. Once again, it’s easy to be bold, but very hard to be bold and correct.
+
+Outside of the special top-right quadrant, however, I think it *is* possible to make predictions and catch common failure modes. We can’t consistently pick winning ideas, but we can rule out some bad ideas that aren’t innovative or impactful. That is the purpose of this essay.
+
+**First, we can detect incrementalism masquerading as innovation**, which almost always ends up in the bottom-left with the other “gimmicks”. Once you peel away a few layers of marketing, these ideas and companies are plainly unexciting.
+
+**Second, we can separate the faster horses from the breakthroughs, though they exist on a spectrum.** Some cases, like electric cars, are debatable; are EVs an improvement on the concept of a car or a paradigm shift toward an electrified world? The point is not to start an endless philosophical debate, but to just be honest about the level of innovation involved. 
+
+**Third, we can also identify novel technologies being applied to the wrong problems, which are often called “solutions in search of problems” (SISPs)**. SISPs are an interesting case where the underlying technology might be a breakthrough, but the product isn’t useful. SISPs can end up in the bottom-left or bottom-right, but never the top-right.
+
+**Fourth, I think there were warning signals for some, but not all, of the Loonshot ideas in the bottom-right.** One red flag is betting against powerful external trends that seem unlikely to yield. Another is having a nebulous argument for why people should adopt a new way of doing things. For some ideas, the math doesn’t check out.
+
+In the following series of posts, I’ll provide some salient examples of each quadrant and try to extract some useful patterns. And to have some skin in the game, I’ve added some of my own predictions in the final post.
+
+**Next up: [Gimmicks](/blog/post/idea-compass-2)**
