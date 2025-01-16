@@ -1,7 +1,7 @@
 import { Separator, Text } from "@radix-ui/themes";
 
 import ExternalLink from "@/components/external-link";
-import BlogPostsIndex from "@/components/posts-index";
+import SubstackIndex from "@/components/substack-index";
 
 export default function Page() {
   return (
@@ -54,7 +54,7 @@ export default function Page() {
         </Text>
       </div>
       <Separator className="mt-8 mb-8 w-full" />
-      <BlogPostsIndex />
+      <SubstackIndex/>
     </section>
   );
 }

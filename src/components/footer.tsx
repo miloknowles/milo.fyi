@@ -17,8 +17,8 @@ function ArrowIcon() {
 
 const items = [
   {
-    href: "/rss",
-    label: "rss",
+    href: "https://miloknowles.substack.com/",
+    label: "substack",
   },
   {
     href: "https://github.com/miloknowles/next.milo.fyi",

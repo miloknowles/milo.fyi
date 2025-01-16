@@ -104,22 +104,22 @@ export default function Navigation() {
           zIndex: 4000,
         }}
       >
-        <nav style={{ display: open ? "inherit" : "none" }}>
-          <Container size="1" p={{ initial: "4", md: "0" }}>
-            <Flex direction="column" gap="6">
+        <nav style={{ display: open ? "flex" : "none" }} className="h-full flex items-center justify-center">
+          <Container size="1" p={{ initial: "4", md: "0" }} className="">
+            <Flex direction="column" gap="8" className="">
               <BigLink href="/" onClick={onClickLink}>
                 About
               </BigLink>
               <BigLink href="/blog" onClick={onClickLink}>
                 Writing
               </BigLink>
-              <BigLink
+              {/* <BigLink
                 href="https://triathlon-tools.vercel.app/"
                 target="_blank"
                 onClick={onClickLink}
               >
                 Triathlon
-              </BigLink>
+              </BigLink> */}
               <BigLink
                 href="https://resume.io/r/5C7pJxyMP"
                 onClick={onClickLink}
@@ -127,7 +127,7 @@ export default function Navigation() {
               >
                 Resume
               </BigLink>
-              <Socials size={48} color="black" />
+              {/* <Socials size={48} color="black" /> */}
             </Flex>
           </Container>
         </nav>
