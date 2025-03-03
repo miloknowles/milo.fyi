@@ -1,3 +1,5 @@
+import { config } from "@/lib/config";
+
 function ArrowIcon() {
   return (
     <svg
@@ -17,27 +19,27 @@ function ArrowIcon() {
 
 const items = [
   {
-    href: "https://miloknowles.substack.com/",
+    href: config.SUBSTACK_URL,
     label: "substack",
   },
   {
-    href: "https://github.com/miloknowles/next.milo.fyi",
+    href: config.GITHUB_URL,
     label: "github",
   },
   {
-    href: "https://resume.io/r/5C7pJxyMP",
+    href: config.RESUME_URL,
     label: "resume",
   },
   {
-    href: "https://www.linkedin.com/in/milo-knowles/",
+    href: config.LINKEDIN_URL,
     label: "linkedin",
   },
   {
-    href: "https://www.strava.com/athletes/6914634",
+    href: config.STRAVA_URL,
     label: "strava",
   },
   {
-    href: "mailto:miloknowles97@gmail.com",
+    href: config.EMAIL_URL,
     label: "email",
   },
 ];

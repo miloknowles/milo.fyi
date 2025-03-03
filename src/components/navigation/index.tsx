@@ -10,6 +10,7 @@ import { GitHubLogoIcon, LinkedInLogoIcon } from "@radix-ui/react-icons";
 import { FaStrava } from "react-icons/fa";
 import { FaEnvelope } from "react-icons/fa";
 import ThemeToggle from "../theme-toggle";
+import { config } from "@/lib/config";
 
 const BigLink = (props: {
   href: string;
@@ -44,24 +45,24 @@ function LinkIcon(props: { href: string; children: any }) {
 function Socials(props: { size: number; color?: string }) {
   return (
     <Flex gap="6">
-      <LinkIcon href="https://www.linkedin.com/in/milo-knowles/">
+      <LinkIcon href={config.LINKEDIN_URL}>
         <LinkedInLogoIcon
           width={props.size.toString()}
           height={props.size.toString()}
           className="text-black dark:text-gray-50"
         />
       </LinkIcon>
-      <LinkIcon href="https://www.github.com/miloknowles">
+      <LinkIcon href={config.GITHUB_URL}>
         <GitHubLogoIcon
           width={props.size.toString()}
           height={props.size.toString()}
           className="text-black dark:text-gray-50"
         />
       </LinkIcon>
-      <LinkIcon href="https://www.strava.com/athletes/6914634">
+      <LinkIcon href={config.STRAVA_URL}>
         <FaStrava size={props.size} className="text-black dark:text-gray-50" />
       </LinkIcon>
-      <LinkIcon href="mailto:miloknowles97@gmail.com">
+      <LinkIcon href={config.EMAIL_URL}>
         <FaEnvelope
           size={props.size}
           className="text-black dark:text-gray-50"
@@ -113,21 +114,13 @@ export default function Navigation() {
               <BigLink href="/blog" onClick={onClickLink}>
                 Writing
               </BigLink>
-              {/* <BigLink
-                href="https://triathlon-tools.vercel.app/"
-                target="_blank"
-                onClick={onClickLink}
-              >
-                Triathlon
-              </BigLink> */}
               <BigLink
-                href="https://resume.io/r/5C7pJxyMP"
+                href={config.RESUME_URL}
                 onClick={onClickLink}
                 target={"_blank"}
               >
                 Resume
               </BigLink>
-              {/* <Socials size={48} color="black" /> */}
             </Flex>
           </Container>
         </nav>

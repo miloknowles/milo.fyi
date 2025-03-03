@@ -8,7 +8,6 @@ import { useEffect, useState } from "react";
 export default function ThemeToggle() {
   const [mounted, setMounted] = useState(false);
   const { setTheme, resolvedTheme } = useTheme();
-  console.debug(resolvedTheme);
 
   // Only render after first client-side mount to avoid hydration mismatch
   useEffect(() => {
