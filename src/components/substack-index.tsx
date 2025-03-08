@@ -2,6 +2,21 @@ import Link from "next/link";
 
 const posts = [
   {
+    title: "Future Food #5: Climbing the energy price ladder",
+    url: "https://miloknowles.substack.com/p/future-food-6-climbing-the-energy",
+    subtitle: "A handy chart for figuring out if you can use X to make Y"
+  },
+  {
+    title: "Future Food #4: Indoor agriculture",
+    url: "https://miloknowles.substack.com/p/future-food-4-indoor-agriculture",
+    subtitle: "Vertical farming is overhyped, but greenhouses will play a key role in climate adaptation and food security"
+  },
+  {
+    title: "Idea Compass #5: Predictions",
+    url: "https://miloknowles.substack.com/p/idea-compass-5-predictions",
+    subtitle: "Carbon dioxide removal, decarbonizing transportation, and alternative proteins"
+  },
+  {
     title: "Idea Compass #4: Loonshots",
     url: "https://substack.com/home/post/p-154489759",
     subtitle: "Grand visions that failed to materialize"
