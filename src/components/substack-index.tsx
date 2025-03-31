@@ -2,6 +2,11 @@ import Link from "next/link";
 
 const posts = [
   {
+    title: "Longevity, AI, and Zeno's progress paradox",
+    url: "https://miloknowles.substack.com/p/longevity-ai-and-zenos-progress-paradox",
+    subtitle: "There's a disconnect between our intuitions about incremental progress and its cumulative effect"
+  },
+  {
     title: "Future Food #5: Climbing the energy price ladder",
     url: "https://miloknowles.substack.com/p/future-food-6-climbing-the-energy",
     subtitle: "A handy chart for figuring out if you can use X to make Y"
