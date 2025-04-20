@@ -2,6 +2,11 @@ import Link from "next/link";
 
 const posts = [
   {
+    title: "An environmental defense of AI",
+    url: "https://open.substack.com/pub/miloknowles/p/an-environmental-defense-of-ai",
+    subtitle: "Making the Earth wealthier without making it hotter"
+  },
+  {
     title: "Longevity, AI, and Zeno's progress paradox",
     url: "https://miloknowles.substack.com/p/longevity-ai-and-zenos-progress-paradox",
     subtitle: "There's a disconnect between our intuitions about incremental progress and its cumulative effect"
