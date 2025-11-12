@@ -2,6 +2,11 @@ import Link from "next/link";
 
 const posts = [
   {
+    title: "Upgrading photosynthesis",
+    url: "https://miloknowles.substack.com/p/upgrading-photosynthesis",
+    subtitle: "Land is a finite resource – better photosynthesis can make it abundant."
+  },
+  {
     title: "An environmental defense of AI",
     url: "https://open.substack.com/pub/miloknowles/p/an-environmental-defense-of-ai",
     subtitle: "Making the Earth wealthier without making it hotter"
@@ -83,7 +88,7 @@ const posts = [
   },
   {
     title: "Paper: Toward Robust and Efficient Online Adaptation for Deep Stereo Depth Estimation (ICRA 2021)",
-    url: "/knowles_icra_2021.pdf",
+    url: "https://dspace.mit.edu/handle/1721.1/145527",
     subtitle: "My first (and so far only) conference paper"
   },
   {
