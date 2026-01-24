@@ -1,5 +1,5 @@
 export const config = {
-  RESUME_URL: "/miloknowles_resume_2026.pdf",
+  RESUME_URL: "/milo_knowles_resume_2026.pdf",
   SUBSTACK_URL: "https://miloknowles.substack.com/",
   GITHUB_URL: "https://github.com/miloknowles/next.milo.fyi",
   LINKEDIN_URL: "https://www.linkedin.com/in/milo-knowles/",
