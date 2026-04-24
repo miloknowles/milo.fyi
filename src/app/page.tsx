@@ -4,16 +4,18 @@ import ExternalLink from "@/components/external-link";
 import SocialLinks from "@/components/social-links";
 import SubstackIndex from "@/components/substack-index";
 import ThemeToggle from "@/components/theme-toggle";
+import PaletteToggle from "@/components/palette-toggle";
 
 export default function Page() {
   return (
     <section className="pt-8 pb-8">
-      <div className="mb-4">
+      <div className="mb-4 flex items-center gap-2">
         <ThemeToggle />
+        <PaletteToggle />
       </div>
       <h1 className="mb-8 font-serif text-[60px] font-normal leading-none tracking-[-0.025em] fade-order-1">
         Hi, I'm{" "}
-        <span className="text-indigo-500 dark:text-indigo-400">Milo</span>.
+        <span className="text-primary">Milo</span>.
         Here are some tokens about me.
       </h1>
       <div className="flex flex-col gap-4">
@@ -49,7 +51,6 @@ export default function Page() {
           <ExternalLink href="https://miloknowles.substack.com/">
             write
           </ExternalLink>
-          .
         </Text>
       </div>
       <div className="mt-8">

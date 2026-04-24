@@ -78,7 +78,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <Theme radius="medium" grayColor="auto" accentColor="indigo">
+          <Theme radius="medium" grayColor="auto">
             <main className="flex-auto min-w-0 flex flex-col px-2 md:px-0 pt-6">
               {/* <Navigation /> */}
               {children}

@@ -109,9 +109,9 @@ export default function SubstackIndex() {
       {
         posts.map((post, index) => (
           <Link key={index} href={post.url} target="_blank" className="group flex items-start gap-3">
-            <span className="mt-[0.45rem] size-2 rounded-full bg-indigo-500 dark:bg-indigo-400 shrink-0 opacity-0 group-hover:animate-dot-pulse" />
+            <span className="mt-[0.45rem] size-2 rounded-full bg-primary shrink-0 opacity-0 group-hover:animate-dot-pulse" />
             <div className="flex flex-col gap-1">
-              <span className="text-indigo-500 dark:text-indigo-400 group-hover:underline">
+              <span className="text-primary group-hover:underline">
                 {post.title}
               </span>
               <span className="text-gray-500 dark:text-gray-400 text-sm">

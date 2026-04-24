@@ -32,6 +32,10 @@ module.exports = {
         mono: ["var(--font-geist-mono)", "monospace"],
       },
       colors: {
+        primary: {
+          DEFAULT: "hsl(var(--primary))",
+          foreground: "hsl(var(--primary-foreground))",
+        },
         // light mode
         tremor: {
           brand: {
