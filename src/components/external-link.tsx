@@ -1,4 +1,3 @@
-import { Link as _Link } from "@radix-ui/themes";
 import { cn } from "@/lib/utils";
 
 const ExternalLink = (props: {
@@ -6,9 +5,17 @@ const ExternalLink = (props: {
   children: any;
   className?: string;
 }) => (
-  <_Link href={props.href} target="_blank" className={cn("", props.className)}>
+  <a
+    href={props.href}
+    target="_blank"
+    rel="noopener noreferrer"
+    className={cn(
+      "text-primary underline underline-offset-2 decoration-[0.05em] hover:opacity-80 transition-opacity",
+      props.className,
+    )}
+  >
     {props.children}
-  </_Link>
+  </a>
 );
 
 export default ExternalLink;

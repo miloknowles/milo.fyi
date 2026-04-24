@@ -105,7 +105,10 @@ export default function Navigation() {
           zIndex: 4000,
         }}
       >
-        <nav style={{ display: open ? "flex" : "none" }} className="h-full flex items-center justify-center">
+        <nav
+          style={{ display: open ? "flex" : "none" }}
+          className="h-full flex items-center justify-center"
+        >
           <Container size="1" p={{ initial: "4", md: "0" }} className="">
             <Flex direction="column" gap="8" className="">
               <BigLink href="/" onClick={onClickLink}>
