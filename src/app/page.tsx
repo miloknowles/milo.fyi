@@ -3,14 +3,18 @@ import { Separator, Text } from "@radix-ui/themes";
 import ExternalLink from "@/components/external-link";
 import SocialLinks from "@/components/social-links";
 import SubstackIndex from "@/components/substack-index";
+import ThemeToggle from "@/components/theme-toggle";
 
 export default function Page() {
   return (
     <section className="pt-8 pb-8">
+      <div className="mb-4">
+        <ThemeToggle />
+      </div>
       <h1 className="mb-8 font-serif text-[60px] font-normal leading-none tracking-[-0.025em] fade-order-1">
         Hi, I'm{" "}
         <span className="text-indigo-500 dark:text-indigo-400">Milo</span>.
-        Welcome to my corner of the internet.
+        Here are some tokens about me.
       </h1>
       <div className="flex flex-col gap-4">
         <Text className="fade-order-2 text-lg">
