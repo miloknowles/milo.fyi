@@ -38,7 +38,9 @@ export default function SocialLinks() {
             href={item.href}
           >
             <ArrowIcon />
-            <p className="ml-2 h-7 font-mono uppercase tracking-widest text-xs">{item.label}</p>
+            <p className="ml-2 h-7 font-mono uppercase tracking-widest text-xs">
+              {item.label}
+            </p>
           </a>
         </li>
       ))}

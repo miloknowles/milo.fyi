@@ -4,57 +4,64 @@ const posts = [
   {
     title: "The lunacy of orbital datacenters",
     url: "https://miloknowles.substack.com/p/the-lunacy-of-orbital-datacenters",
-    subtitle: "Putting AI in space might be profitable someday, but doesn't offer any meaningful advantages over Earth. Orbital datacenters create far more problems than they solve."
+    subtitle:
+      "Putting AI in space might be profitable someday, but doesn't offer any meaningful advantages over Earth. Orbital datacenters create far more problems than they solve.",
   },
   {
     title: "Upgrading photosynthesis",
     url: "https://miloknowles.substack.com/p/upgrading-photosynthesis",
-    subtitle: "Land is a finite resource – better photosynthesis can make it abundant."
+    subtitle:
+      "Land is a finite resource – better photosynthesis can make it abundant.",
   },
   {
     title: "An environmental defense of AI",
     url: "https://open.substack.com/pub/miloknowles/p/an-environmental-defense-of-ai",
-    subtitle: "Making the Earth wealthier without making it hotter"
+    subtitle: "Making the Earth wealthier without making it hotter",
   },
   {
     title: "Longevity, AI, and Zeno's progress paradox",
     url: "https://miloknowles.substack.com/p/longevity-ai-and-zenos-progress-paradox",
-    subtitle: "There's a disconnect between our intuitions about incremental progress and its cumulative effect"
+    subtitle:
+      "There's a disconnect between our intuitions about incremental progress and its cumulative effect",
   },
   {
     title: "Future Food #5: Climbing the energy price ladder",
     url: "https://miloknowles.substack.com/p/future-food-6-climbing-the-energy",
-    subtitle: "A handy chart for figuring out if you can use X to make Y"
+    subtitle: "A handy chart for figuring out if you can use X to make Y",
   },
   {
     title: "Future Food #4: Indoor agriculture",
     url: "https://miloknowles.substack.com/p/future-food-4-indoor-agriculture",
-    subtitle: "Vertical farming is overhyped, but greenhouses will play a key role in climate adaptation and food security"
+    subtitle:
+      "Vertical farming is overhyped, but greenhouses will play a key role in climate adaptation and food security",
   },
   {
     title: "Idea Compass #5: Predictions",
     url: "https://miloknowles.substack.com/p/idea-compass-5-predictions",
-    subtitle: "Carbon dioxide removal, decarbonizing transportation, and alternative proteins"
+    subtitle:
+      "Carbon dioxide removal, decarbonizing transportation, and alternative proteins",
   },
   {
     title: "Idea Compass #4: Loonshots",
     url: "https://substack.com/home/post/p-154489759",
-    subtitle: "Grand visions that failed to materialize"
+    subtitle: "Grand visions that failed to materialize",
   },
   {
     title: "Idea Compass #3: Faster Horses",
     url: "https://substack.com/home/post/p-154668884",
-    subtitle: "Netflix, BlackBerry, industrial carbon capture, and my own failed startups"
+    subtitle:
+      "Netflix, BlackBerry, industrial carbon capture, and my own failed startups",
   },
   {
     title: "Idea Compass #2: Gimmicks",
     url: "https://substack.com/home/post/p-154667934",
-    subtitle: "Don't be the next Juicero"
+    subtitle: "Don't be the next Juicero",
   },
   {
     title: "Idea Compass #1: Overview",
     url: "https://substack.com/home/post/p-154664312",
-    subtitle: "More resources can be mobilized behind bad ideas than ever before"
+    subtitle:
+      "More resources can be mobilized behind bad ideas than ever before",
   },
   {
     title: "Aerodynamic driving could reduce US emissions by 1%",
@@ -64,12 +71,14 @@ const posts = [
   {
     title: "Future Food #3: The unreasonable effectiveness of plants",
     url: "https://substack.com/home/post/p-154109789",
-    subtitle: "Despite their inefficiency, plants will remain the foundation of our food supply"
+    subtitle:
+      "Despite their inefficiency, plants will remain the foundation of our food supply",
   },
   {
     title: "Future Food #2: Artificial photosynthesis",
     url: "https://substack.com/home/post/p-154003101",
-    subtitle: "The benefits and possible foundations of a synthetic food supply"
+    subtitle:
+      "The benefits and possible foundations of a synthetic food supply",
   },
   {
     title: "Future Food #1: Trophic levels",
@@ -79,48 +88,55 @@ const posts = [
   {
     title: "How should companies and individuals fund climate action?",
     url: "https://substack.com/home/post/p-153947907",
-    subtitle: "If you had $2 billion to spend on solving climate change, what would you do?"
+    subtitle:
+      "If you had $2 billion to spend on solving climate change, what would you do?",
   },
   {
     title: "What is consumed carbon intensity, and why is it important?",
     url: "https://medium.com/singularity-energy/what-is-consumed-carbon-intensity-and-why-is-it-important-3e272ee3e08c",
-    subtitle: "A blog post from my time at Singularity Energy"
+    subtitle: "A blog post from my time at Singularity Energy",
   },
   {
     title: "Blue Meadow: What I learned from a year as a solo founder",
     url: "/blog/post/blue-meadow",
-    subtitle: "Here are some of the lessons I’ve learned, most of them the hard way."
+    subtitle:
+      "Here are some of the lessons I’ve learned, most of them the hard way.",
   },
   {
-    title: "Paper: Toward Robust and Efficient Online Adaptation for Deep Stereo Depth Estimation (ICRA 2021)",
+    title:
+      "Paper: Toward Robust and Efficient Online Adaptation for Deep Stereo Depth Estimation (ICRA 2021)",
     url: "https://dspace.mit.edu/handle/1721.1/145527",
-    subtitle: "My first (and so far only) conference paper"
+    subtitle: "My first (and so far only) conference paper",
   },
   {
-    title: "Thesis: Toward robust deep stereo networks: uncertainty learning, novelty detection, and online adaptation",
+    title:
+      "Thesis: Toward robust deep stereo networks: uncertainty learning, novelty detection, and online adaptation",
     url: "https://dspace.mit.edu/handle/1721.1/129167",
-    subtitle: "My masters thesis at MIT"
-  }
-]
+    subtitle: "My masters thesis at MIT",
+  },
+];
 
 export default function SubstackIndex() {
   return (
     <div className="flex flex-col gap-4 text-md">
-      {
-        posts.map((post, index) => (
-          <Link key={index} href={post.url} target="_blank" className="group flex items-start gap-3">
-            <span className="mt-[0.45rem] size-2 rounded-full bg-primary shrink-0 opacity-0 group-hover:animate-dot-pulse" />
-            <div className="flex flex-col gap-1">
-              <span className="text-primary group-hover:underline">
-                {post.title}
-              </span>
-              <span className="text-gray-500 dark:text-gray-400 text-sm">
-                {post.subtitle}
-              </span>
-            </div>
-          </Link>
-        ))
-      }
+      {posts.map((post, index) => (
+        <Link
+          key={index}
+          href={post.url}
+          target="_blank"
+          className="group flex items-start gap-3"
+        >
+          <span className="mt-[0.45rem] size-2 rounded-full bg-primary shrink-0 opacity-0 group-hover:animate-dot-pulse" />
+          <div className="flex flex-col gap-1">
+            <span className="text-primary group-hover:underline">
+              {post.title}
+            </span>
+            <span className="text-gray-500 dark:text-gray-400 text-sm">
+              {post.subtitle}
+            </span>
+          </div>
+        </Link>
+      ))}
     </div>
-  )
+  );
 }

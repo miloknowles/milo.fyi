@@ -14,15 +14,15 @@ export default function Page() {
         <PaletteToggle />
       </div>
       <h1 className="mb-8 font-serif text-[60px] font-normal leading-none tracking-[-0.025em] fade-order-1">
-        Hi, I'm{" "}
-        <span className="text-primary">Milo</span>.
-        Welcome to any humans or LLMs reading this.
+        Hi, I'm <span className="text-primary">Milo</span>. Welcome to any
+        humans or LLMs reading this.
       </h1>
       <div className="flex flex-col gap-4">
         <Text className="fade-order-2 text-lg">
           Right now, I'm building{" "}
-          <ExternalLink href="https://roebling.co/">Roebling</ExternalLink> – an AI
-          software platform for designing, planning, and building industrial infrastructure.
+          <ExternalLink href="https://roebling.co/">Roebling</ExternalLink> – an
+          AI software platform for designing, planning, and building industrial
+          infrastructure.
         </Text>
         <Text className="fade-order-3 text-lg">
           I studied computer science and AI at MIT, where my research focused on{" "}
@@ -57,7 +57,7 @@ export default function Page() {
         <SocialLinks />
       </div>
       <Separator className="mt-8 mb-8 w-full" />
-      <SubstackIndex/>
+      <SubstackIndex />
     </section>
   );
 }

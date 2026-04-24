@@ -8,7 +8,7 @@ export const metadata = {
 export default function Page() {
   return (
     <section className="pt-8 pb-8">
-      <SubstackIndex/>
+      <SubstackIndex />
     </section>
   );
 }

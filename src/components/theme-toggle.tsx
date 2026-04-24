@@ -9,7 +9,11 @@ type ThemeValue = "light" | "dark" | "system";
 const OPTIONS: { value: ThemeValue; icon: React.ReactNode; label: string }[] = [
   { value: "light", icon: <SunIcon width={15} height={15} />, label: "Light" },
   { value: "dark", icon: <MoonIcon width={15} height={15} />, label: "Dark" },
-  { value: "system", icon: <DesktopIcon width={15} height={15} />, label: "System" },
+  {
+    value: "system",
+    icon: <DesktopIcon width={15} height={15} />,
+    label: "System",
+  },
 ];
 
 export default function ThemeToggle() {
@@ -26,7 +30,10 @@ export default function ThemeToggle() {
   useEffect(() => {
     if (!open) return;
     function handleClick(e: MouseEvent) {
-      if (containerRef.current && !containerRef.current.contains(e.target as Node)) {
+      if (
+        containerRef.current &&
+        !containerRef.current.contains(e.target as Node)
+      ) {
         setOpen(false);
       }
     }

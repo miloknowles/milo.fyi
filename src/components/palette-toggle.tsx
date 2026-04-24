@@ -13,12 +13,42 @@ const PALETTES: {
   swatch: string;
   ring: string;
 }[] = [
-  { value: "indigo", label: "Indigo",  swatch: "bg-indigo-500", ring: "ring-indigo-500" },
-  { value: "violet", label: "Violet",  swatch: "bg-violet-500", ring: "ring-violet-500" },
-  { value: "blue",   label: "Blue",    swatch: "bg-blue-500",   ring: "ring-blue-500"   },
-  { value: "teal",   label: "Teal",    swatch: "bg-teal-500",   ring: "ring-teal-500"   },
-  { value: "orange", label: "Orange",  swatch: "bg-orange-500", ring: "ring-orange-500" },
-  { value: "rose",   label: "Rose",    swatch: "bg-rose-500",   ring: "ring-rose-500"   },
+  {
+    value: "indigo",
+    label: "Indigo",
+    swatch: "bg-indigo-500",
+    ring: "ring-indigo-500",
+  },
+  {
+    value: "violet",
+    label: "Violet",
+    swatch: "bg-violet-500",
+    ring: "ring-violet-500",
+  },
+  {
+    value: "blue",
+    label: "Blue",
+    swatch: "bg-blue-500",
+    ring: "ring-blue-500",
+  },
+  {
+    value: "teal",
+    label: "Teal",
+    swatch: "bg-teal-500",
+    ring: "ring-teal-500",
+  },
+  {
+    value: "orange",
+    label: "Orange",
+    swatch: "bg-orange-500",
+    ring: "ring-orange-500",
+  },
+  {
+    value: "rose",
+    label: "Rose",
+    swatch: "bg-rose-500",
+    ring: "ring-rose-500",
+  },
 ];
 
 // 36 (trigger) + 1 (divider) + 6 × 32 (swatches) = 229
@@ -44,7 +74,10 @@ export default function PaletteToggle() {
   useEffect(() => {
     if (!open) return;
     function handleClick(e: MouseEvent) {
-      if (containerRef.current && !containerRef.current.contains(e.target as Node)) {
+      if (
+        containerRef.current &&
+        !containerRef.current.contains(e.target as Node)
+      ) {
         setOpen(false);
       }
     }
@@ -84,7 +117,9 @@ export default function PaletteToggle() {
           className="flex h-9 w-9 flex-shrink-0 items-center justify-center"
           aria-label={open ? "Close palette picker" : "Open palette picker"}
         >
-          <span className={`block h-3.5 w-3.5 rounded-full ${current.swatch}`} />
+          <span
+            className={`block h-3.5 w-3.5 rounded-full ${current.swatch}`}
+          />
         </button>
 
         {/* Options that slide in to the right */}

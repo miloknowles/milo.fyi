@@ -95,20 +95,50 @@
   /* ─── Palette overrides ─────────────────────────────────────────────── */
   /* indigo is the default (:root), no override needed                     */
 
-  [data-palette="violet"]      { --primary: 258 90% 66%; --ring: 258 90% 66%; }
-  .dark[data-palette="violet"] { --primary: 255 92% 76%; --ring: 255 92% 76%; }
+  [data-palette="violet"] {
+    --primary: 258 90% 66%;
+    --ring: 258 90% 66%;
+  }
+  .dark[data-palette="violet"] {
+    --primary: 255 92% 76%;
+    --ring: 255 92% 76%;
+  }
 
-  [data-palette="blue"]        { --primary: 217 91% 60%; --ring: 217 91% 60%; }
-  .dark[data-palette="blue"]   { --primary: 213 97% 69%; --ring: 213 97% 69%; }
+  [data-palette="blue"] {
+    --primary: 217 91% 60%;
+    --ring: 217 91% 60%;
+  }
+  .dark[data-palette="blue"] {
+    --primary: 213 97% 69%;
+    --ring: 213 97% 69%;
+  }
 
-  [data-palette="teal"]        { --primary: 174 86% 40%; --ring: 174 86% 40%; }
-  .dark[data-palette="teal"]   { --primary: 172 66% 50%; --ring: 172 66% 50%; }
+  [data-palette="teal"] {
+    --primary: 174 86% 40%;
+    --ring: 174 86% 40%;
+  }
+  .dark[data-palette="teal"] {
+    --primary: 172 66% 50%;
+    --ring: 172 66% 50%;
+  }
 
-  [data-palette="orange"]      { --primary: 25 95% 53%;  --ring: 25 95% 53%;  }
-  .dark[data-palette="orange"] { --primary: 21 90% 63%;  --ring: 21 90% 63%;  }
+  [data-palette="orange"] {
+    --primary: 25 95% 53%;
+    --ring: 25 95% 53%;
+  }
+  .dark[data-palette="orange"] {
+    --primary: 21 90% 63%;
+    --ring: 21 90% 63%;
+  }
 
-  [data-palette="rose"]        { --primary: 347 87% 60%; --ring: 347 87% 60%; }
-  .dark[data-palette="rose"]   { --primary: 343 87% 68%; --ring: 343 87% 68%; }
+  [data-palette="rose"] {
+    --primary: 347 87% 60%;
+    --ring: 347 87% 60%;
+  }
+  .dark[data-palette="rose"] {
+    --primary: 343 87% 68%;
+    --ring: 343 87% 68%;
+  }
 }
 
 html {

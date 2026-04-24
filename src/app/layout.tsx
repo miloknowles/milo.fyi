@@ -68,7 +68,11 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={cx(GeistSans.variable, GeistMono.variable, instrumentSerif.variable)}
+      className={cx(
+        GeistSans.variable,
+        GeistMono.variable,
+        instrumentSerif.variable,
+      )}
       suppressHydrationWarning
     >
       <body className="font-sans antialiased max-w-2xl mx-4 lg:mx-auto">
