@@ -85,7 +85,7 @@ export default function ThemeToggle() {
                 className={[
                   "flex h-9 w-[36px] flex-shrink-0 items-center justify-center transition-colors",
                   isActive
-                    ? "text-indigo-500 dark:text-indigo-400"
+                    ? "text-primary"
                     : "text-neutral-400 dark:text-neutral-500 hover:text-neutral-700 dark:hover:text-neutral-300",
                 ].join(" ")}
                 aria-label={option.label}

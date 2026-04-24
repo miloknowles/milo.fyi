@@ -4,6 +4,9 @@ import { useEffect, useRef, useState } from "react";
 
 type PaletteValue = "indigo" | "violet" | "blue" | "teal" | "orange" | "rose";
 
+const STORAGE_KEY = "palette";
+const DEFAULT_PALETTE: PaletteValue = "indigo";
+
 const PALETTES: {
   value: PaletteValue;
   label: string;
@@ -23,9 +26,21 @@ const EXPANDED_WIDTH = "w-[229px]";
 
 export default function PaletteToggle() {
   const [open, setOpen] = useState(false);
-  const [palette, setPalette] = useState<PaletteValue>("indigo");
+  const [palette, setPalette] = useState<PaletteValue>(DEFAULT_PALETTE);
   const containerRef = useRef<HTMLDivElement>(null);
 
+  // Restore persisted palette on mount
+  useEffect(() => {
+    const stored = localStorage.getItem(STORAGE_KEY) as PaletteValue | null;
+    if (stored && PALETTES.some((p) => p.value === stored)) {
+      setPalette(stored);
+      if (stored !== DEFAULT_PALETTE) {
+        document.documentElement.setAttribute("data-palette", stored);
+      }
+    }
+  }, []);
+
+  // Close when clicking outside
   useEffect(() => {
     if (!open) return;
     function handleClick(e: MouseEvent) {
@@ -36,6 +51,17 @@ export default function PaletteToggle() {
     document.addEventListener("mousedown", handleClick);
     return () => document.removeEventListener("mousedown", handleClick);
   }, [open]);
+
+  function selectPalette(value: PaletteValue) {
+    setPalette(value);
+    if (value === DEFAULT_PALETTE) {
+      document.documentElement.removeAttribute("data-palette");
+    } else {
+      document.documentElement.setAttribute("data-palette", value);
+    }
+    localStorage.setItem(STORAGE_KEY, value);
+    setOpen(false);
+  }
 
   const current = PALETTES.find((p) => p.value === palette)!;
 
@@ -77,10 +103,7 @@ export default function PaletteToggle() {
             return (
               <button
                 key={p.value}
-                onClick={() => {
-                  setPalette(p.value);
-                  setOpen(false);
-                }}
+                onClick={() => selectPalette(p.value)}
                 className="flex h-9 w-8 flex-shrink-0 items-center justify-center"
                 aria-label={p.label}
                 title={p.label}
