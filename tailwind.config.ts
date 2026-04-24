@@ -26,7 +26,16 @@ module.exports = {
       },
     },
     extend: {
+      fontFamily: {
+        sans: ["var(--font-geist-sans)", "sans-serif"],
+        serif: ["var(--font-instrument-serif)", "serif"],
+        mono: ["var(--font-geist-mono)", "monospace"],
+      },
       colors: {
+        primary: {
+          DEFAULT: "hsl(var(--primary))",
+          foreground: "hsl(var(--primary-foreground))",
+        },
         // light mode
         tremor: {
           brand: {
@@ -114,6 +123,10 @@ module.exports = {
         "tremor-metric": ["1.875rem", { lineHeight: "2.25rem" }],
       },
       keyframes: {
+        "dot-pulse": {
+          "0%, 100%": { opacity: "1" },
+          "50%": { opacity: "0" },
+        },
         "accordion-down": {
           from: { height: "0" },
           to: { height: "var(--radix-accordion-content-height)" },
@@ -173,6 +186,7 @@ module.exports = {
         },
       },
       animation: {
+        "dot-pulse": "dot-pulse 1.5s ease-in-out infinite",
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         hide: "hide 150ms cubic-bezier(0.16, 1, 0.3, 1)",

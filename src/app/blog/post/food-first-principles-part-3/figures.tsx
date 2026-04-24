@@ -8,34 +8,19 @@ import DataOilsLandUse from "./oils-land-use.svg";
 
 export const FigureProteinOpex = () => (
   <figure>
-    <Image
-      src={DataProteinOpex}
-      alt=""
-      width={800}
-      height={800}
-    />
+    <Image src={DataProteinOpex} alt="" width={800} height={800} />
   </figure>
 );
 
 export const FigureBfCapex = () => (
   <figure>
-    <Image
-      src={DataBfCapex}
-      alt=""
-      width={800}
-      height={800}
-    />
+    <Image src={DataBfCapex} alt="" width={800} height={800} />
   </figure>
 );
 
 export const FigureBfCogs = () => (
   <figure>
-    <Image
-      src={DataBfCogs}
-      alt=""
-      width={800}
-      height={800}
-    />
+    <Image src={DataBfCogs} alt="" width={800} height={800} />
   </figure>
 );
 

@@ -12,7 +12,7 @@ import {
   FigureBfCapex,
   FigureBfCogs,
   FigureOilsCost,
-  FigureOilsLandUse
+  FigureOilsLandUse,
 } from "./figures";
 
 <Header
@@ -41,10 +41,25 @@ While plants might lose in a head-to-head battle with gas fermentation on energy
 
 My time so far at [Synonym](https://www.synonym.bio/) has taught me just how much it costs to build industrial fermentation facilities. The building, bioreactors, tanks, centrifuges, dryers, construction fees, etc, add up to tens or hundreds of millions of dollars. Our financial models often include a multi-million-dollar line item for paint\! Paint\! Each facility involves an incredible number of engineering hours to design and several years to build. Even amortized over 20+ years, the total installed cost of the facility and the cost of capital are a significant fraction of the”fully-loaded” cost-of-goods-sold.
 
-<FigureBfCapex/>
+<FigureBfCapex />
 <span className="text-neutral-500 text-sm">
-**Figure 1:** An illustrative CAPEX breakdown for an example \~$200M biomass fermentation facility (2,400 m3 capacity, fed-batch, US Midwest, yeast biomass with 75 g/L titer, 120 hour fermentation time, \~10 MT/year production). There are many routes to reducing CAPEX, like standardizing facilities or doing continuous fermentation. But financing large-scale facilities like this will remain a big challenge for fermentation startups. For reference, the output of this facility is equivalent to \~20-30 km2 of US soybeans. But don’t get too excited – it would also need \~20-30 km2 of corn to supply it with sugar feedstock.
-The expense and effort involved in building food-grade steel infrastructure makes “low-tech” solutions like plants look all the more attractive. True, modern farming includes some expensive equipment, and places like the Netherlands have a lot of greenhouses. But the infrastructure for conventional farming is relatively cheap, and is already deployed widely. If you develop an improved crop variety, there are [millions](https://ourworldindata.org/land-use) of square kilometers of farmland ready for your innovation to be deployed on with low up-front investment.
+  **Figure 1:** An illustrative CAPEX breakdown for an example \~$200M biomass
+  fermentation facility (2,400 m3 capacity, fed-batch, US Midwest, yeast biomass
+  with 75 g/L titer, 120 hour fermentation time, \~10 MT/year production). There
+  are many routes to reducing CAPEX, like standardizing facilities or doing
+  continuous fermentation. But financing large-scale facilities like this will
+  remain a big challenge for fermentation startups. For reference, the output of
+  this facility is equivalent to \~20-30 km2 of US soybeans. But don’t get too
+  excited – it would also need \~20-30 km2 of corn to supply it with sugar
+  feedstock. The expense and effort involved in building food-grade steel
+  infrastructure makes “low-tech” solutions like plants look all the more
+  attractive. True, modern farming includes some expensive equipment, and places
+  like the Netherlands have a lot of greenhouses. But the infrastructure for
+  conventional farming is relatively cheap, and is already deployed widely. If
+  you develop an improved crop variety, there are
+  [millions](https://ourworldindata.org/land-use) of square kilometers of
+  farmland ready for your innovation to be deployed on with low up-front
+  investment.
 </span>
 
 ## Lower input costs
@@ -57,14 +72,21 @@ For sustainable and affordable protein production, the two competing options in 
 
 In this [spreadsheet](https://docs.google.com/spreadsheets/d/1s1-KWnBtnQ66X74uN_AWXpq61v8ViZ2fzfIhICpligI/edit?usp=sharing) and the chart below, I compare the input costs of several protein production scenarios on a `$/kg` dry protein basis:
 
-* Biomass fermentation, using primary glucose (extracted from corn)  
-* Biomass fermentation, using upcycled crop sidestreams (see this [GFI report](https://gfi.org/resource/cultivating-alternative-proteins-from-commodity-crop-sidestreams/))  
-* Biomass fermentation using [hydrogen-oxidizing bacteria](https://en.wikipedia.org/wiki/Hydrogen-oxidizing_bacteria) (HOBs), which consume H2 and CO₂. I’m assuming the inputs are produced with renewable electricity.  
-* Protein isolates of several commodity crops (soy, wheat, and peas). Isolates are similar to the dried and purified biomass you’d get from fermentation.
+- Biomass fermentation, using primary glucose (extracted from corn)
+- Biomass fermentation, using upcycled crop sidestreams (see this [GFI report](https://gfi.org/resource/cultivating-alternative-proteins-from-commodity-crop-sidestreams/))
+- Biomass fermentation using [hydrogen-oxidizing bacteria](https://en.wikipedia.org/wiki/Hydrogen-oxidizing_bacteria) (HOBs), which consume H2 and CO₂. I’m assuming the inputs are produced with renewable electricity.
+- Protein isolates of several commodity crops (soy, wheat, and peas). Isolates are similar to the dried and purified biomass you’d get from fermentation.
 
-<FigureProteinOpex/>
+<FigureProteinOpex />
 <span className="text-neutral-500 text-sm">
-**Figure 2:** Comparing the input costs of several fermentation configurations to the total delivered cost (\*\*) of protein isolates from crops and livestock. All approaches are normalized to a functional unit of 1 kg dry protein. Under optimistic assumptions, the input-only costs of fermentation (no CAPEX) are close to the total delivered cost of soy protein isolate, but cheaper than other crops. My takeaway is that biomass fermentation is in the right cost ballpark to become a meaningful part of our protein supply, but probably won’t replace staple crops.
+  **Figure 2:** Comparing the input costs of several fermentation configurations
+  to the total delivered cost (\*\*) of protein isolates from crops and
+  livestock. All approaches are normalized to a functional unit of 1 kg dry
+  protein. Under optimistic assumptions, the input-only costs of fermentation
+  (no CAPEX) are close to the total delivered cost of soy protein isolate, but
+  cheaper than other crops. My takeaway is that biomass fermentation is in the
+  right cost ballpark to become a meaningful part of our protein supply, but
+  probably won’t replace staple crops.
 </span>
 
 Critically, I’m comparing the total delivered cost of the crops to the input-only costs of fermentation. This is an unfair comparison that removes CAPEX from the equation and heavily favors fermentation.
@@ -77,14 +99,16 @@ Upcycled crop residues could bring feedstock costs down a bit, but the potential
 
 The story is similar for HOBs, where the cost of the H₂ \+ CO₂ \+ NH4 and other media components exceeds the total delivered cost of soy protein isolate. Under optimistic projections for hydrogen (\$2/kg) and direct air capture (\$250/tonne [^5]) in 2030+, HOBs look similar in feedstock cost to sugar fermentation today. I still think it’s worth keeping an eye on companies like Solar Foods and Air Protein. Green hydrogen, DAC, and [green ammonia](https://www.latitudemedia.com/news/catalyst-tea-breakdown-green-ammonia-and-synthetic-methane) are still on their way down the cost curve, and lots of industries have a keen interest in making them cheaper. There’s a chance they outperform our most optimistic estimates.
 
-<FigureBfCogs/>
+<FigureBfCogs />
 <span className="text-neutral-500 text-sm">
-**Figure 3:** The breakdown of cost-of-goods sold (COGS) for a fed-batch biomass fermentation process. Even without labor, O\&M, taxes, and financing costs, the consumables set a tough lower-bound on cost.
+  **Figure 3:** The breakdown of cost-of-goods sold (COGS) for a fed-batch
+  biomass fermentation process. Even without labor, O\&M, taxes, and financing
+  costs, the consumables set a tough lower-bound on cost.
 </span>
 
 **Carbohydrates**
 
-For producing carbohydrates, plants are really the only viable solution I know of right now. I’ve [written](https://www.milo.fyi/blog/post/food-first-principles-part-2) about the possibility of cell-free carbohydrate synthesis – replicating photosynthesis in a reactor using enzymes – but I don't believe that process will be cost-competitive any time soon.  
+For producing carbohydrates, plants are really the only viable solution I know of right now. I’ve [written](https://www.milo.fyi/blog/post/food-first-principles-part-2) about the possibility of cell-free carbohydrate synthesis – replicating photosynthesis in a reactor using enzymes – but I don't believe that process will be cost-competitive any time soon.
 
 Consider the [ASAP Cycle](https://www.science.org/doi/10.1126/science.abh4049) as an example, which was experimentally shown to be more efficient than crops at converting CO₂ or other C1 molecules like methanol into starch. In this CO₂\-to-carbohydrate pathway, there are 20+ unique enzymes needed. Each of these enzymes needs to be produced in a microbial host, extracted, isolated, and purified – so you need a mini fermentation process just to supply the reagents for your main process. The enzymes [wear out over time](https://www.pnas.org/doi/10.1073/pnas.2023348118#:~:text=CCR%20is%20the%20number%20of,lactis%2C%20yeast%2C%20and%20Arabidopsis.) and need to be replenished. You probably also need to immobilize them somehow, and physically separate some of the reactions, as in the paper.
 
@@ -103,12 +127,14 @@ Everyone likes to blame palm oil for deforestation. But oil palms are incredibly
   allow="web-share; clipboard-write"
 />
 
-Fermentation is a possible route for producing fat alternatives, since some yeasts and other microorganisms naturally produce lots of lipids. For example, [C16 Biosciences](https://www.c16bio.com/technology) was founded to create a [yeast-produced alternative](https://sustainability.mit.edu/article/clean-alternative-one-worlds-most-common-ingredients) to palm oil, citing the environmental destruction and deforestation it causes.  
+Fermentation is a possible route for producing fat alternatives, since some yeasts and other microorganisms naturally produce lots of lipids. For example, [C16 Biosciences](https://www.c16bio.com/technology) was founded to create a [yeast-produced alternative](https://sustainability.mit.edu/article/clean-alternative-one-worlds-most-common-ingredients) to palm oil, citing the environmental destruction and deforestation it causes.
 
-
-<FigureOilsLandUse/>
+<FigureOilsLandUse />
 <span className="text-neutral-500 text-sm">
-**Figure 4\.** Left: Comparing the land use required for palm oil production via crops vs. fermentation. A business-as-usual, fed-batch sugar fermentation process does not reduce land use. A land use reduction is only possible if the sugar comes from the most productive sugar beet farms in the world.
+  **Figure 4\.** Left: Comparing the land use required for palm oil production
+  via crops vs. fermentation. A business-as-usual, fed-batch sugar fermentation
+  process does not reduce land use. A land use reduction is only possible if the
+  sugar comes from the most productive sugar beet farms in the world.
 </span>
 
 The problem is that fermentation-derived oils are not a win from either a land use or cost perspective. Yeasts are typically fed sugar or methanol, and as far as I can [tell](https://sustainability.mit.edu/article/clean-alternative-one-worlds-most-common-ingredients) from public information, C16 uses sugar. In Figure 4, I [modeled](https://docs.google.com/spreadsheets/d/1s1-KWnBtnQ66X74uN_AWXpq61v8ViZ2fzfIhICpligI/edit?gid=2046139135#gid=2046139135) the land use of palm oil (world average) vs. an idealized lipid fermentation process. Even if we assume the maximum metabolic efficiency for converting glucose to lipids, a C16-like fermentation process is at least as land-intensive as oil palms[^7]. If you source your feedstock from the most productive sugar beet farms in the world, you could cut land use in half – but I don’t see how C16’s claim of [250x more efficient land use](https://archive.ph/dMUQn) could possibly hold up. Similarly, if we assume maximum metabolic efficiency and $600/ton dextrose, the feedstock costs alone are about double the price of commodity plant oils (Figure 5). For what it’s worth, I’m still rooting for C16 and their peers, and I’d love to see my quick math here proven wrong.
@@ -119,9 +145,12 @@ The best looking option might be a [chemical process](https://synthesis.capital/
 
 One company pursuing a chemical route to fats is called [Savor](https://www.savor.it/). Their thermochemical process converts CO₂ and H2, which could be sourced with renewable energy, into edible fats. This blog post from [Synthesis](https://synthesis.capital/insights/how-chemistry-is-being-used-to-produce-superior-alternative-fats-introducing-our-investment-in-savor-foods) (one of their backers) lays out the many advantages of their approach: it can be precisely tuned to produce a range of end products, it’s based on mature chemical processes (less scale-up risk), and has a path to price parity with commodity oils.
 
-<FigureOilsCost/>
+<FigureOilsCost />
 <span className="text-neutral-500 text-sm">
-<strong>Figure 5:</strong> Comparing the input costs of several fermented/synthetic fat production scenarios to the total delivered cost of commodity crop oils. All approaches are normalized to a functional unit of 1 kg fat.
+  <strong>Figure 5:</strong> Comparing the input costs of several
+  fermented/synthetic fat production scenarios to the total delivered cost of
+  commodity crop oils. All approaches are normalized to a functional unit of 1
+  kg fat.
 </span>
 
 I made a simple model to compare the C16 and Savor processes to commodity oil crops. Once again, I’m comparing feedstock costs only of C16 and Savor to the total commodity price for the crops. I also make a few simplifications in their favor: for C16 I’m excluding the cost of media components, and for Savor I’m assuming 100% conversion of H2 and CO₂ into triglycerides. For both processes, I’m also ignoring any heat/electricity that’s consumed in the process itself, which could be significant for a thermochemical process.
@@ -142,8 +171,14 @@ Of course, climate change also leads to more extreme and unpredictable weather. 
   alt="Potential impacts of climate change on crop yields across the world"
   caption={
     <div>
-      <strong>Figure 6:</strong> Crops like soybeans and rice will see significant yield improvements due to CO₂ fertilization,
-      while others like wheat and maize will see more mixed results, with negative impacts near the tropics (<a href="https://ourworldindata.org/will-climate-change-affect-crop-yields-future">Source</a>).
+      <strong>Figure 6:</strong> Crops like soybeans and rice will see
+      significant yield improvements due to CO₂ fertilization, while others like
+      wheat and maize will see more mixed results, with negative impacts near
+      the tropics (
+      <a href="https://ourworldindata.org/will-climate-change-affect-crop-yields-future">
+        Source
+      </a>
+      ).
     </div>
   }
 />
@@ -156,25 +191,26 @@ Coming into this research, I assumed that crops must be at a plateau in producti
   src="https://ourworldindata.org/grapher/yields-key-staple-crops?stackMode=relative&facet=none&tab=chart"
   loading="lazy"
   style={{ width: "100%", height: "600px", border: "0px none" }}
-  allow="web-share; clipboard-write">
-</iframe>
+  allow="web-share; clipboard-write"
+></iframe>
 
 <span className="text-neutral-500 text-sm">
-**Figure 7:** Staple crop yields have improved remarkably over the last \~60 years.
-The key questions are, how long will this trend continue, and can we accelerate it? If you play
-around with the chart and choose some specific countries, you'll notice that the upward trend is not universal.
+  **Figure 7:** Staple crop yields have improved remarkably over the last \~60
+  years. The key questions are, how long will this trend continue, and can we
+  accelerate it? If you play around with the chart and choose some specific
+  countries, you'll notice that the upward trend is not universal.
 </span>
 
 ## Improving photosynthesis
 
-There is a [theoretical upper bound](https://en.wikipedia.org/wiki/Photosynthetic_efficiency) on efficiency of about `~12%` for photosynthesis. The chemical reaction that turns CO₂ into glucose itself (Calvin Cycle) is about `30%` thermodynamically efficient, and plants can only capture and utilize the energy from `~45%` of the sunlight spectrum. Other inefficiencies stack on top of this, like [photorespiration](https://en.wikipedia.org/wiki/Photorespiration), self-shading, reflection, excess photons that are wasted as heat when sunlight is too intense, and less productive phases in a plant’s life cycle, and so on. As a result, the *practical* efficiency of crops is usually [below 1%](https://www.science.org/doi/10.1126/science.1200165), less than 1/10th the theoretical limit.
+There is a [theoretical upper bound](https://en.wikipedia.org/wiki/Photosynthetic_efficiency) on efficiency of about `~12%` for photosynthesis. The chemical reaction that turns CO₂ into glucose itself (Calvin Cycle) is about `30%` thermodynamically efficient, and plants can only capture and utilize the energy from `~45%` of the sunlight spectrum. Other inefficiencies stack on top of this, like [photorespiration](https://en.wikipedia.org/wiki/Photorespiration), self-shading, reflection, excess photons that are wasted as heat when sunlight is too intense, and less productive phases in a plant’s life cycle, and so on. As a result, the _practical_ efficiency of crops is usually [below 1%](https://www.science.org/doi/10.1126/science.1200165), less than 1/10th the theoretical limit.
 
 This [excellent 2011 paper](https://en.wikipedia.org/wiki/Photorespiration) by Blankenship et. al. lays out a menu of options for improving photosynthetic efficiency.
 
-* You could find variants of the RuBisCO enzyme that are better suited to modern CO₂ concentrations, or more selective for CO₂ in general  
-* You could replace the Calvin Cycle (dark half of photosynthesis) with a new and more efficient CO₂ reduction pathway. The [reductive glycine (rGly) pathway](https://www.sciencedirect.com/science/article/pii/S1096717620301245) is a particularly efficient example that has been implemented in a few organisms.  
-* You could bypass photorespiration \- this is what [Living Carbon](https://www.livingcarbon.com/post/photosynthesis-enhanced-trees-grow-faster-and-capture-more-carbon) has demonstrated\!  
-* You could redesign the light reaction of photosynthesis so that its two photosystems absorb photons from separate halves of the sunlight spectrum. Instead of competing for photons in the same range of wavelengths, they would operate in tandem across a spectrum that’s twice the width. Very crudely, this could double the theoretical efficiency of photosynthesis, from `12%` to `24%`.
+- You could find variants of the RuBisCO enzyme that are better suited to modern CO₂ concentrations, or more selective for CO₂ in general
+- You could replace the Calvin Cycle (dark half of photosynthesis) with a new and more efficient CO₂ reduction pathway. The [reductive glycine (rGly) pathway](https://www.sciencedirect.com/science/article/pii/S1096717620301245) is a particularly efficient example that has been implemented in a few organisms.
+- You could bypass photorespiration \- this is what [Living Carbon](https://www.livingcarbon.com/post/photosynthesis-enhanced-trees-grow-faster-and-capture-more-carbon) has demonstrated\!
+- You could redesign the light reaction of photosynthesis so that its two photosystems absorb photons from separate halves of the sunlight spectrum. Instead of competing for photons in the same range of wavelengths, they would operate in tandem across a spectrum that’s twice the width. Very crudely, this could double the theoretical efficiency of photosynthesis, from `12%` to `24%`.
 
 Maybe some of these strategies are dead ends in the idea maze – I haven’t done enough research yet to know for sure. But given the gap between actual efficiencies (\<1%) and theoretical efficiencies (12%[^9]) it seems plausible to me that we could, say, double the rate of photosynthesis in crops. Despite doubling crop yields since the 1960s, plants are still only sipping from a firehose of photons.
 
@@ -186,8 +222,8 @@ About [5%](https://www.nature.com/articles/s43016-023-00698-w#:~:text=Both%20the
   src="https://ourworldindata.org/explorers/fertilizers?facet=none&country=MMR~Eastern+Asia~ISL&hideControls=true&Input=Synthetic+fertilizer&Nutrient=Nitrogen&Metric=Applied+%28per+hectare%29&Share+of+world+total=false&tab=map"
   loading="lazy"
   style={{ width: "100%", height: "600px", border: "0px none" }}
-  allow="web-share; clipboard-write">
-</iframe>
+  allow="web-share; clipboard-write"
+></iframe>
 
 Some plants, like soybeans and other legumes, already need less nitrogen fertilizer due to their symbiotic relationship with nitrogen-fixing bacteria near their roots. The plants provide sugar to the bacteria in exchange for nitrogen in an elaborate handshake, which I find kind of heartwarming. Companies like [Kula Bio](https://www.kulabio.com/) are enhancing the natural nitrogen fixation capabilities of these symbiotic microbes (e.g Xanthobacter).
 
@@ -213,7 +249,7 @@ I think climate change will necessitate more of this type of Borlaugian work: cr
 
 ## Conclusions
 
-Taking a step back, what can we predict about the future of food? Will it be grown in steel tanks or on cropland? My answer is both, but mostly cropland. And the right answer depends on *what* and *where* you’re growing.
+Taking a step back, what can we predict about the future of food? Will it be grown in steel tanks or on cropland? My answer is both, but mostly cropland. And the right answer depends on _what_ and _where_ you’re growing.
 
 In general, it’s hard to beat the cost, simplicity, and scalability of crops for producing carbohydrates, proteins, and fats for 10B+ people. I think plants will remain the foundation of our food supply, and fermentation or chemical processes will fill in the gaps.
 
@@ -235,28 +271,28 @@ You can find the supplemental information for this essay [here](https://docs.goo
 
 Thanks to Sebastian Quaade for his helpful feedback.
 
-[^1]:  I think firmware is a more accurate analogy for the genome than software, since it’s embedded in the plant’s cells, not easily modifiable at runtime, and operates over the entire organism’s life cycle. Epigenetics might be closer to software.
+[^1]: I think firmware is a more accurate analogy for the genome than software, since it’s embedded in the plant’s cells, not easily modifiable at runtime, and operates over the entire organism’s life cycle. Epigenetics might be closer to software.
 
-[^2]:  Biomass fermentation means growing and harvesting whole cells. Precision fermentation means separating and purifying a specific target product from the cells.
+[^2]: Biomass fermentation means growing and harvesting whole cells. Precision fermentation means separating and purifying a specific target product from the cells.
 
-[^3]:  A similar analogy is adding carbon capture on top of an industrial process (e.g cement production) to decarbonize it. You will never compete with incumbents on cost by adding things\!
+[^3]: A similar analogy is adding carbon capture on top of an industrial process (e.g cement production) to decarbonize it. You will never compete with incumbents on cost by adding things\!
 
-[^4]:  In theory, you could engineer plants to produce most molecules (see the molecular farming section below). But the downstream processing could be impractical giving fermentation a significant advantage.
+[^4]: In theory, you could engineer plants to produce most molecules (see the molecular farming section below). But the downstream processing could be impractical giving fermentation a significant advantage.
 
-[^5]:  [Climeworks](https://www.canarymedia.com/articles/carbon-capture/CO₂-removal-leader-climeworks-says-new-tech-can-halve-costs-energy-use#:~:text=Climeworks%20said%20its%20Generation%203,350%20per%20ton%20by%202030.) aims to hit $250-350/ton by 2030 in its large-scale DAC facilities.
+[^5]: [Climeworks](https://www.canarymedia.com/articles/carbon-capture/CO₂-removal-leader-climeworks-says-new-tech-can-halve-costs-energy-use#:~:text=Climeworks%20said%20its%20Generation%203,350%20per%20ton%20by%202030.) aims to hit $250-350/ton by 2030 in its large-scale DAC facilities.
 
-[^6]:  To recap, the [formose reaction](https://en.wikipedia.org/wiki/Formose_reaction) produces equal amounts of L-glucose and D-glucose. For whatever reason, biology on Earth evolved to prefer D-glucose. L-glucose tastes like sugar, but we can’t metabolize it.
+[^6]: To recap, the [formose reaction](https://en.wikipedia.org/wiki/Formose_reaction) produces equal amounts of L-glucose and D-glucose. For whatever reason, biology on Earth evolved to prefer D-glucose. L-glucose tastes like sugar, but we can’t metabolize it.
 
-[^7]:  I recognize that not all land is the same. A big advantage of fermentation is that you can do it anywhere, as long as the feedstock is nearby. So you could produce C16 palm oil somewhere like the midwest instead of Indonesia or Malaysia, where the ecological importance of land is really high.
+[^7]: I recognize that not all land is the same. A big advantage of fermentation is that you can do it anywhere, as long as the feedstock is nearby. So you could produce C16 palm oil somewhere like the midwest instead of Indonesia or Malaysia, where the ecological importance of land is really high.
 
-[^8]:  I wonder what carbon removal companies think about future CO₂ concentrations. If they achieve their mission, we’ll go from more than 420 ppm of CO₂ back down to 280 ppm, a 33% lower concentration. This means that the unit energy costs for DAC will only get higher as progress is made.
+[^8]: I wonder what carbon removal companies think about future CO₂ concentrations. If they achieve their mission, we’ll go from more than 420 ppm of CO₂ back down to 280 ppm, a 33% lower concentration. This means that the unit energy costs for DAC will only get higher as progress is made.
 
-[^9]:  And 12% isn’t even a hard limit (see above)\! That’s just the limit within the spectrum of radiation that plants can *currently* use, which could be extended through bioengineering.
+[^9]: And 12% isn’t even a hard limit (see above)\! That’s just the limit within the spectrum of radiation that plants can _currently_ use, which could be extended through bioengineering.
 
-[^10]:  While the Haber process is energy intensive, most of the emissions in the fertilizer lifecycle occur during their use on farms. N<sub>2</sub>O is a potent greenhouse gas\!
+[^10]: While the Haber process is energy intensive, most of the emissions in the fertilizer lifecycle occur during their use on farms. N<sub>2</sub>O is a potent greenhouse gas\!
 
-[^11]:  Synthetic fertilizer, as well as other advances in modern agriculture, have allowed crop yields to [outpace population growth](https://ourworldindata.org/yields-vs-land-use-how-has-the-world-produced-enough-food-for-a-growing-population).
+[^11]: Synthetic fertilizer, as well as other advances in modern agriculture, have allowed crop yields to [outpace population growth](https://ourworldindata.org/yields-vs-land-use-how-has-the-world-produced-enough-food-for-a-growing-population).
 
-[^12]:  If you saw the show *Travelers*, they actually [allude](https://www.reddit.com/r/TravelersTV/comments/grxdy2/what_food_do_they_eat/) to a post-apocalyptic future where the human food supply is produced from fermentation.
+[^12]: If you saw the show _Travelers_, they actually [allude](https://www.reddit.com/r/TravelersTV/comments/grxdy2/what_food_do_they_eat/) to a post-apocalyptic future where the human food supply is produced from fermentation.
 
-[^13]:  Estimates range from [16.5%](https://www.mdpi.com/2071-1050/13/11/6276) to [\~20%](http://isam.atmos.uiuc.edu/atuljain/publications/XuEtAl_NatureFood_2021.pdf).
+[^13]: Estimates range from [16.5%](https://www.mdpi.com/2071-1050/13/11/6276) to [\~20%](http://isam.atmos.uiuc.edu/atuljain/publications/XuEtAl_NatureFood_2021.pdf).
