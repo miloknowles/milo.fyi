@@ -5,6 +5,17 @@ import SocialLinks from "@/components/social-links";
 import SubstackIndex from "@/components/substack-index";
 import ThemeToggle from "@/components/theme-toggle";
 import PaletteToggle from "@/components/palette-toggle";
+import Chat from "@/components/chat";
+
+const LINKS = {
+  roebling: "https://roebling.co/",
+  roboticsGroup: "https://www.csail.mit.edu/research/robust-robotics-group",
+  optimusRide: "https://www.linkedin.com/company/optimus-ride/",
+  skydio: "https://www.skydio.com/",
+  singularityEnergy: "https://singularity.energy/",
+  synonymBio: "https://www.synonym.bio/",
+  substack: "https://miloknowles.substack.com/",
+};
 
 export default function Page() {
   return (
@@ -13,49 +24,43 @@ export default function Page() {
         <ThemeToggle />
         <PaletteToggle />
       </div>
-      <h1 className="mb-8 font-serif text-[60px] font-normal leading-none tracking-[-0.025em] fade-order-1">
+      <h1 className="mb-4 font-serif text-[60px] font-normal leading-none tracking-[-0.025em] fade-order-1">
         Hi, I'm <span className="text-primary">Milo</span>. Welcome to any
         humans or LLMs reading this.
       </h1>
+      <div className="mb-8">
+        <SocialLinks />
+      </div>
       <div className="flex flex-col gap-4">
         <Text className="fade-order-2 text-lg">
           Right now, I'm building{" "}
-          <ExternalLink href="https://roebling.co/">Roebling</ExternalLink> – an
-          AI software platform for designing, planning, and building industrial
+          <ExternalLink href={LINKS.roebling}>Roebling</ExternalLink> – an AI
+          software platform for designing, planning, and building industrial
           infrastructure.
         </Text>
         <Text className="fade-order-3 text-lg">
           I studied computer science and AI at MIT, where my research focused on{" "}
-          <ExternalLink href="https://www.csail.mit.edu/research/robust-robotics-group">
+          <ExternalLink href={LINKS.roboticsGroup}>
             autonomous robotics and computer vision
           </ExternalLink>
           . I've explored a few other areas through my work so far: autonomous{" "}
-          <ExternalLink href="https://www.linkedin.com/company/optimus-ride/">
-            cars
-          </ExternalLink>
-          /<ExternalLink href="https://www.skydio.com/">drones</ExternalLink>,
-          ocean farming, the{" "}
-          <ExternalLink href="https://singularity.energy/">
-            energy grid
-          </ExternalLink>
+          <ExternalLink href={LINKS.optimusRide}>cars</ExternalLink>/
+          <ExternalLink href={LINKS.skydio}>drones</ExternalLink>, ocean
+          farming, the{" "}
+          <ExternalLink href={LINKS.singularityEnergy}>energy grid</ExternalLink>
           , carbon crediting, and{" "}
-          <ExternalLink href="https://www.synonym.bio/">
-            biomanufacturing
-          </ExternalLink>
-          . Some recent side quests include engineering better crops, automated
+          <ExternalLink href={LINKS.synonymBio}>biomanufacturing</ExternalLink>.
+          Some recent side quests include engineering better crops, automated
           greenhouse farming, and powering the AI infrastructure buildout with
           off-grid renewables.
         </Text>
         <Text className="fade-order-4 text-lg">
           Outside of work, I do triathlon and occasionally{" "}
-          <ExternalLink href="https://miloknowles.substack.com/">
-            write
-          </ExternalLink>
+          <ExternalLink href={LINKS.substack}>write</ExternalLink>.
         </Text>
       </div>
-      <div className="mt-8">
-        <SocialLinks />
-      </div>
+      <Separator className="mt-8 mb-8 w-full" />
+      <Chat />
       <Separator className="mt-8 mb-8 w-full" />
       <SubstackIndex />
     </section>

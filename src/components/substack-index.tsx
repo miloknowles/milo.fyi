@@ -124,17 +124,14 @@ export default function SubstackIndex() {
           key={index}
           href={post.url}
           target="_blank"
-          className="group flex items-start gap-3"
+          className="group flex flex-col gap-1"
         >
-          <span className="mt-[0.45rem] size-2 rounded-full bg-primary shrink-0 opacity-0 group-hover:animate-dot-pulse" />
-          <div className="flex flex-col gap-1">
-            <span className="text-primary group-hover:underline">
-              {post.title}
-            </span>
-            <span className="text-gray-500 dark:text-gray-400 text-sm">
-              {post.subtitle}
-            </span>
-          </div>
+          <span className="text-primary group-hover:underline">
+            {post.title}
+          </span>
+          <span className="text-gray-500 dark:text-gray-400 text-sm">
+            {post.subtitle}
+          </span>
         </Link>
       ))}
     </div>
