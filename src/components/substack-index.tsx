@@ -2,6 +2,11 @@ import Link from "next/link";
 
 const posts = [
   {
+    title: "The lunacy of orbital datacenters",
+    url: "https://miloknowles.substack.com/p/the-lunacy-of-orbital-datacenters",
+    subtitle: "Putting AI in space might be profitable someday, but doesn't offer any meaningful advantages over Earth. Orbital datacenters create far more problems than they solve."
+  },
+  {
     title: "Upgrading photosynthesis",
     url: "https://miloknowles.substack.com/p/upgrading-photosynthesis",
     subtitle: "Land is a finite resource – better photosynthesis can make it abundant."
@@ -103,14 +108,15 @@ export default function SubstackIndex() {
     <div className="flex flex-col gap-4 text-md">
       {
         posts.map((post, index) => (
-          <Link key={index} href={post.url} target="_blank">
+          <Link key={index} href={post.url} target="_blank" className="group flex items-start gap-3">
+            <span className="mt-[0.45rem] size-2 rounded-full bg-indigo-500 dark:bg-indigo-400 shrink-0 opacity-0 group-hover:animate-dot-pulse" />
             <div className="flex flex-col gap-1">
-            <span className="text-indigo-500 dark:text-indigo-400 hover:underline">
-              {post.title}
-            </span>
-            <span className="text-gray-500 dark:text-gray-400 text-sm">
-              {post.subtitle}
-            </span>
+              <span className="text-indigo-500 dark:text-indigo-400 group-hover:underline">
+                {post.title}
+              </span>
+              <span className="text-gray-500 dark:text-gray-400 text-sm">
+                {post.subtitle}
+              </span>
             </div>
           </Link>
         ))

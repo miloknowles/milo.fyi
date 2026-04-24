@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { GeistSans } from "geist/font/sans";
 import { GeistMono } from "geist/font/mono";
+import { Instrument_Serif } from "next/font/google";
 // import { Newsreader } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
@@ -25,6 +26,9 @@ export const metadata: Metadata = {
     template: "%s | Milo Knowles",
   },
   description: "Welcome to my personal website.",
+  icons: {
+    icon: "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🫠</text></svg>",
+  },
   openGraph: {
     title: "Milo Knowles",
     description: "Welcome to my personal website.",
@@ -48,6 +52,12 @@ export const metadata: Metadata = {
 
 const cx = (...classes) => classes.filter(Boolean).join(" ");
 
+const instrumentSerif = Instrument_Serif({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-instrument-serif",
+});
+
 // const newsreader = Newsreader({ subsets: ["latin"] });
 
 export default function RootLayout({
@@ -58,10 +68,10 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={cx(GeistSans.variable, GeistMono.variable)}
+      className={cx(GeistSans.variable, GeistMono.variable, instrumentSerif.variable)}
       suppressHydrationWarning
     >
-      <body className="antialiased max-w-2xl mx-4 lg:mx-auto">
+      <body className="font-sans antialiased max-w-2xl mx-4 lg:mx-auto">
         <ThemeProvider
           attribute="class"
           defaultTheme="system"

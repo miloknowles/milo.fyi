@@ -1,23 +1,29 @@
 import { Separator, Text } from "@radix-ui/themes";
 
 import ExternalLink from "@/components/external-link";
+import SocialLinks from "@/components/social-links";
 import SubstackIndex from "@/components/substack-index";
 
 export default function Page() {
   return (
     <section className="pt-8 pb-8">
-      <h1 className="mb-8 text-5xl font-semibold tracking-tighter fade-order-1">
+      <h1 className="mb-8 font-serif text-[60px] font-normal leading-none tracking-[-0.025em] fade-order-1">
         Hi, I'm{" "}
-        <span className="text-indigo-500 dark:text-indigo-400">Milo</span> – a
-        software engineer focused on climate.
+        <span className="text-indigo-500 dark:text-indigo-400">Milo</span>.
+        Welcome to my corner of the internet.
       </h1>
       <div className="flex flex-col gap-4">
         <Text className="fade-order-2 text-lg">
-          I studied computer science at MIT, where my research focused on{" "}
+          Right now, I'm building{" "}
+          <ExternalLink href="https://roebling.co/">Roebling</ExternalLink> – an AI
+          software platform for designing industrial infrastructure.
+        </Text>
+        <Text className="fade-order-3 text-lg">
+          I studied computer science and AI at MIT, where my research focused on{" "}
           <ExternalLink href="https://www.csail.mit.edu/research/robust-robotics-group">
             autonomous robotics and computer vision
           </ExternalLink>
-          . I've explored a few different areas through my work: autonomous{" "}
+          . I've explored a few other areas through my work so far: autonomous{" "}
           <ExternalLink href="https://www.linkedin.com/company/optimus-ride/">
             cars
           </ExternalLink>
@@ -26,32 +32,24 @@ export default function Page() {
           <ExternalLink href="https://singularity.energy/">
             energy grid
           </ExternalLink>
-          , carbon crediting, alternative proteins, and biomanufacturing.
-        </Text>
-        <Text className="fade-order-3 text-lg">
-          The goal of this blog is{" "}
-          <ExternalLink href="https://nav.al/optimism">
-            rational optimism
+          , carbon crediting, and{" "}
+          <ExternalLink href="https://www.synonym.bio/">
+            biomanufacturing
           </ExternalLink>
-          ; I'd like to clarify my own thinking about how the world could and
-          should get even better. Right now, I'm focused on climate change, the
-          food system, and learning about synthetic biology.
+          . Some recent side quests include engineering better crops, automated
+          greenhouse farming, and powering the AI infrastructure buildout with
+          off-grid renewables.
         </Text>
         <Text className="fade-order-4 text-lg">
-          By day, I'm a software engineer at{" "}
-          <ExternalLink href="https://www.synonym.bio">Synonym</ExternalLink>,
-          which builds infrastructure for biomanufacturing. If you're working on
-          biomanufacturing, alternative proteins, agriculture, or climate more
-          broadly, I'd love to chat.
+          Outside of work, I do triathlon and occasionally{" "}
+          <ExternalLink href="https://miloknowles.substack.com/">
+            write
+          </ExternalLink>
+          .
         </Text>
-        <Text className="fade-order-5 text-lg">
-          Outside of work, I'm a{" "}
-          <ExternalLink href="https://www.strava.com/athletes/6914634">
-            triathlon
-          </ExternalLink>{" "}
-          enthusiast and enjoy following endurance sports. You'll usually find
-          me biking, running, or at the pool.
-        </Text>
+      </div>
+      <div className="mt-8">
+        <SocialLinks />
       </div>
       <Separator className="mt-8 mb-8 w-full" />
       <SubstackIndex/>
