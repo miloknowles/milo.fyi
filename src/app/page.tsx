@@ -59,9 +59,13 @@ export default function Page() {
           <ExternalLink href={LINKS.substack}>write</ExternalLink>.
         </Text>
       </div>
-      <Separator className="mt-8 mb-8 w-full" />
-      <Chat />
-      <Separator className="mt-8 mb-8 w-full" />
+      {process.env.ENABLE_AI_CHAT === "true" && (
+        <>
+          <Separator className="mt-8 mb-8 w-full" />
+          <Chat />
+          <Separator className="mt-8 mb-8 w-full" />
+        </>
+      )}
       <SubstackIndex />
     </section>
   );

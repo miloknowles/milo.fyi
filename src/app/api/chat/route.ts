@@ -18,6 +18,10 @@ Guidelines:
 - If asked something sensitive or deeply personal, it's fine to say you'd rather not get into it here`;
 
 export async function POST(request: Request) {
+  if (process.env.ENABLE_AI_CHAT !== "true") {
+    return new Response("AI chat is disabled.", { status: 503 });
+  }
+
   const { messages } = await request.json();
 
   const stream = await client.messages.stream({
