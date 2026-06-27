@@ -64,11 +64,6 @@ const posts = [
       "More resources can be mobilized behind bad ideas than ever before",
   },
   {
-    title: "Aerodynamic driving could reduce US emissions by 1%",
-    url: "/blog/post/aerodynamic-driving",
-    subtitle: "A (mostly) unserious climate solution",
-  },
-  {
     title: "Future Food #3: The unreasonable effectiveness of plants",
     url: "https://substack.com/home/post/p-154109789",
     subtitle:
