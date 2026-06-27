@@ -51,6 +51,7 @@ export default function Page() {
           <ExternalLink href="https://miloknowles.substack.com/">
             write
           </ExternalLink>
+          .
         </Text>
       </div>
       <div className="mt-8">
