@@ -31,8 +31,8 @@ export default function Page() {
           . I've explored a few other areas through my work so far: autonomous{" "}
           <ExternalLink href="https://www.linkedin.com/company/optimus-ride/">
             cars
-          </ExternalLink>
-          /<ExternalLink href="https://www.skydio.com/">drones</ExternalLink>,
+          </ExternalLink>{" "}
+          and <ExternalLink href="https://www.skydio.com/">drones</ExternalLink>,
           ocean farming, the{" "}
           <ExternalLink href="https://singularity.energy/">
             energy grid
