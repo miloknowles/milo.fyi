@@ -2,6 +2,12 @@ import Link from "next/link";
 
 const posts = [
   {
+    title: "The Cambrian explosion of ideas to power AI",
+    url: "https://miloknowles.substack.com/p/the-cambrian-explosion-of-ideas-to",
+    subtitle:
+      "BTM gas, fuel cells, demand flexibility, modular datacenters, solar microgrids, stranded renewables, enhanced geothermal, nuclear restarts, metal fuels, thermal storage, SMRs, space, and wave power.",
+  },
+  {
     title: "The lunacy of orbital datacenters",
     url: "https://miloknowles.substack.com/p/the-lunacy-of-orbital-datacenters",
     subtitle:
