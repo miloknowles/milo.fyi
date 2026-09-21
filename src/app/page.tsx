@@ -37,22 +37,23 @@ export default function Page() {
           <ExternalLink href="https://singularity.energy/">
             energy grid
           </ExternalLink>
-          , carbon crediting, and{" "}
+          , carbon crediting,{" "}
           <ExternalLink href="https://www.synonym.bio/">
-            biomanufacturing.
-          </ExternalLink>
+            biomanufacturing
+          </ExternalLink>,
+          and techno-economic analysis for industrials.
         </Text>
         <Text className="fade-order-4 text-lg">
           In my free time, I like to read and think about what a better future might look like.
-          There's not always a rhyme or reason, but some current areas of interest are climate, animal welfare, alternative proteins, artificial
-          photosynthesis, physical infrastructure for AI, and human physiology.
+          There's not always a rhyme or reason to what I'm interested in, but some current areas of interest are climate, animal welfare, alternative proteins, artificial
+          photosynthesis, clean energy for AI, and making physical therapy more effective.
         </Text>
         <Text className="fade-order-5 text-lg">
           Occassionally, I test whether I actually understand something by trying to{" "}
           <ExternalLink href="https://miloknowles.substack.com/">
             write
           </ExternalLink>{" "}
-          about it.
+          about it on Substack.
         </Text>
       </div>
       <div className="mt-8">
