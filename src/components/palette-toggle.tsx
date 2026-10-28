@@ -114,7 +114,7 @@ export default function PaletteToggle() {
         {/* Trigger — colored dot showing current palette */}
         <button
           onClick={() => setOpen((o) => !o)}
-          className="flex h-9 w-9 flex-shrink-0 items-center justify-center"
+          className="flex h-[34px] w-[34px] flex-shrink-0 items-center justify-center"
           aria-label={open ? "Close palette picker" : "Open palette picker"}
         >
           <span

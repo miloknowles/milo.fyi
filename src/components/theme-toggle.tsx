@@ -63,7 +63,7 @@ export default function ThemeToggle() {
         {/* Trigger — shows current theme icon, toggles the picker */}
         <button
           onClick={() => setOpen((o) => !o)}
-          className="flex h-9 w-9 flex-shrink-0 items-center justify-center text-neutral-500 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-white transition-colors"
+          className="flex h-[34px] w-[34px] flex-shrink-0 items-center justify-center text-neutral-500 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-white transition-colors"
           aria-label={open ? "Close theme picker" : "Open theme picker"}
         >
           {current.icon}

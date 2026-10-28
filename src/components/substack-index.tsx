@@ -2,10 +2,10 @@ import Link from "next/link";
 
 const posts = [
   {
-    title: "The Cambrian explosion of ideas to power AI",
-    url: "https://miloknowles.substack.com/p/the-cambrian-explosion-of-ideas-to",
+    title: "Studying the playbook of factory-farmed chicken",
+    url: "https://netprimary.substack.com/p/studying-the-playbook-of-factory",
     subtitle:
-      "BTM gas, fuel cells, demand flexibility, modular datacenters, solar microgrids, stranded renewables, enhanced geothermal, nuclear restarts, metal fuels, thermal storage, SMRs, space, and wave power.",
+      "Plant-based meat could be a low-end disruptor that's cheaper, healthier, and tastes good enough. Cultivated meat may not need to disrupt at all.",
   },
   {
     title: "The lunacy of orbital datacenters",
@@ -125,9 +125,8 @@ export default function SubstackIndex() {
           key={index}
           href={post.url}
           target="_blank"
-          className="group flex items-start gap-3"
+          className="group flex items-start"
         >
-          <span className="mt-[0.45rem] size-2 rounded-full bg-primary shrink-0 opacity-0 group-hover:animate-dot-pulse" />
           <div className="flex flex-col gap-1">
             <span className="text-primary group-hover:underline">
               {post.title}
